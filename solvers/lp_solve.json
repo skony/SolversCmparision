@@ -1,0 +1,7 @@
+{
+    "id" : "lp_solve",
+    "name": "lp_solve",
+    "run" : "lp_solve",
+    "args": "",
+    "input_translator":"true"
+}
