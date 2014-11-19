@@ -1,0 +1,62 @@
+
+Log started (V12.6.0.0) Wed Nov 19 23:00:52 2014
+
+
+Log started (V12.6.0.0) Wed Nov 19 23:03:42 2014
+
+
+Log started (V12.6.0.0) Wed Nov 19 23:04:32 2014
+
+
+Log started (V12.6.0.0) Wed Nov 19 23:05:55 2014
+
+
+Log started (V12.6.0.0) Wed Nov 19 23:06:06 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (6.11 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Wed Nov 19 23:07:01 2014
+

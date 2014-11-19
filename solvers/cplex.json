@@ -1,0 +1,7 @@
+{
+    "id" : "cplex",
+    "name": "IBM CPLEX Optimizer",
+    "input_translator":"true",
+    "spec_command":"true",
+    "command":""
+}

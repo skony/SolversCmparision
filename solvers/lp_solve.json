@@ -1,7 +1,7 @@
 {
     "id" : "lp_solve",
-    "name": "lp_solve",
-    "run" : "lp_solve",
-    "args": "",
+    "name": "LPSolve",
+    "run" : ["lp_solve", "-s", "file_name", ">", "file_out"],
+    "out":"out",
     "input_translator":"true"
 }

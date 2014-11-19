@@ -4,8 +4,9 @@ import glob
 import os
 import json
 #from pprint import pprint
-from subprocess import call
+from subprocess import call, STDOUT, Popen
 import input_translator
+from sys import stdout
 
 def getConfiguredSolvers():
     solvers = []
@@ -22,16 +23,24 @@ def getConfiguredSolvers():
     os.chdir("../")
     return solvers
     
-def runAllSolvers():
-    return 0
-    
 def runSolver(solver, file_name):
     if(solver["input_translator"] == "true"):
-        command = "input_translator." + solver["id"] + "(\"" + file_name + "\")"
-        #input_translator.lp_solve(file_name)
-        trans_file = eval(command)
+        trans_cmd = "input_translator." + solver["id"] + "(\"" + file_name + "\")"
+        trans_file = eval(trans_cmd)
+#         out = open("file.out", 'w')
+#         call([solver["run"], solver["args"], trans_file], stdout=out)
+        Popen("cat problem.cmd | /home/piotrek/programy/ibm/cplex/bin/x86-64_linuxcplex &", shell=True)
+        #Popen("ls -l", shell=True)
     else:
-        call([solver["run"], solver["args"], file_name, "--output", "file.out"])
+        #call([solver["run"], solver["args"], file_name, "--output", "file.out"])
+        command = ""
+        for x in solver["run"]:
+            if(x == "file_name"):
+                x = file_name
+            elif(x == "file_out"):
+                x = solver["id"] + "." + solver["out"]
+            command += x + " "
+        Popen(command, shell=True)
     
 def main(argv):    
     solvers = getConfiguredSolvers()
@@ -40,7 +49,8 @@ def main(argv):
         print("Program needs at least 2 arguments")
         return
     elif(argv[1] == "--all"):
-        runAllSolvers()
+        for solver in solvers:
+            runSolver(solver, argv[-1])
     else:
         for solver in argv[1:-1]:
             item = (item for item in solvers if item["id"] == solver[2:]).next()

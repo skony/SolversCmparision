@@ -27,5 +27,15 @@ def lp_solve(file):
             
     base_file.close()
     new_file.close()
-    return "lp_solve_problem.lp"   
+    return "lp_solve_problem.lp"
+
+def cplex(file):
+    new_file = open(file[:-2] + "cmd", 'w')
+    new_file.write("read " + file + "\n")
+    new_file.write("opt\n")
+    new_file.write("write cplex.sol\n")
+    new_file.write("y\n")
+    new_file.write("quit\n")
+    new_file.write("\n")
+    return file[:-2] + "cmd"
     
