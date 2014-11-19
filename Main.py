@@ -27,12 +27,15 @@ def runSolver(solver, file_name):
     if(solver["input_translator"] == "true"):
         trans_cmd = "input_translator." + solver["id"] + "(\"" + file_name + "\")"
         trans_file = eval(trans_cmd)
-#         out = open("file.out", 'w')
-#         call([solver["run"], solver["args"], trans_file], stdout=out)
-        Popen("cat problem.cmd | /home/piotrek/programy/ibm/cplex/bin/x86-64_linuxcplex &", shell=True)
-        #Popen("ls -l", shell=True)
+        command = ""
+        for x in solver["run"]:
+            if(x == "file_name"):
+                x = trans_file
+            elif(x == "file_out"):
+                x = solver["id"] + "." + solver["out"]
+            command += x + " "
+        Popen(command, shell=True)
     else:
-        #call([solver["run"], solver["args"], file_name, "--output", "file.out"])
         command = ""
         for x in solver["run"]:
             if(x == "file_name"):

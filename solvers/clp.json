@@ -1,6 +1,8 @@
 {
     "id":"clp",
     "name":"COIN-OR Linear Programming Solver",
-    "version":"1.15"
-    
+    "version":"1.15",
+    "run":["/home/piotrek/programy/coin-Clp/bin/clp", "file_name", ">", "file_out"],
+    "out":"out",
+    "input_translator":"false"
 }

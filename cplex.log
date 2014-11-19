@@ -1,17 +1,5 @@
 
-Log started (V12.6.0.0) Wed Nov 19 23:00:52 2014
-
-
-Log started (V12.6.0.0) Wed Nov 19 23:03:42 2014
-
-
-Log started (V12.6.0.0) Wed Nov 19 23:04:32 2014
-
-
-Log started (V12.6.0.0) Wed Nov 19 23:05:55 2014
-
-
-Log started (V12.6.0.0) Wed Nov 19 23:06:06 2014
+Log started (V12.6.0.0) Thu Nov 20 00:09:15 2014
 
 
 Problem 'problem.lp' read.
@@ -53,10 +41,7 @@ Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.2250000000e+02
 Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
-Deterministic time = 0.04 ticks  (6.11 ticks/sec)
+Deterministic time = 0.04 ticks  (2.57 ticks/sec)
 
 
 Incumbent solution written to file 'cplex.sol'.
-
-Log started (V12.6.0.0) Wed Nov 19 23:07:01 2014
-
