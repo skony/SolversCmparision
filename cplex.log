@@ -1,5 +1,99 @@
 
-Log started (V12.6.0.0) Thu Nov 20 00:09:15 2014
+Log started (V12.6.0.0) Thu Nov 27 19:00:03 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.03 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.03 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.46 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:07:13 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.04 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.04 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.04 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.04 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (0.90 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:08:33 2014
 
 
 Problem 'problem.lp' read.
@@ -41,7 +135,1088 @@ Solution pool: 2 solutions saved.
 
 MIP - Integer optimal solution:  Objective =  1.2250000000e+02
 Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
-Deterministic time = 0.04 ticks  (2.57 ticks/sec)
+Deterministic time = 0.04 ticks  (5.40 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:09:43 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.03 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.03 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.30 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:11:36 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (5.44 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:12:17 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (3.26 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:12:57 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.71 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:12:58 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.99 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:12:59 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (4.99 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:13:00 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.91 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:13:01 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.91 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:15:11 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (5.50 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:15:22 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.94 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:15:29 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.61 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:15:34 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.53 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:23:18 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.17 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:23:34 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.02 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (1.77 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:24:21 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.80 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:24:30 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.02 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (2.45 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:25:01 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.00 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.00 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (7.74 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:25:13 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (3.47 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 19:25:20 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (6.91 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Thu Nov 27 20:07:39 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.00 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.00 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (7.86 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Fri Nov 28 10:36:18 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.00 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.00 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (8.54 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Fri Nov 28 10:37:07 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (4.52 ticks/sec)
+
+
+Incumbent solution written to file 'cplex.sol'.
+
+Log started (V12.6.0.0) Fri Nov 28 10:40:14 2014
+
+
+Problem 'problem.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Found incumbent of value 46.000000 after 0.00 sec. (0.00 ticks)
+Tried aggregator 2 times.
+Aggregator did 1 substitutions.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 2 rows, 3 columns, and 6 nonzeros.
+Reduced MIP has 0 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 4 threads.
+Root relaxation solution time = 0.00 sec. (0.00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                           46.0000      163.0000        3  254.35%
+      0     0      125.2083     1       46.0000      125.2083        3  172.19%
+*     0+    0                          122.5000      125.2083        3    2.21%
+      0     0        cutoff            122.5000                      3    0.00%
+Elapsed time = 0.01 sec. (0.04 ticks, tree = 0.00 MB, solutions = 2)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (0.04 ticks)
+Parallel b&c, 4 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (0.04 ticks)
+
+Solution pool: 2 solutions saved.
+
+MIP - Integer optimal solution:  Objective =  1.2250000000e+02
+Solution time =    0.01 sec.  Iterations = 3  Nodes = 0
+Deterministic time = 0.04 ticks  (5.24 ticks/sec)
 
 
 Incumbent solution written to file 'cplex.sol'.

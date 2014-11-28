@@ -11,7 +11,7 @@ def lp_solve(file):
             new_file.write(line[:-1] + ";\n")
             general = False
         elif(line.lower() == 'maximize\n' or line.lower() == 'maximum\n' or line.lower() == 'max\n'):
-            new_file.write("max")
+            new_file.write("max:")
         elif(re.match(pattern, line) ):
             new_file.write(line.rsplit(':', -1)[1][:-1] + ";\n")
         elif(line.lower().strip() == "subject to" or line.lower().strip() == "bounds" or line.lower().strip() == "end"):

@@ -1,0 +1,7 @@
+Number of variables: 4
+Number of constraints: 3
+Constraints density: 0.833333333333
+13.9780044556ms cplex
+2.83288955688ms glpk
+3.05700302124ms lp_solve
+4.92382049561ms clp
