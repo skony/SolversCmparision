@@ -1,0 +1,6 @@
+Number of variables: 89
+Number of constraints: 174
+Constraints density: 0.146519436911
+Maximum factor: 917000.0
+Minimum factor: 0.001
+37.4898910522ms lp_solve

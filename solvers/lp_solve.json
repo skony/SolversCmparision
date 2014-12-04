@@ -3,5 +3,5 @@
     "name": "LPSolve",
     "run" : ["lp_solve", "-s", "file_name", ">", "file_out"],
     "out":"out",
-    "input_translator":"true"
+    "input":"lp_solve"
 }
