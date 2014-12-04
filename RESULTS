@@ -1,7 +1,24 @@
 Number of variables: 4
 Number of constraints: 3
 Constraints density: 0.833333333333
-13.9780044556ms cplex
-2.83288955688ms glpk
-3.05700302124ms lp_solve
-4.92382049561ms clp
+Maximum factor: 30.0
+Minimum factor: 0.0
+18.4271335602ms cplex
+3.08799743652ms glpk
+3.48997116089ms lp_solve
+5.19394874573ms clp
+122.5 Value of objective function [cplex]
+40.0 x1 [cplex]
+10.5 x2 [cplex]
+19.5 x3 [cplex]
+3.0 x4 [cplex]
+122.5 Value of objective function [glpk]
+40.0 x1 [glpk]
+10.5 x2 [glpk]
+19.5 x3 [glpk]
+3.0 x4 [glpk]
+122.5 Value of objective function [lp_solve]
+40.0 x1 [lp_solve]
+10.5 x2 [lp_solve]
+19.5 x3 [lp_solve]
+3.0 x4 [lp_solve]

@@ -102,10 +102,10 @@ def getProblemParams(file_path):
     results.write("Minimum factor: " + min.__str__() + "\n")
     
 def scanOutput(solver):
-    if(solver["id"] == "lp_solve"):
-        #scan_cmd = "output_scanner." + solver["id"] + "()"
-        #d = eval(scan_cmd)
-        d = output_scanner.lp_solve()
+    if(solver["id"] == "lp_solve" or solver["id"] == "glpk" or solver["id"] == "cplex"):
+        scan_cmd = "output_scanner." + solver["id"] + "()"
+        d = eval(scan_cmd)
+        #d = output_scanner.lp_solve()
         file = open("RESULTS", 'a')
         file.write(d["VoOF"].__str__() + " Value of objective function [" + solver["id"] + "]" + "\n")
         i = 1
