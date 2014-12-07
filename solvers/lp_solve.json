@@ -3,5 +3,7 @@
     "name": "LPSolve",
     "run" : ["lp_solve", "-s", "file_name", ">", "file_out"],
     "out":"out",
-    "input":"lp_solve"
+    "input":"lp_solve",
+    "VoOF":"Value of objective function:",
+    "VotV":""
 }

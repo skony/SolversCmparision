@@ -3,5 +3,7 @@
     "name": "IBM CPLEX Optimizer",
     "run":["cat", "file_name", "|", "/home/piotrek/programy/ibm/cplex/bin/x86-64_linux/cplex"],
     "out":"sol",
-    "input":"cmd"
+    "input":"cmd",
+    "VoOF":"objectiveValue=",
+    "VotV":""
 }

@@ -3,5 +3,7 @@
 	"name": "Gnu Linear Programming Kit",
 	"run" : ["glpsol", "--lp", "file_name", "--output", "file_out"],
 	"out": "out",
-	"input":"cplex"
+	"input":"cplex",
+	"VoOF":"Objective:",
+    "VotV":""
 }
