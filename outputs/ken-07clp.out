@@ -1,0 +1,19 @@
+Coin LP version 1.15, build Nov 19 2014
+command line - /home/piotrek/programy/coin-Clp/bin/clp /home/piotrek/Kodzenie/SolversComparision/problems/ken-07cplex.lp 
+Presolve 892 (-5136) rows, 2051 (-1551) columns and 4641 (-7365) elements
+0  Obj -1.0700579e+08 Primal inf 18300 (785) Dual inf 12891288 (1946)
+92  Obj -7.7108e+08 Primal inf 27213.7 (810)
+184  Obj -7.4312044e+08 Primal inf 20810.7 (737)
+276  Obj -7.2418616e+08 Primal inf 16207.4 (664)
+368  Obj -7.1091376e+08 Primal inf 12561.7 (616)
+460  Obj -7.0064939e+08 Primal inf 10192.5 (533)
+552  Obj -6.9203928e+08 Primal inf 7691.8 (478)
+644  Obj -6.8657007e+08 Primal inf 4193.2 (413)
+736  Obj -6.832027e+08 Primal inf 2626.5 (336)
+828  Obj -6.8097437e+08 Primal inf 1152.7 (257)
+920  Obj -6.7987866e+08 Primal inf 234.69999 (143)
+1012  Obj -6.7952843e+08 Primal inf 2.3000006 (24)
+1030  Obj -6.7952044e+08
+Optimal - objective value -6.7952044e+08
+After Postsolve, objective -6.7952044e+08, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective -679520440 - 1030 iterations time 0.022, Presolve 0.01

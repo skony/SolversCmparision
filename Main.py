@@ -5,14 +5,17 @@ import os
 import json
 import time
 import re
-from subprocess import Popen
+import subprocess
 import input_translator
+from signal import SIGTERM
+import shlex
 
 source = ""
 script_dir = ""
 outputs_dir = ""
 problems_dir = ""
 results_dir = ""
+charts_dir = ""
 
 def getConfiguredSolvers():
     global script_dir
@@ -34,32 +37,40 @@ def runSolver(solver, file_name):
     results = open(script_dir + "/results/" + file_name + "RESULTS", 'a')
     if(solver["input"] != "lp_solve"):
         trans_cmd = "input_translator." + solver["input"] + "(\"" + script_dir + "/problems/" + file_name + "\")"
-        trans_file = eval(trans_cmd)
-        command = ""
-        for x in solver["run"]:
-            if(x == "file_name"):
-                x = trans_file
-            elif(x == "file_out"):
-                x = script_dir + "/outputs/" + file_name + solver["id"] + "." + solver["out"]
-            command += x + " "
-        t1 = time.time()
-        Popen(command, shell=True).wait()
-        t2 = time.time()
-        ts = ((t2-t1)*1000).__str__()
-        results.write(ts + "ms " + solver["id"] + "\n")
+        problem_file = eval(trans_cmd)
     else:
-        command = ""
-        for x in solver["run"]:
-            if(x == "file_name"):
-                x = script_dir + "/problems/" + file_name
-            elif(x == "file_out"):
-                x = script_dir + "/outputs/" + file_name + solver["id"] + "." + solver["out"]
-            command += x + " "
-        t1 = time.time()
-        Popen(command, shell=True).wait()
+        problem_file = script_dir + "/problems/" + file_name
+        
+    file_out_path = script_dir + "/outputs/" + file_name + solver["id"] + "." + solver["out"]
+    file_out = open(file_out_path, 'w')
+    stdout = None
+    
+    command = ""
+    for x in solver["run"]:
+        if(x == "file_name"):
+            x = problem_file
+        elif(x == ">"):
+            stdout = file_out
+            break
+        elif(x == "<"):
+            stdout = file_out
+            continue
+        elif(x == "file_out"):
+            x = file_out_path
+        command += x + " "
+    t1 = time.time()
+    try:
+        #p = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)
+        p = subprocess.Popen(shlex.split(command), stdout=stdout)          
+        p.wait(timeout = 10)
         t2 = time.time()
         ts = ((t2-t1)*1000).__str__()
         results.write(ts + "ms " + solver["id"] + "\n")
+    except:
+        os.kill(p.pid, SIGTERM)
+        t2 = time.time()
+        ts = ((t2-t1)*1000).__str__()
+        results.write(ts + "ms TIMEOUT_EXCEPTION " + solver["id"] + "\n")
         
 def getProblemParams(file_path):
     problem = open(file_path, 'r')
@@ -143,7 +154,10 @@ def scanOutput(solver, problem):
                     VoOF = -0.0 
 
     file2 = open(results_dir + problem + "RESULTS", 'a')
-    file2.write(VoOF.__str__() + " Value of objective function [" + solver["id"] + "]" + "\n")
+    if(VoOF != -0.0):
+        file2.write(VoOF.__str__() + " Value of objective function [" + solver["id"] + "]" + "\n")
+    else:
+        file2.write(VoOF.__str__() + " Value of objective function EXCEPTION [" + solver["id"] + "]" + "\n")
 #         i = 1
 #         for x in d["VotV"]:
 #             file.write(x.__str__() + " x" + i.__str__() + " [" + solver["id"] + "]\n")
@@ -151,7 +165,7 @@ def scanOutput(solver, problem):
     file.close()
     file2.close()
             
-def cleanBefore():
+def cleanBefore(solvers):
     os.chdir(results_dir)
     for file in glob.glob("*"):
         os.unlink(file)
@@ -160,10 +174,17 @@ def cleanBefore():
     for file in glob.glob("*"):
         os.unlink(file)
     
+    os.chdir(problems_dir)
+    for file in glob.glob("*"):
+        for solver in solvers:
+            if solver["input"] in file:
+                os.unlink(file)
+                break
+    
     os.chdir("../")
     
 def cleanAfter(solvers):
-    os.chdir("problems")
+    os.chdir(problems_dir)
     for file in glob.glob("*"):
         for solver in solvers:
             if solver["input"] in file:
@@ -182,7 +203,7 @@ def main(argv):
     results_dir = script_dir + "/results/"
     
     solvers = getConfiguredSolvers()
-    cleanBefore()
+    cleanBefore(solvers)
     global source
     
     if(argv[-1].startswith("--")):
@@ -209,7 +230,7 @@ def main(argv):
             scanOutput(solver)
     elif(source == "file"):
         for solver in argv[1:-1]:
-            item = (item for item in solvers if item["id"] == solver[2:]).next()
+            item = (item for item in solvers if item["id"] == solver[2:]).__next__()
             runSolver(item, argv[-1])
             scanOutput(item)
     elif(argv[1] == "--all" and source == "dir"):
@@ -223,7 +244,7 @@ def main(argv):
     elif(source == "dir"):
         listdir = os.listdir(script_dir + "/problems")
         for solver in argv[1:]:
-            item = (item for item in solvers if item["id"] == solver[2:]).next()
+            item = (item for item in solvers if item["id"] == solver[2:]).__next__()
             for file in listdir:
                 runSolver(item, file)
                 scanOutput(item, file)

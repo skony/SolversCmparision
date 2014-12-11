@@ -1,7 +1,7 @@
 {
     "id" : "cplex",
     "name": "IBM CPLEX Optimizer",
-    "run":["cat", "file_name", "|", "/home/piotrek/programy/ibm/cplex/bin/x86-64_linux/cplex"],
+    "run":["/home/piotrek/programy/ibm/cplex/bin/x86-64_linux/cplex", "-f", "file_name"],
     "out":"sol",
     "input":"cmd",
     "VoOF":"objectiveValue=",

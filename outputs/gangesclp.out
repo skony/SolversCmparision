@@ -1,0 +1,19 @@
+Coin LP version 1.15, build Nov 19 2014
+command line - /home/piotrek/programy/coin-Clp/bin/clp /home/piotrek/Kodzenie/SolversComparision/problems/gangescplex.lp 
+Presolve 466 (-1247) rows, 510 (-1171) columns and 3651 (-3665) elements
+Perturbing problem by 0.001 % of 15.763335 - largest nonzero change 9.6185355e-05 (% 0.012997165) - largest zero change 8.8109116e-05
+0  Obj -1238.7809 Primal inf 173382.03 (98) Dual inf 288.92199 (98)
+84  Obj -157566.19 Primal inf 300775.74 (259)
+168  Obj -132094.2 Primal inf 114979.15 (177)
+252  Obj -116264.1 Primal inf 33452.83 (118)
+336  Obj -111912.77 Primal inf 1207.4601 (33)
+411  Obj -109582.91
+Optimal - objective value -109585.74
+After Postsolve, objective -109585.74, infeasibilities - dual 16.08791 (22), primal 0 (0)
+Presolved model was optimal, full model needs cleaning up
+0  Obj -109585.74
+End of values pass after 4 iterations
+4  Obj -109585.74
+4  Obj -109585.74
+Optimal - objective value -109585.74
+Optimal objective -109585.7435 - 415 iterations time 0.022, Presolve 0.01
