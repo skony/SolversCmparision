@@ -5,13 +5,12 @@ Created on 11 gru 2014
 '''
 import glob
 import os
+
 import matplotlib.pyplot as plt
 import numpy as np
 
-from Main import results_dir
 
-
-def getUnresolvedData(solvers):
+def getUnresolvedData(solvers, results_dir):
     rating = {}
     problems_count = 0
     for s in solvers:
@@ -23,15 +22,24 @@ def getUnresolvedData(solvers):
         for line in rfile:
             for solver in rating.keys():
                 if solver in line and " EXCEPTION" in line:
-                    rating["solver"] = rating["solver"] + 1 
+                    rating[solver] = rating[solver] + 1 
         rfile.close()
     
     for solver in rating.keys():
-        rating["solver"] = rating["solver"] / problems_count
+        rating[solver] = int(rating[solver] / problems_count * 100)
     
     return rating
 
-def drawBarChart(solvers):
-    rating = getUnresolvedData(solvers)
+def drawBarChart(solvers, results_dir, charts_dir):
+    rating = getUnresolvedData(solvers, results_dir)
+    fig, ax = plt.subplots()
+    plt.bar(range(4), rating.values())
+
+    ax.set_ylabel('Percentage')
+    ax.set_title('Percentage of unresolved problems')
+    ax.set_xticks([0,1,2,3])
+    ax.set_xticklabels(tuple(rating.keys()))
+    #plt.show()
+    plt.savefig(charts_dir + "unresolved_problems.png")
     
         

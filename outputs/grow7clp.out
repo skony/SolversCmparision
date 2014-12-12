@@ -10,4 +10,4 @@ Perturbing problem by 0.001 % of 23.76442 - largest nonzero change 2.1710518e-06
 263  Obj -47787812
 Optimal - objective value -47787812
 After Postsolve, objective -47787812, infeasibilities - dual 0 (0), primal 0 (0)
-Optimal objective -47787811.81 - 263 iterations time 0.012, Presolve 0.01
+Optimal objective -47787811.81 - 263 iterations time 0.012, Presolve 0.00

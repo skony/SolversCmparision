@@ -1,14 +1,17 @@
 #!/usr/bin/python
-import sys
 import glob
-import os
 import json
-import time
+import os
 import re
-import subprocess
-import input_translator
-from signal import SIGTERM
 import shlex
+from signal import SIGTERM
+import subprocess
+import sys
+import time
+
+import Charts
+import input_translator
+
 
 source = ""
 script_dir = ""
@@ -62,11 +65,11 @@ def runSolver(solver, file_name):
     try:
         #p = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)
         p = subprocess.Popen(shlex.split(command), stdout=stdout)          
-        p.wait(timeout = 10)
+        p.wait(timeout = 5)
         t2 = time.time()
         ts = ((t2-t1)*1000).__str__()
         results.write(ts + "ms " + solver["id"] + "\n")
-    except:
+    except subprocess.TimeoutExpired:
         os.kill(p.pid, SIGTERM)
         t2 = time.time()
         ts = ((t2-t1)*1000).__str__()
@@ -197,10 +200,12 @@ def main(argv):
     global outputs_dir
     global problems_dir
     global results_dir
+    global charts_dir
     script_dir = os.path.dirname(__file__)
     outputs_dir = script_dir + "/outputs/"
     problems_dir = script_dir + "/problems/"
     results_dir = script_dir + "/results/"
+    charts_dir = script_dir + "/charts/"
     
     solvers = getConfiguredSolvers()
     cleanBefore(solvers)
@@ -249,6 +254,7 @@ def main(argv):
                 runSolver(item, file)
                 scanOutput(item, file)
     
+    Charts.drawBarChart(solvers, results_dir, charts_dir)
     cleanAfter(solvers)
                        
 if __name__ == "__main__":

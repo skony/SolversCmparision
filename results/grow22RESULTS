@@ -3,10 +3,10 @@ Number of constraints: 440
 Constraints density: 0.3023415977961432
 Maximum factor: 4.7
 Minimum factor: -0.000102
-17.03643798828125ms cplex
-114.96543884277344ms glpk
-64.79811668395996ms lp_solve
-64.74113464355469ms clp
+17.994165420532227ms cplex
+116.43552780151367ms glpk
+69.69118118286133ms lp_solve
+65.9780502319336ms clp
 -0.0 Value of objective function EXCEPTION [cplex]
 -160834336.5 Value of objective function [glpk]
 -160834000.0 Value of objective function [lp_solve]

@@ -204,3 +204,1579 @@ Deterministic time = 11.83 ticks  (678.78 ticks/sec)
 
 
 Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 00:58:12 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (780.18 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 00:58:35 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 00:59:11 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (884.00 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 00:59:24 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (891.74 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 01:29:13 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.09 sec. (0.13 ticks)
+
+Log started (V12.6.0.0) Fri Dec 12 01:33:01 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:33 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.00 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.08 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.39 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (123.93 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:35 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:41:35 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.02 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (770.35 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:43 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.00 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (939.51 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:43 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:43 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:43 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:44 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:44 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:44:44 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.01 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.02 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (625.98 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 01:47:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:52:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:53:07 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 01:53:34 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:02:04 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:03:38 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:09 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.02 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (858.99 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:10 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:10 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.05 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.06 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (35.37 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:10 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:12 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:05:12 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.02 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (564.44 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:47 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (857.58 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:47 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:48 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:48 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:48 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:48 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.01 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (378.03 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:48 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:50 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:09:51 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.01 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (841.76 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:13 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (764.63 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:13 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:13 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:13 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:14 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.01 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (378.41 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:16 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:12:16 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (831.76 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:39 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (739.98 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:40 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:40 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:40 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (620.86 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:40 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:42 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:14:43 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (823.94 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:13 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (908.32 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:14 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:15 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (636.76 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:15 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:16 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:17:17 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (847.48 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:09 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (927.31 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:09 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:10 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (463.13 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:10 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:11 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:19:12 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.01 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (795.63 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:39 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.05 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (934.15 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:39 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:40 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:40 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (442.39 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:40 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:42 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:24:42 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.01 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (846.57 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:53 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.00 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (856.50 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:53 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:53 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:53 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:54 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:54 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.01 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (528.33 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:54 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:55 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:29:56 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.02 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (698.37 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:18 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow15cplex.lp' read.
+Read time = 0.01 sec. (0.13 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 600 rows and 0 columns.
+Reduced LP has 300 rows, 645 columns, and 5620 nonzeros.
+Presolve time = 0.00 sec. (0.76 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =    -129750000.000000
+Iteration:    68   Dual objective     =    -120428539.166308
+Iteration:   130   Dual objective     =    -119025874.716446
+Iteration:   192   Dual objective     =    -110795439.062946
+Iteration:   254   Dual objective     =    -110721771.513478
+Iteration:   316   Dual objective     =    -109407726.706225
+Iteration:   378   Dual objective     =    -108379587.268473
+Iteration:   440   Dual objective     =    -107488207.524802
+Iteration:   502   Dual objective     =    -107263517.643337
+Iteration:   564   Dual objective     =    -107245934.257551
+Iteration:   626   Dual objective     =    -107150358.504341
+Iteration:   688   Dual objective     =    -107144169.704746
+Iteration:   750   Dual objective     =    -106877486.592265
+Iteration:   812   Dual objective     =    -106871414.852723
+Removing shift (202).
+
+Dual simplex - Optimal:  Objective = -1.0687094129e+08
+Solution time =    0.06 sec.  Iterations = 857 (0)
+Deterministic time = 47.97 ticks  (870.02 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow15cplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:18 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:18 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:18 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:19 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:19 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp' read.
+Read time = 0.00 sec. (0.04 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 1 columns.
+Reduced LP has 163 rows, 141 columns, and 2256 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          2046.999982
+Iteration:    20   Dual objective     =      -1426951.504366
+Iteration:    81   Dual objective     =       -917814.585581
+
+Dual simplex - Optimal:  Objective = -8.9664482186e+05
+Solution time =    0.00 sec.  Iterations = 122 (19)
+Deterministic time = 1.99 ticks  (632.07 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol'.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:19 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:21 2014
+
+CPLEX Error  1016: Restricted version.  Problem size limits exceeded.
+No file read.
+No problem exists.
+No problem exists.
+No file written.
+
+Log started (V12.6.0.0) Fri Dec 12 02:31:21 2014
+
+
+Problem '/home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp' read.
+Read time = 0.00 sec. (0.06 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 280 rows and 0 columns.
+Reduced LP has 140 rows, 301 columns, and 2612 nonzeros.
+Presolve time = 0.00 sec. (0.35 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =     -57750000.000000
+Iteration:    62   Dual objective     =     -54002540.117612
+Iteration:   124   Dual objective     =     -49472686.399925
+Iteration:   186   Dual objective     =     -48337320.718784
+Iteration:   248   Dual objective     =     -47952954.297190
+Iteration:   310   Dual objective     =     -47806609.433810
+Iteration:   372   Dual objective     =     -47788509.436605
+Removing shift (75).
+
+Dual simplex - Optimal:  Objective = -4.7787811815e+07
+Solution time =    0.01 sec.  Iterations = 394 (0)
+Deterministic time = 11.83 ticks  (849.38 ticks/sec)
+
+
+Solution written to file '/home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol'.
