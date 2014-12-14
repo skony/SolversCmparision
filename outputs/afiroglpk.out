@@ -1,0 +1,91 @@
+Problem:    
+Rows:       27
+Columns:    32
+Non-zeros:  83
+Status:     OPTIMAL
+Objective:  obj = -464.7531429 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 R09          NS             0             0             =     -0.628571 
+     2 R10          NS             0             0             =         < eps
+     3 X05          NU            80                          80     -0.344771 
+     4 X21          NU             0                           0     -0.228571 
+     5 R12          NS             0             0             =         < eps
+     6 R13          NS             0             0             =         < eps
+     7 X17          B        18.2143                          80 
+     8 X18          B              0                           0 
+     9 X19          B              0                           0 
+    10 X20          B              0                           0 
+    11 R19          NS             0             0             =     -0.942857 
+    12 R20          NS             0             0             =         < eps
+    13 X27          NU           500                         500     -0.874343 
+    14 X44          NU             0                           0     -0.342857 
+    15 R22          NS             0             0             =         < eps
+    16 R23          NS            44            44             =         < eps
+    17 X40          B              0                         500 
+    18 X41          B              0                           0 
+    19 X42          B              0                           0 
+    20 X43          B              0                           0 
+    21 X45          B              0                           0 
+    22 X46          NU             0                           0     -0.628571 
+    23 X47          NU             0                           0         < eps
+    24 X48          NU             0                           0     -0.942857 
+    25 X49          B        -378.46                           0 
+    26 X50          B          299.8                         310 
+    27 X51          B        19.3071                         300 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 X02          B           25.5             0               
+     2 X14          B        18.2143             0               
+     3 X23          B         475.92             0               
+     4 X36          B        339.943             0               
+     5 X39          NL             0             0                          10 
+     6 X01          B             80             0               
+     7 X03          B           54.5             0               
+     8 X04          B           84.8             0               
+     9 X06          B        18.2143             0               
+    10 X07          NL             0             0                       < eps
+    11 X08          NL             0             0                       < eps
+    12 X09          NL             0             0                       < eps
+    13 X15          B              0             0               
+    14 X16          B        19.3071             0               
+    15 X10          NL             0             0                       < eps
+    16 X11          NL             0             0                       < eps
+    17 X12          NL             0             0                       < eps
+    18 X13          NL             0             0                       < eps
+    19 X22          B            500             0               
+    20 X24          B          24.08             0               
+    21 X25          NL             0             0                    0.942857 
+    22 X26          B            215             0               
+    23 X28          NL             0             0                       < eps
+    24 X29          NL             0             0                       < eps
+    25 X30          NL             0             0                       < eps
+    26 X31          NL             0             0                       < eps
+    27 X38          B              0             0               
+    28 X37          B        383.943             0               
+    29 X32          NL             0             0                       < eps
+    30 X33          NL             0             0                       < eps
+    31 X34          NL             0             0                       < eps
+    32 X35          NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.22e-16 on column 20
+        max.rel.err = 7.69e-17 on column 20
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

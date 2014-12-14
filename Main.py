@@ -254,7 +254,8 @@ def main(argv):
                 runSolver(item, file)
                 scanOutput(item, file)
     
-    Charts.drawBarChart(solvers, results_dir, charts_dir)
+    #Charts.drawBarChart(solvers, results_dir, charts_dir)
+    Charts.drawLineChart(solvers, results_dir, charts_dir)
     cleanAfter(solvers)
                        
 if __name__ == "__main__":

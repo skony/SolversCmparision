@@ -1,0 +1,13 @@
+Number of variables: 131
+Number of constraints: 488
+Constraints density: 0.03852771868351896
+Maximum factor: 966000.0
+Minimum factor: 0.00012
+17.62866973876953ms cplex
+20.389080047607422ms glpk
+34.932613372802734ms lp_solve
+18.34893226623535ms clp
+-35991696.9393637 Value of objective function [cplex]
+-35991696.94 Value of objective function [glpk]
+-35991700.0 Value of objective function [lp_solve]
+-35991697.0 Value of objective function [clp]
