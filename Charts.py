@@ -131,11 +131,11 @@ def getTimeVariablesData(solvers, results_dir, category):
 def drawBarChart(solvers, results_dir, charts_dir):
     rating = getUnresolvedData(solvers, results_dir)
     fig, ax = plt.subplots()
-    plt.bar(range(4), rating.values())
+    plt.bar(range(5), rating.values())
 
     ax.set_ylabel('Percentage')
     ax.set_title('Percentage of unresolved problems')
-    ax.set_xticks([0,1,2,3])
+    ax.set_xticks([0,1,2,3,4])
     ax.set_xticklabels(tuple(rating.keys()))
     #plt.show()
     plt.savefig(charts_dir + "unresolved_problems.png")

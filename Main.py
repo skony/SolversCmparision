@@ -48,6 +48,11 @@ def runSolver(solver, file_name):
     file_out = open(file_out_path, 'w')
     stdout = None
     
+    my_env = os.environ.copy()
+    my_env["LD_LIBRARY_PATH"] = "/home/piotrek/programy/gurobi563/linux64/lib"
+    my_env["GUROBI_HOME"] = "/home/piotrek/programy/gurobi563/linux64"
+    my_env["GRB_LICENSE_FILE"] = "/home/piotrek/certyfikaty/gurobi.lic"
+    
     command = ""
     for x in solver["run"]:
         if(x == "file_name"):
@@ -58,13 +63,13 @@ def runSolver(solver, file_name):
         elif(x == "<"):
             stdout = file_out
             continue
-        elif(x == "file_out"):
-            x = file_out_path
+        elif("file_out" in x):
+            x = x.replace("file_out", file_out_path)
         command += x + " "
     t1 = time.time()
     try:
         #p = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)
-        p = subprocess.Popen(shlex.split(command), stdout=stdout)          
+        p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)          
         p.wait(timeout = 5)
         t2 = time.time()
         ts = ((t2-t1)*1000).__str__()
@@ -224,7 +229,7 @@ def main(argv):
             getProblemParams(file)
     
         os.chdir("../")
-     
+         
     if(len(argv) < 2):
         print("Program needs at least 1 arguments")
         return

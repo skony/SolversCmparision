@@ -3,12 +3,12 @@ Number of constraints: 27
 Constraints density: 0.6148148148148148
 Maximum factor: 500.0
 Minimum factor: 0.107
-4.241228103637695ms gurobi
-9.73200798034668ms cplex
-7.814168930053711ms glpk
-6.986141204833984ms lp_solve
-20.999908447265625ms clp
--0.0 Value of objective function EXCEPTION [gurobi]
+12.132644653320312ms gurobi
+18.43714714050293ms cplex
+8.921384811401367ms glpk
+12.467622756958008ms lp_solve
+20.659685134887695ms clp
+-464.75314285714285 Value of objective function [gurobi]
 -464.753142857143 Value of objective function [cplex]
 -464.7531429 Value of objective function [glpk]
 -464.753 Value of objective function [lp_solve]
