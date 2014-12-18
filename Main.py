@@ -254,8 +254,12 @@ def main(argv):
                 runSolver(item, file)
                 scanOutput(item, file)
     
-    #Charts.drawBarChart(solvers, results_dir, charts_dir)
-    Charts.drawLineChart(solvers, results_dir, charts_dir)
+    Charts.drawBarChart(solvers, results_dir, charts_dir)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "variables")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
     cleanAfter(solvers)
                        
 if __name__ == "__main__":

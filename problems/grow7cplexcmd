@@ -1,0 +1,6 @@
+read /home/piotrek/Kodzenie/SolversComparision/problems/grow7cplex.lp lp
+opt
+write /home/piotrek/Kodzenie/SolversComparision/outputs/grow7cplex.sol
+y
+quit
+

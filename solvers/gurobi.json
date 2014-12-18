@@ -1,0 +1,9 @@
+{
+    "id" : "gurobi",
+    "name": "Gurobi Optimizer",
+    "run":["/home/piotrek/programy/gurobi563/linux64/bin/gurobi_cl", "ResultFile=", "file_out", "file_name"],
+    "out":"sol",
+    "input":"cplex",
+    "VoOF":"# Objective value =",
+    "VotV":""
+}
