@@ -1,6 +1,0 @@
-read /home/piotrek/Kodzenie/SolversComparision/problems/afirocplex.lp lp
-opt
-write /home/piotrek/Kodzenie/SolversComparision/outputs/afirocplex.sol
-y
-quit
-

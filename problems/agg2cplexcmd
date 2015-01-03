@@ -1,6 +1,0 @@
-read /home/piotrek/Kodzenie/SolversComparision/problems/agg2cplex.lp lp
-opt
-write /home/piotrek/Kodzenie/SolversComparision/outputs/agg2cplex.sol
-y
-quit
-

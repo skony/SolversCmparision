@@ -1,6 +1,0 @@
-read /home/piotrek/Kodzenie/SolversComparision/problems/gangescplex.lp lp
-opt
-write /home/piotrek/Kodzenie/SolversComparision/outputs/gangescplex.sol
-y
-quit
-

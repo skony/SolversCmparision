@@ -1,6 +1,0 @@
-read /home/piotrek/Kodzenie/SolversComparision/problems/israelcplex.lp lp
-opt
-write /home/piotrek/Kodzenie/SolversComparision/outputs/israelcplex.sol
-y
-quit
-
