@@ -5,5 +5,9 @@
     "out":"sol",
     "input":"cmd",
     "VoOF":"objectiveValue=",
-    "VotV":""
+    "VotV":"",
+    "VotV_on":"true",
+    "VotV_num":"2",
+    "VotV_start":["<variables>"],
+    "VotV_stop":"</variables>"
 }

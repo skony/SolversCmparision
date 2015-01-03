@@ -5,5 +5,9 @@
     "out":"out",
     "input":"lp_solve",
     "VoOF":"Value of objective function:",
-    "VotV":""
+    "VotV":"variable name="",
+    "VotV_on":"true",
+    "VotV_num":"1",
+    "VotV_start":["Actual values of the variables:"],
+    "VotV_stop":""
 }

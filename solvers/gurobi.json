@@ -5,5 +5,9 @@
     "out":"sol",
     "input":"cplex",
     "VoOF":"# Objective value =",
-    "VotV":""
+    "VotV":"",
+    "VotV_on":"true",
+    "VotV_num":"1",
+    "VotV_start":["# Objective value ="],
+    "VotV_stop":""
 }

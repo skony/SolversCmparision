@@ -6,5 +6,6 @@
     "out":"out",
     "input":"cplex",
     "VoOF":"Optimal - objective value",
-    "VotV":""
+    "VotV":"",
+    "VotV:"false"
 }

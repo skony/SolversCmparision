@@ -1,0 +1,8 @@
+/charts/*
+/outputs/*
+/problems/*
+__pycache__
+/results/*
+/solvers/*
+*.pyc
+*.log

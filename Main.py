@@ -151,16 +151,41 @@ def scanOutput(solver, problem):
         return
     
     VoOF = -0.0
+    VotV = {}
     pattern = re.compile("[-+ ]?[0-9]+[.]?[0-9]*e?[+-]?[0-9]*")
-    for line in file:
-        if(re.search(solver["VoOF"], line) != None):
-            list = re.findall(pattern, line)
-            if(len(list) > 0):
-                try:
-                    VoOF = float(list[0])
-                except ValueError:
-                    VoOF = -0.0 
-
+    var_name_pattern = re.compile("")
+    if(solver["VotV_on"] == "false"):
+        for line in file:
+            if(re.search(solver["VoOF"], line) != None):
+                list = re.findall(pattern, line)
+                if(len(list) > 0):
+                    try:
+                        VoOF = float(list[0])
+                    except ValueError:
+                        VoOF = -0.0
+    elif(solver["VotV_on"] == "true"):
+        VotV_started = False
+        VotV_begin = False
+        VotV_line = 1
+        for line in file:
+            if(VotV_started == True):
+                
+            elif(VotV_begin == True):
+                
+            elif(re.search(solver["VoOF"], line) != None):
+                list = re.findall(pattern, line)
+                if(len(list) > 0):
+                    try:
+                        VoOF = float(list[0])
+                    except ValueError:
+                        VoOF = -0.0           
+            elif(re.search(solver["VotV_start"][0], line) != None):
+                if(len(solver["VotV_start"]) == 1):
+                    VotV_started = True
+                elif(len(solver["VotV_start"]) > 1):
+                    VotV_begin = True
+                    VotV_line += 1
+                
     file2 = open(results_dir + problem + "RESULTS", 'a')
     if(VoOF != -0.0):
         file2.write(VoOF.__str__() + " Value of objective function [" + solver["id"] + "]" + "\n")

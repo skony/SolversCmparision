@@ -5,5 +5,9 @@
 	"out": "out",
 	"input":"cplex",
 	"VoOF":"Objective:",
-    "VotV":""
+    "VotV":"",
+    "VotV_on":"true",
+    "VotV_num":"2",
+    "VotV_start":["No. Column name  St   Activity     Lower bound   Upper bound    Marginal", "------ ------------ -- ------------- ------------- ------------- -------------"],
+    "VotV_stop":"Karush-Kuhn-Tucker optimality conditions:"
 }
