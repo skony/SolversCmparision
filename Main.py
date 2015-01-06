@@ -321,14 +321,15 @@ def main(argv):
             for file in listdir:
                 runSolver(item, file)
                 scanOutput(item, file)
-    
-    Charts.drawBarChart(solvers, results_dir, charts_dir)
-    Charts.drawLineChart(solvers, results_dir, charts_dir, "variables")
-    Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints")
-    Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
-    Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
-    Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
+                
     cleanAfter(solvers)
+#     Charts.drawBarChart(solvers, results_dir, charts_dir)
+#     Charts.drawLineChart(solvers, results_dir, charts_dir, "variables")
+#     Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints")
+#     Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
+#     Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
+#     Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
+    Charts.checkIfCorrect(solvers, variables_dir, problems_dir)
                        
 if __name__ == "__main__":
     main(sys.argv)

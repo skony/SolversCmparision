@@ -12,6 +12,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 from Main import problems_dir
 
+def getVars(line):
+    var_pattern = re.compile("[a-zA-Z]+\w*")
+    return re.findall(var_pattern, line)
+
+def getFactors(line):
+    factor_pattern = re.compile("[+ -]\d+[.]?\d*|[+-]")
+    factors = re.findall(factor_pattern, line)
+    factors2 = []
+    for f in factors:
+        if(f=='+'):
+            factors2.append(1.0)
+        elif(f=='-'):
+            factors2.append(-1.0)
+        else:
+            factors2.append(float(f))
+    return factors2
+
 def checkIfCorrect(solvers, variables_dir, problems_dir):
     solver_pattern = re.compile("\w+")
     var_pattern = re.compile("[a-zA-Z]+\w*")
@@ -23,12 +40,18 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
         vfile = open(variables_dir + "/" + file + "VARIABLES", 'r')
         for line in vfile:
             if(line.startswith("***")):
-                curr_solver = re.search(solver_pattern, line.rsplit("VALUES", -1)[0].lower())
+                curr_solver = re.findall(solver_pattern, line.rsplit("VALUES", -1)[0].lower())[0]
                 solvers_vars[curr_solver] = {}
             else:
                 var = line.rsplit(" ", -1)[0]
                 factor = float(line.rsplit(" ", -1)[1])
                 solvers_vars[curr_solver][var] = factor
+        vfile.close()
+        with open(file) as pfile:
+            next(pfile)
+            for line in pfile:
+                vars = getVars(line.rsplit(":", -1)[1])
+                factors = getFactors(line.rsplit(":", -1)[1])
 
 def getFactorMagnitude(f):
     f = abs(float(f))
