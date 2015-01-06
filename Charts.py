@@ -12,6 +12,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from Main import problems_dir
 
+def getEquationSign(line):
+    equation_pattern = re.compile("[=<>]+")
+    return re.findall(equation_pattern, line)[0]
+
 def getVars(line):
     var_pattern = re.compile("[a-zA-Z]+\w*")
     return re.findall(var_pattern, line)
@@ -33,6 +37,7 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
     solver_pattern = re.compile("\w+")
     var_pattern = re.compile("[a-zA-Z]+\w*")
     factor_pattern = re.compile("[\d+[.]\d+")
+    solvers_correctness = {}
     os.chdir(problems_dir)
     for file in glob.glob("*"):
         curr_solver = ""
@@ -42,6 +47,7 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
             if(line.startswith("***")):
                 curr_solver = re.findall(solver_pattern, line.rsplit("VALUES", -1)[0].lower())[0]
                 solvers_vars[curr_solver] = {}
+                solvers_correctness[curr_solver] = True
             else:
                 var = line.rsplit(" ", -1)[0]
                 factor = float(line.rsplit(" ", -1)[1])
@@ -52,6 +58,20 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
             for line in pfile:
                 vars = getVars(line.rsplit(":", -1)[1])
                 factors = getFactors(line.rsplit(":", -1)[1])
+                equation = getEquationSign(line.rsplit(":", -1)[1])
+                for s in solvers_vars.keys():
+                    rhs = factors[-1]
+                    ls = 0.0
+                    for f, v in zip(factors, vars):
+                        vv = solvers_vars[s][v]
+                        ls += f * vv
+                    if(equation == '=' and ls != rhs):
+                        solvers_correctness[s] = False
+                    elif((equation == '<' or equation == '<=') and ls > rhs):
+                        solvers_correctness[s] = False
+                    elif((equation == '>' or equation == '>=') and ls < rhs):
+                        solvers_correctness[s] = False
+    x = 1
 
 def getFactorMagnitude(f):
     f = abs(float(f))
