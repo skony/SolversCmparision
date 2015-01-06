@@ -19,6 +19,7 @@ outputs_dir = ""
 problems_dir = ""
 results_dir = ""
 charts_dir = ""
+variables_dir = ""
 
 def getConfiguredSolvers():
     global script_dir
@@ -153,32 +154,61 @@ def scanOutput(solver, problem):
     VoOF = -0.0
     VotV = {}
     pattern = re.compile("[-+ ]?[0-9]+[.]?[0-9]*e?[+-]?[0-9]*")
-    var_name_pattern = re.compile("")
-    if(solver["VotV_on"] == "false"):
+    var_pattern = re.compile("[-+ ]?[0-9]+[.]?[0-9]*e?[+-]?[0-9]*")
+    var_name_pattern = re.compile("[a-zA-Z]+\w*")
+    if(solver["VotV_on"] == "false"):   #searching values of the variables disabled
         for line in file:
             if(re.search(solver["VoOF"], line) != None):
                 list = re.findall(pattern, line)
                 if(len(list) > 0):
                     try:
                         VoOF = float(list[0])
+                        break
                     except ValueError:
                         VoOF = -0.0
-    elif(solver["VotV_on"] == "true"):
+                        break
+    elif(solver["VotV_on"] == "true"):  #searching values of the variables enabled
+        VoOF_found = False
         VotV_started = False
         VotV_begin = False
-        VotV_line = 1
+        VotV_line = 0
         for line in file:
-            if(VotV_started == True):
-                
-            elif(VotV_begin == True):
-                
-            elif(re.search(solver["VoOF"], line) != None):
-                list = re.findall(pattern, line)
-                if(len(list) > 0):
+            if(VoOF_found == False):
+                if(re.search(solver["VoOF"], line) != None):
+                    list = re.findall(pattern, line)
+                    if(len(list) > 0):
+                        try:
+                            VoOF = float(list[0])
+                            VoOF_found = True
+                        except ValueError:
+                            VoOF = -0.0
+                            VoOF_found = True
+                 
+            if(VotV_started == True):   #section with variables started
+                if(re.search(solver["VotV_stop"], line) != None and solver["VotV_stop"] != ""):
+                    VotV_started = False
+                    break
+                list = re.findall(var_pattern, line)
+                if(solver["VotV"] != ""):
+                    name_list = re.findall(var_name_pattern, line.rsplit(solver["VotV"], -1)[1])
+                else:
+                    name_list = re.findall(var_name_pattern, line)
+                if(len(name_list) > 0):
+                    VotV[name_list[0]] = -0.0
+                else:
+                    VotV_started = False
+                    break
+                if(len(list) >= solver["VotV_num"]):
                     try:
-                        VoOF = float(list[0])
+                        VotV[name_list[0]] = float(list[solver["VotV_num"]-1])
                     except ValueError:
-                        VoOF = -0.0           
+                        VotV[name_list[0]] = -0.0
+            elif(VotV_begin == True):   #
+                if(re.search(solver["VotV_start"][VotV_line], line) != None):
+                    if(len(solver["VotV_start"]) == VotV_line+1):
+                        VotV_started = True
+                    else:
+                        VotV_line += 1  
             elif(re.search(solver["VotV_start"][0], line) != None):
                 if(len(solver["VotV_start"]) == 1):
                     VotV_started = True
@@ -191,10 +221,12 @@ def scanOutput(solver, problem):
         file2.write(VoOF.__str__() + " Value of objective function [" + solver["id"] + "]" + "\n")
     else:
         file2.write(VoOF.__str__() + " Value of objective function EXCEPTION [" + solver["id"] + "]" + "\n")
-#         i = 1
-#         for x in d["VotV"]:
-#             file.write(x.__str__() + " x" + i.__str__() + " [" + solver["id"] + "]\n")
-#             i += 1
+    if(solver["VotV_on"] == "true"):
+        file3 = open(variables_dir + problem + "VARIABLES", 'a')
+        file3.write("*** " + solver["id"].upper() + " VALUES OF THE VARIABLES:\n")
+        for var in VotV.keys():
+            file3.write(var + " " + VotV[var].__str__() + "\n")
+        file3.close()
     file.close()
     file2.close()
             
@@ -204,6 +236,10 @@ def cleanBefore(solvers):
         os.unlink(file)
         
     os.chdir(outputs_dir)
+    for file in glob.glob("*"):
+        os.unlink(file)
+    
+    os.chdir(variables_dir)
     for file in glob.glob("*"):
         os.unlink(file)
     
@@ -231,11 +267,13 @@ def main(argv):
     global problems_dir
     global results_dir
     global charts_dir
+    global variables_dir
     script_dir = os.path.dirname(__file__)
     outputs_dir = script_dir + "/outputs/"
     problems_dir = script_dir + "/problems/"
     results_dir = script_dir + "/results/"
     charts_dir = script_dir + "/charts/"
+    variables_dir = script_dir + "/variables/"
     
     solvers = getConfiguredSolvers()
     cleanBefore(solvers)

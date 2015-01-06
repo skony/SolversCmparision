@@ -10,6 +10,25 @@ import re
 
 import matplotlib.pyplot as plt
 import numpy as np
+from Main import problems_dir
+
+def checkIfCorrect(solvers, variables_dir, problems_dir):
+    solver_pattern = re.compile("\w+")
+    var_pattern = re.compile("[a-zA-Z]+\w*")
+    factor_pattern = re.compile("[\d+[.]\d+")
+    os.chdir(problems_dir)
+    for file in glob.glob("*"):
+        curr_solver = ""
+        solvers_vars = {}
+        vfile = open(variables_dir + "/" + file + "VARIABLES", 'r')
+        for line in vfile:
+            if(line.startswith("***")):
+                curr_solver = re.search(solver_pattern, line.rsplit("VALUES", -1)[0].lower())
+                solvers_vars[curr_solver] = {}
+            else:
+                var = line.rsplit(" ", -1)[0]
+                factor = float(line.rsplit(" ", -1)[1])
+                solvers_vars[curr_solver][var] = factor
 
 def getFactorMagnitude(f):
     f = abs(float(f))

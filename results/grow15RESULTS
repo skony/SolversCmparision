@@ -1,0 +1,15 @@
+Number of variables: 45
+Number of constraints: 300
+Constraints density: 0.44296296296296295
+Maximum factor: 4.7
+Minimum factor: -0.000102
+117.30694770812988ms gurobi
+116.28842353820801ms cplex
+68.27640533447266ms glpk
+69.28586959838867ms lp_solve
+68.7251091003418ms clp
+-106870941.2935754 Value of objective function [gurobi]
+-106870941.293574 Value of objective function [cplex]
+-106870941.3 Value of objective function [glpk]
+-106871000.0 Value of objective function [lp_solve]
+-106870940.0 Value of objective function [clp]

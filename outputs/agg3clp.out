@@ -1,0 +1,10 @@
+Coin LP version 1.15, build Nov 19 2014
+command line - /home/piotrek/programy/coin-Clp/bin/clp /home/piotrek/Kodzenie/SolversComparision/problems/agg3cplex.lp 
+Presolve 380 (-136) rows, 291 (-11) columns and 3277 (-1023) elements
+0  Obj 25941179 Primal inf 1055210.6 (16) Dual inf 27181.635 (169)
+82  Obj 3245672.5 Primal inf 601280.85 (72)
+164  Obj 10244817 Primal inf 4593.5752 (16)
+183  Obj 10312059
+Optimal - objective value 10312059
+After Postsolve, objective 10312059, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 10312058.59 - 183 iterations time 0.002, Presolve 0.00
