@@ -121,7 +121,7 @@ def getTimeVariablesData(solvers, results_dir, category):
         rating["ids"].append(s["id"])
     rating["x"] = []
     num = re.compile("\d+")
-    dec = re.compile("\d+[.]\d+")
+    dec = re.compile("\d+[.]?\d*")
     str = re.compile("[a-z]+_?[a-z]*")
     os.chdir(results_dir)
     
@@ -152,7 +152,11 @@ def getTimeVariablesData(solvers, results_dir, category):
             rfile = open(file, 'r')
             for line in rfile:
                 if(re.search("Constraints density:", line) != None):
-                    x = re.findall(dec, line)[0]
+                    x = re.findall(dec, line)
+                    if(len(x) == 0):
+                        z = 1
+                    else:
+                        x = x[0]
                     rating["x"].append(float(x))
                 elif(re.search("\d+ms", line) != None):
                     x = re.findall(dec, line)[0]

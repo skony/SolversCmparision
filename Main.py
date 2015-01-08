@@ -98,7 +98,7 @@ def getProblemParams(file_path):
     factor = re.compile("[\+\-\s][0-9]+[.]{0,1}[0-9]*")
      
     for line in problem:
-        if(re.match("min:", line) and cons==False):
+        if((re.match("min:", line) or re.match("max:", line)) and cons==False):
             NoV += line.count('+')
             NoV += line.count('-')
             cons = True
@@ -323,13 +323,13 @@ def main(argv):
                 scanOutput(item, file)
                 
     cleanAfter(solvers)
-#     Charts.drawBarChart(solvers, results_dir, charts_dir)
-#     Charts.drawLineChart(solvers, results_dir, charts_dir, "variables")
-#     Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints")
-#     Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
-#     Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
-#     Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
-    Charts.checkIfCorrect(solvers, variables_dir, problems_dir)
+    Charts.drawBarChart(solvers, results_dir, charts_dir)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "variables")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
+    #Charts.checkIfCorrect(solvers, variables_dir, problems_dir)
                        
 if __name__ == "__main__":
     main(sys.argv)
