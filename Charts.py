@@ -10,6 +10,7 @@ import re
 
 import matplotlib.pyplot as plt
 import numpy as np
+from decimal import * 
 from Main import problems_dir
 
 def getEquationSign(line):
@@ -61,10 +62,11 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
                 equation = getEquationSign(line.rsplit(":", -1)[1])
                 for s in solvers_vars.keys():
                     rhs = factors[-1]
-                    ls = 0.0
+                    ls = Decimal(0.0)
                     for f, v in zip(factors, vars):
                         vv = solvers_vars[s][v]
-                        ls += f * vv
+                        getcontext().prec = 8
+                        ls += Decimal(f) * Decimal(vv)
                     if(equation == '=' and ls != rhs):
                         solvers_correctness[s] = False
                     elif((equation == '<' or equation == '<=') and ls > rhs):
