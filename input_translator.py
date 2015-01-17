@@ -6,16 +6,30 @@ def cplex(file):
     new_file = open(file + "cplex.lp", 'w')
     constrait = re.compile("\w+:")
     bound = re.compile("\w+")
+    min_max = False
+    cons = False
     
     for line in base_file:
-        if(re.match("min:", line)):
-            new_file.write("Minimize\n")
-            new_file.write("obj:" + line.rsplit(":",-1)[1][:-2] + "\n")
-            new_file.write("Subject To\n")
-        elif(constrait.match(line) != None):
-            new_file.write(line[:-2].replace('<', '<=').replace('>', '>=') + "\n" )
-        elif(bound.match(line) != None):
-            new_file.write(line[:-2].replace('<', '<=').replace('>', '>=') + "\n" )
+        if(min_max == False):
+            if(re.match("min:", line)):
+                new_file.write("Minimize\n")
+                new_file.write("obj:" + line.rsplit(":",-1)[1][:-2] + "\n")
+                new_file.write("Subject To\n")
+                min_max = True
+            elif(re.match("max:", line)):
+                new_file.write("Maximize\n")
+                new_file.write("obj:" + line.rsplit(":",-1)[1][:-2] + "\n")
+                new_file.write("Subject To\n")
+                min_max = True
+        elif(cons == False):
+            if(constrait.match(line) != None):
+                new_file.write(line[:-2].replace(" < ", " <= ").replace(" > ", " >= ") + "\n" )
+            elif(bound.match(line) != None):
+                new_file.write("Bounds\n")
+                new_file.write(line[:-2].replace(" < ", " <= ").replace(" > ", " >= ") + "\n" )
+                cons = True
+        else:
+            new_file.write(line[:-2].replace(" < ", " <= ").replace(" > ", " >= ") + "\n" )
     
     new_file.write("End") 
     base_file.close()

@@ -65,11 +65,11 @@ def generator(argv):
         index = [0] * (m * n)
         for j in non_empty:
             index[j] = 1
-        pos = 1
+        pos = 0
         for j in range(m):
             const_start = False
             for k in range(n):
-                if pos in non_empty:
+                if index[pos] == 1:
                     if(const_start):
                         file.write("+" + getFactor(f).__str__() + " X" + k.__str__() + " ")
                     else:

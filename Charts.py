@@ -38,9 +38,10 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
     solver_pattern = re.compile("\w+")
     var_pattern = re.compile("[a-zA-Z]+\w*")
     factor_pattern = re.compile("[\d+[.]\d+")
-    solvers_correctness = {}
+    e = Decimal("1e-12")
     os.chdir(problems_dir)
     for file in glob.glob("*"):
+        solvers_correctness = {}
         curr_solver = ""
         solvers_vars = {}
         vfile = open(variables_dir + "/" + file + "VARIABLES", 'r')
@@ -61,19 +62,24 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
                 factors = getFactors(line.rsplit(":", -1)[1])
                 equation = getEquationSign(line.rsplit(":", -1)[1])
                 for s in solvers_vars.keys():
-                    rhs = factors[-1]
+                    rhs = Decimal(factors[-1])
                     ls = Decimal(0.0)
                     for f, v in zip(factors, vars):
                         vv = solvers_vars[s][v]
-                        getcontext().prec = 8
+                        #getcontext().prec = 8
                         ls += Decimal(f) * Decimal(vv)
                     if(equation == '=' and ls != rhs):
-                        solvers_correctness[s] = False
+                        if(abs(ls - rhs) > e):
+                            solvers_correctness[s] = False
+                            print(s, abs(ls - rhs).__str__(), line )
                     elif((equation == '<' or equation == '<=') and ls > rhs):
-                        solvers_correctness[s] = False
+                        if(abs(ls - rhs) > e):
+                            solvers_correctness[s] = False
+                            print(s, abs(ls - rhs).__str__(), line )
                     elif((equation == '>' or equation == '>=') and ls < rhs):
-                        solvers_correctness[s] = False
-    x = 1
+                        if(abs(rhs -ls) > e):
+                            solvers_correctness[s] = False
+                            print(s, abs(ls - rhs).__str__(), line )
 
 def getFactorMagnitude(f):
     f = abs(float(f))
@@ -100,7 +106,7 @@ def getUnresolvedData(solvers, results_dir):
         for line in rfile:
             for solver in rating.keys():
                 if solver in line and " EXCEPTION" in line:
-                    rating[solver] = rating[solver] + 1 
+                    rating[solver] += 1
         rfile.close()
     
     for solver in rating.keys():
@@ -152,11 +158,7 @@ def getTimeVariablesData(solvers, results_dir, category):
             rfile = open(file, 'r')
             for line in rfile:
                 if(re.search("Constraints density:", line) != None):
-                    x = re.findall(dec, line)
-                    if(len(x) == 0):
-                        z = 1
-                    else:
-                        x = x[0]
+                    x = re.findall(dec, line)[0]
                     rating["x"].append(float(x))
                 elif(re.search("\d+ms", line) != None):
                     x = re.findall(dec, line)[0]

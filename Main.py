@@ -67,14 +67,17 @@ def runSolver(solver, file_name):
         elif("file_out" in x):
             x = x.replace("file_out", file_out_path)
         command += x + " "
+    #if(stdout == None):
+    #    stdout = subprocess.PIPE
     t1 = time.time()
     try:
-        #p = subprocess.Popen(command, shell=True, preexec_fn=os.setsid)
-        p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)          
+        p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)
+        #console=p.communicate()[0]       
         p.wait(timeout = 5)
         t2 = time.time()
         ts = ((t2-t1)*1000).__str__()
         results.write(ts + "ms " + solver["id"] + "\n")
+        #print(console)
     except subprocess.TimeoutExpired:
         os.kill(p.pid, SIGTERM)
         t2 = time.time()
@@ -88,7 +91,7 @@ def getProblemParams(file_path):
     results = open(file_path + "RESULTS", 'a')
     os.chdir("../")
     os.chdir("problems")
-    pattern = re.compile("\w+:")
+    pattern = re.compile("[\w.]+:")
     NoV = 0
     NoC = 0
     NoViC = 0
@@ -149,6 +152,8 @@ def scanOutput(solver, problem):
     if(os.path.isfile(full_path)):
         file = open(full_path, 'r')
     else:
+        file2 = open(results_dir + problem + "RESULTS", 'a')
+        file2.write("-0.0 Value of objective function EXCEPTION [" + solver["id"] + "]" + "\n")
         return
     
     VoOF = -0.0
@@ -163,26 +168,20 @@ def scanOutput(solver, problem):
                 if(len(list) > 0):
                     try:
                         VoOF = float(list[0])
-                        break
                     except ValueError:
-                        VoOF = -0.0
-                        break
+                        None
     elif(solver["VotV_on"] == "true"):  #searching values of the variables enabled
-        VoOF_found = False
         VotV_started = False
         VotV_begin = False
         VotV_line = 0
         for line in file:
-            if(VoOF_found == False):
-                if(re.search(solver["VoOF"], line) != None):
-                    list = re.findall(pattern, line)
-                    if(len(list) > 0):
-                        try:
-                            VoOF = float(list[0])
-                            VoOF_found = True
-                        except ValueError:
-                            VoOF = -0.0
-                            VoOF_found = True
+            if(re.search(solver["VoOF"], line) != None):
+                list = re.findall(pattern, line)
+                if(len(list) > 0):
+                    try:
+                        VoOF = float(list[0])
+                    except ValueError:
+                        None
                  
             if(VotV_started == True):   #section with variables started
                 if(re.search(solver["VotV_stop"], line) != None and solver["VotV_stop"] != ""):
@@ -240,6 +239,10 @@ def cleanBefore(solvers):
         os.unlink(file)
     
     os.chdir(variables_dir)
+    for file in glob.glob("*"):
+        os.unlink(file)
+    
+    os.chdir(charts_dir)
     for file in glob.glob("*"):
         os.unlink(file)
     
