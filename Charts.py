@@ -11,8 +11,12 @@ import re
 import matplotlib.pyplot as plt
 import numpy as np
 from decimal import * 
-from Main import problems_dir
+from Main import problems_dir, results_dir
 from numpy import arange,array,ones,linalg
+
+def format_e(n):
+    a = '%E' % n
+    return a.split('E')[0].rstrip('0').rstrip('.') + 'E' + a.split('E')[1]
 
 def getEquationSign(line):
     equation_pattern = re.compile("[=<>]+")
@@ -20,12 +24,19 @@ def getEquationSign(line):
 
 def getVars(line):
     var_pattern = re.compile("[a-zA-Z]+\w*")
-    return re.findall(var_pattern, line)
+    if ':' in line:
+        return re.findall(var_pattern, line)[1:]
+    else:
+        return re.findall(var_pattern, line)
 
 def getFactors(line):
+    var_pattern = re.compile("[a-zA-Z]+\w*")
     factor_pattern = re.compile("[+ -]\d+[.]?\d*|[+-]")
+    vars = re.findall(var_pattern, line)
     factors = re.findall(factor_pattern, line)
     factors2 = []
+    if len(vars) == 1:  #line is bound not constraint
+        factors2.append(1.0)
     for f in factors:
         if(f=='+'):
             factors2.append(1.0)
@@ -35,7 +46,7 @@ def getFactors(line):
             factors2.append(float(f))
     return factors2
 
-def checkIfCorrect(solvers, variables_dir, problems_dir):
+def checkIfCorrect(solvers, variables_dir, problems_dir, results_dir):
     solver_pattern = re.compile("\w+")
     var_pattern = re.compile("[a-zA-Z]+\w*")
     factor_pattern = re.compile("[\d+[.]\d+")
@@ -50,37 +61,56 @@ def checkIfCorrect(solvers, variables_dir, problems_dir):
             if(line.startswith("***")):
                 curr_solver = re.findall(solver_pattern, line.rsplit("VALUES", -1)[0].lower())[0]
                 solvers_vars[curr_solver] = {}
-                solvers_correctness[curr_solver] = True
+                solvers_correctness[curr_solver] = Decimal(0.0)
             else:
                 var = line.rsplit(" ", -1)[0]
                 factor = float(line.rsplit(" ", -1)[1])
                 solvers_vars[curr_solver][var] = factor
+        solver_to_rm = []
+        for s in solvers_vars.keys():
+            if len(solvers_vars[s].keys()) == 0:
+                solver_to_rm.append(s)
+        for s in solver_to_rm:
+            solvers_vars.pop(s)
+            solvers_correctness.pop(s)
         vfile.close()
+        if len(solvers_vars.keys()) == 0:
+            continue
         with open(file) as pfile:
             next(pfile)
             for line in pfile:
-                vars = getVars(line.rsplit(":", -1)[1])
-                factors = getFactors(line.rsplit(":", -1)[1])
-                equation = getEquationSign(line.rsplit(":", -1)[1])
+                vars = getVars(line)
+                factors = getFactors(line)
+                equation = getEquationSign(line)
                 for s in solvers_vars.keys():
                     rhs = Decimal(factors[-1])
                     ls = Decimal(0.0)
+                    restart = False
                     for f, v in zip(factors, vars):
-                        vv = solvers_vars[s][v]
-                        #getcontext().prec = 8
+                        try:
+                            vv = solvers_vars[s][v]
+                        except KeyError:
+                            #print( "solver " + s + " var " + v)
+                            restart = True
+                            break
                         ls += Decimal(f) * Decimal(vv)
+                    if restart:
+                        continue
                     if(equation == '=' and ls != rhs):
-                        if(abs(ls - rhs) > e):
-                            solvers_correctness[s] = False
-                            print(s, abs(ls - rhs).__str__(), line )
+                        if solvers_correctness[s] < abs(ls - rhs):
+                            diff = abs(ls - rhs)
+                            solvers_correctness[s] = abs(ls - rhs)
                     elif((equation == '<' or equation == '<=') and ls > rhs):
-                        if(abs(ls - rhs) > e):
-                            solvers_correctness[s] = False
-                            print(s, abs(ls - rhs).__str__(), line )
+                        if solvers_correctness[s] < abs(ls - rhs):
+                            diff = abs(ls - rhs)
+                            solvers_correctness[s] = abs(ls - rhs)
                     elif((equation == '>' or equation == '>=') and ls < rhs):
-                        if(abs(rhs -ls) > e):
-                            solvers_correctness[s] = False
-                            print(s, abs(ls - rhs).__str__(), line )
+                        if solvers_correctness[s] < abs(rhs - ls):
+                            diff = abs(rhs - ls)
+                            solvers_correctness[s] = abs(rhs - ls)
+        with open(results_dir + file + "RESULTS", 'a') as rfile:
+            for s in solvers_correctness.keys():
+                rfile.write(format_e(solvers_correctness[s]) + " biggest miscount [" + s + "]\n")
 
 def getFactorMagnitude(f):
     f = abs(float(f))
