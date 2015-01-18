@@ -5,6 +5,7 @@ import os
 import re
 import shlex
 from signal import SIGTERM
+import bisect
 import subprocess
 import sys
 import time
@@ -20,6 +21,13 @@ problems_dir = ""
 results_dir = ""
 charts_dir = ""
 variables_dir = ""
+
+def bi_contains(lst, item):
+    """ efficient `item in lst` for sorted lists """
+    # if item is larger than the last its not in the list, but the bisect would 
+    # find `len(lst)` as the index to insert, so check that first. Else, if the 
+    # item is in the list then it has to be at index bisect_left(lst, item)
+    return (item <= lst[-1]) and (lst[bisect.bisect_left(lst, item)] == item)
 
 def getConfiguredSolvers():
     global script_dir
@@ -91,19 +99,19 @@ def getProblemParams(file_path):
     results = open(file_path + "RESULTS", 'a')
     os.chdir("../")
     os.chdir("problems")
-    pattern = re.compile("[\w.]+:")
+    var_pattern = re.compile("[A-Za-z]+[\w.]*")
     NoV = 0
     NoC = 0
     NoViC = 0
     cons = False
+    bounds = False
     max = 1
     min = 1
     factor = re.compile("[\+\-\s][0-9]+[.]{0,1}[0-9]*")
+    found_vars = []
      
     for line in problem:
         if((re.match("min:", line) or re.match("max:", line)) and cons==False):
-            NoV += line.count('+')
-            NoV += line.count('-')
             cons = True
             factors = re.findall(factor, line)
             for f in factors:
@@ -112,20 +120,11 @@ def getProblemParams(file_path):
                     max = ff
                 if(abs(ff) < abs(min) and abs(ff) != 0):
                     min = ff
-        elif(re.match(pattern, line)):
-            NoC += 1
-            if(line.count('<') == 1):
-                ls = line.rsplit('<', -1)[0]    #ls = left side
-                NoViC += ls.count('+')
-                NoViC += ls.count('-')
-            elif(line.count('>') == 1):
-                ls = line.rsplit('>', -1)[0]    #ls = left side
-                NoViC += ls.count('+')
-                NoViC += ls.count('-')
-            elif(line.count('=') == 1):
-                ls = line.rsplit('>', -1)[0]    #ls = left side
-                NoViC += ls.count('+')
-                NoViC += ls.count('-')            
+            for var in re.findall(var_pattern, line):
+                bisect.insort_left(found_vars, var)
+                NoV += 1
+                NoViC += 1
+        elif cons and not bounds:
             factors = re.findall(factor, line)
             for f in factors:
                 ff = float(f)
@@ -133,6 +132,28 @@ def getProblemParams(file_path):
                     max = ff
                 if(abs(ff) < abs(min) and abs(ff) != 0):
                     min = ff
+            vars = re.findall(var_pattern, line)
+            if len(vars) < 2:
+                bounds = True
+            else:
+                NoC += 1
+                if ':' in line:
+                    vars = vars[1:]    #name of constrainst not included
+                for var in vars:   
+                    if not bi_contains(found_vars, var):
+                        bisect.insort_left(found_vars, var)
+                        NoV += 1
+                        NoViC += 1
+                    else:
+                        NoViC += 1
+        elif bounds:
+            factors = re.findall(factor, line)
+            for f in factors:
+                ff = float(f)
+                if(ff > max):
+                    max = ff
+                if(abs(ff) < abs(min) and abs(ff) != 0):
+                    min = ff         
      
     results.write("Number of variables: " + NoV.__str__() + "\n")
     results.write("Number of constraints: " + NoC.__str__() + "\n")
