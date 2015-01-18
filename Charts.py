@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from decimal import * 
 from Main import problems_dir
+from numpy import arange,array,ones,linalg
 
 def getEquationSign(line):
     equation_pattern = re.compile("[=<>]+")
@@ -225,7 +226,11 @@ def drawLineChart(solvers, results_dir, charts_dir, category):
         order = np.argsort(rating['x'])
         xs = np.array(rating['x'])[order]
         ys = np.array(rating[s])[order]
-        plt.plot(xs, ys, label=s, marker=next(marker))
+        A = array([xs, ones(len(xs))])
+        w = linalg.lstsq(A.T, ys)[0]
+        line = w[0] * xs + w[1]
+        plt.plot(xs, line, label=s, marker=next(marker))
+        #plt.plot(xs, ys, label=s, marker=next(marker))
     
     if(category == "variables"):
         plt.xlabel("Number of variables")
