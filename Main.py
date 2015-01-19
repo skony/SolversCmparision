@@ -21,6 +21,7 @@ problems_dir = ""
 results_dir = ""
 charts_dir = ""
 variables_dir = ""
+timeout_problems = []
 
 def bi_contains(lst, item):
     """ efficient `item in lst` for sorted lists """
@@ -44,8 +45,9 @@ def getConfiguredSolvers():
     
     os.chdir("../")
     return solvers
-    
-def runSolver(solver, file_name):
+
+#mode: time console    
+def runSolver(solver, file_name, mode):
     results = open(script_dir + "/results/" + file_name + "RESULTS", 'a')
     if(solver["input"] != "lp_solve"):
         trans_cmd = "input_translator." + solver["input"] + "(\"" + script_dir + "/problems/" + file_name + "\")"
@@ -58,12 +60,16 @@ def runSolver(solver, file_name):
     stdout = None
     
     my_env = os.environ.copy()
-    my_env["LD_LIBRARY_PATH"] = "/home/piotrek/programy/gurobi563/linux64/lib"
-    my_env["GUROBI_HOME"] = "/home/piotrek/programy/gurobi563/linux64"
-    my_env["GRB_LICENSE_FILE"] = "/home/piotrek/certyfikaty/gurobi.lic"
+    if "env" in solver:
+        for env in solver["env"].keys():
+            my_env[env] = solver["env"][env]
     
     command = ""
-    for x in solver["run"]:
+    if mode == "time" or "run_console" not in solver:
+        run = solver["run"]
+    elif "run_console" in solver and mode == "console":
+        run = solver["run_console"]
+    for x in run:
         if(x == "file_name"):
             x = problem_file
         elif(x == ">"):
@@ -75,22 +81,32 @@ def runSolver(solver, file_name):
         elif("file_out" in x):
             x = x.replace("file_out", file_out_path)
         command += x + " "
-    #if(stdout == None):
-    #    stdout = subprocess.PIPE
-    t1 = time.time()
-    try:
-        p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)
-        #console=p.communicate()[0]       
-        p.wait(timeout = 5)
-        t2 = time.time()
-        ts = ((t2-t1)*1000).__str__()
-        results.write(ts + "ms " + solver["id"] + "\n")
-        #print(console)
-    except subprocess.TimeoutExpired:
-        os.kill(p.pid, SIGTERM)
-        t2 = time.time()
-        ts = ((t2-t1)*1000).__str__()
-        results.write(ts + "ms TIMEOUT_EXCEPTION " + solver["id"] + "\n")
+    if mode == "time":
+        t1 = time.time()
+        try:
+            p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)       
+            p.wait(timeout = 5)
+            t2 = time.time()
+            ts = ((t2-t1)*1000).__str__()
+            results.write(ts + "ms " + solver["id"] + "\n")
+        except subprocess.TimeoutExpired:
+            os.kill(p.pid, SIGTERM)
+            t2 = time.time()
+            ts = ((t2-t1)*1000).__str__()
+            results.write(ts + "ms TIMEOUT_EXCEPTION " + solver["id"] + "\n")
+            timeout_problems.append(file_name + solver["id"])
+    elif mode == "console":
+        if file_name + solver["id"] not in timeout_problems:
+            stdout = subprocess.PIPE
+            stderr = subprocess.PIPE
+            p = subprocess.Popen(shlex.split(command), stdout=stdout, stderr=stderr, env=my_env)
+            console, err = p.communicate()
+            print(console)
+            print(err)
+            if "exceptions" in solver:
+                for exc in solver["exceptions"].keys():    
+                    if solver["exceptions"][exc] in console.__str__() or solver["exceptions"][exc] in err.__str__():
+                        results.write(exc.upper() + "_EXCEPTION [" + solver["id"] + "]\n")
         
 def getProblemParams(file_path):
     problem = open(file_path, 'r')
@@ -334,7 +350,10 @@ def main(argv):
         listdir = os.listdir(script_dir + "/problems")
         for solver in solvers:
             for file in listdir:
-                runSolver(solver, file)
+                runSolver(solver, file, "time")
+        for solver in solvers:
+            for file in listdir:
+                runSolver(solver, file, "console")
         for solver in solvers:
             for file in listdir:
                 scanOutput(solver, file)
@@ -343,7 +362,8 @@ def main(argv):
         for solver in argv[1:]:
             item = (item for item in solvers if item["id"] == solver[2:]).__next__()
             for file in listdir:
-                runSolver(item, file)
+                runSolver(item, file, "time")
+                runSolver(item, file, "console")
                 scanOutput(item, file)
                 
     cleanAfter(solvers)
@@ -353,7 +373,7 @@ def main(argv):
     Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
     Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
     Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
-    #Charts.checkIfCorrect(solvers, variables_dir, problems_dir)
+    Charts.checkIfCorrect(solvers, variables_dir, problems_dir, results_dir)
                        
 if __name__ == "__main__":
     main(sys.argv)

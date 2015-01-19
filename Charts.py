@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from decimal import * 
 from Main import problems_dir, results_dir
-from numpy import arange,array,ones,linalg
+from numpy import arange,array,ones,linalg, append
 
 def format_e(n):
     a = '%E' % n
@@ -128,22 +128,47 @@ def getFactorMagnitude(f):
 def getUnresolvedData(solvers, results_dir):
     rating = {}
     problems_count = 0
+    exc_pattern = re.compile("([A-Z]+)_EXCEPTION")
     for s in solvers:
-        rating[s["id"]] = 0
+        rating[s["id"]] = {}
+        rating[s["id"]]["timeout"] = 0
+        rating[s["id"]]["any"] = 0
+        if "exceptions" in s:
+            for e in s["exceptions"].keys():
+                 rating[s["id"]][e] = 0
     os.chdir(results_dir)
     for file in glob.glob("*"):
-        rfile = open(file, 'r')
         problems_count += 1
-        for line in rfile:
-            for solver in rating.keys():
-                if solver in line and " EXCEPTION" in line:
-                    rating[solver] += 1
+        rfile = open(file, 'r')
+        for line in rfile:   
+            for solver in rating.keys():         
+                if solver in line and "_EXCEPTION" in line:
+                    exc = re.findall(exc_pattern, line)[0].rsplit("-", -1)[0]
+                    rating[solver][exc.lower()] += 1
+                    rating[solver]["any"] -= 1
+                elif solver in line and " EXCEPTION" in line:
+                    rating[solver]["any"] += 1              
         rfile.close()
     
     for solver in rating.keys():
-        rating[solver] = int(rating[solver] / problems_count * 100)
+        for e in rating[solver].keys():
+            rating[solver][e] = int(rating[solver][e] / problems_count * 100)
     
-    return rating
+    reversed_rating = {"timeout":[], "any":[], "ids":[]}
+    for solver in rating.keys():
+        reversed_rating["ids"].append(solver)
+        for e in rating[solver].keys():
+            if e not in reversed_rating.keys():
+                reversed_rating[e] = []
+    for s in reversed_rating["ids"]:
+        for e in reversed_rating.keys():
+            if e != "ids":
+                if e in rating[s]:
+                    reversed_rating[e].append(rating[s][e])
+                else:
+                    reversed_rating[e].append(0)
+            
+    return reversed_rating
 
 #category
 #-variables
@@ -189,8 +214,11 @@ def getTimeVariablesData(solvers, results_dir, category):
             rfile = open(file, 'r')
             for line in rfile:
                 if(re.search("Constraints density:", line) != None):
-                    x = re.findall(dec, line)[0]
-                    rating["x"].append(float(x))
+                    x = re.findall(dec, line)
+                    if len(x) > 0:
+                        rating["x"].append(float(x[0]))
+                    else:
+                        break
                 elif(re.search("\d+ms", line) != None):
                     x = re.findall(dec, line)[0]
                     id = re.findall(str, line.rsplit("ms")[1])[0]
@@ -232,13 +260,18 @@ def getTimeVariablesData(solvers, results_dir, category):
 def drawBarChart(solvers, results_dir, charts_dir):
     rating = getUnresolvedData(solvers, results_dir)
     fig, ax = plt.subplots()
-    plt.bar(range(5), rating.values())
+    color = itertools.cycle(('r', 'y', 'b', 'c', 'm', 'g', 'k', 'w'))
+    bottom = [0]*len(rating["ids"])
+    for r in rating.keys():
+        if r != "ids":
+            plt.bar(range(5), rating[r], color=next(color), label=r, bottom=bottom)
+            bottom = [x + y for x, y in zip(bottom, rating[r])]
 
     ax.set_ylabel('Percentage')
     ax.set_title('Percentage of unresolved problems')
     ax.set_xticks([0,1,2,3,4])
-    ax.set_xticklabels(tuple(rating.keys()))
-    #plt.show()
+    ax.set_xticklabels(tuple(rating["ids"]))
+    plt.legend()
     plt.savefig(charts_dir + "unresolved_problems.png")
 
 #category
