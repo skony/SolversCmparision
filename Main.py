@@ -56,7 +56,10 @@ def runSolver(solver, file_name, mode):
         problem_file = script_dir + "/problems/" + file_name
         
     file_out_path = script_dir + "/outputs/" + file_name + solver["id"] + "." + solver["out"]
-    file_out = open(file_out_path, 'w')
+    if mode == "time":
+        file_out = open(file_out_path, 'w')
+    elif mode == "console":
+        file_out = None
     stdout = None
     
     my_env = os.environ.copy()
@@ -107,6 +110,10 @@ def runSolver(solver, file_name, mode):
                 for exc in solver["exceptions"].keys():    
                     if solver["exceptions"][exc] in console.__str__() or solver["exceptions"][exc] in err.__str__():
                         results.write(exc.upper() + "_EXCEPTION [" + solver["id"] + "]\n")
+                        
+    results.close()
+    if file_out != None:
+        file_out.close()
         
 def getProblemParams(file_path):
     problem = open(file_path, 'r')
