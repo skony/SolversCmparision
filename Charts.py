@@ -13,6 +13,7 @@ import numpy as np
 from decimal import * 
 from Main import problems_dir, results_dir
 from numpy import arange,array,ones,linalg, append
+from math import log
 
 def format_e(n):
     a = '%E' % n
@@ -123,7 +124,7 @@ def getFactorMagnitude(f):
             f *= 10
             magnitude -= 1
      
-    return magnitude   
+    return magnitude       
     
 def getUnresolvedData(solvers, results_dir):
     rating = {}
@@ -170,6 +171,44 @@ def getUnresolvedData(solvers, results_dir):
             
     return reversed_rating
 
+def getMiscountData(solvers, results_dir):
+    rating = {"ids":[]}
+    for s in solvers:
+        if s["VotV_on"] == "true":
+            rating[s["id"]] = []
+            rating["ids"].append(s["id"])
+    rating["x"] = []
+    num = re.compile("\d+")
+    str = re.compile("[a-z]+_?[a-z]*")
+    e = re.compile("[0-9.E+-]+")
+    os.chdir(results_dir)
+    for file in glob.glob("*"):
+        rfile = open(file, 'r')
+        x_val = 0
+        temp_val = {}
+        for id in rating["ids"]:
+            temp_val[id] = 0.0
+        for line in rfile:
+            if(re.search("Number of variables:", line) != None):
+                x = re.findall(num, line)[0]
+                x_val = x
+            elif(re.search("biggest miscount", line) != None):
+                x = re.findall(e, line)[0]
+                id = re.findall(str, line.rsplit("[")[1])[0]
+                x_f = float(x)
+                if x_f != 0.0:
+                    temp_val[id] = x_f
+                    if 0.0 not in temp_val.values():
+                        rating["x"].append(float(x_val))
+                        for key, value in temp_val.items():
+                            rating[key].append(value)
+                
+    for key in rating:
+        if key != "x" and key != "ids":
+            rating[key] = [log(y, 10) + 14 for y in rating[key]]
+            
+    return rating
+    
 #category
 #-variables
 #-constraits
@@ -280,22 +319,33 @@ def drawBarChart(solvers, results_dir, charts_dir):
 #-matrix density(density)
 #-factors diff(factors)
 #-variables * constraints(multiplication)
-def drawLineChart(solvers, results_dir, charts_dir, category):
-    rating = getTimeVariablesData(solvers, results_dir, category)
+
+#reg True for line regresion, False for not
+def drawLineChart(solvers, results_dir, charts_dir, category, reg=False):
+    if category != "miscount":
+        rating = getTimeVariablesData(solvers, results_dir, category)
+    else:
+        rating = getMiscountData(solvers, results_dir)
     fig, ax = plt.subplots()
     marker = itertools.cycle(('v', '+', 'D', 'o', '*')) 
     
-    for s in rating["ids"]:
-        order = np.argsort(rating['x'])
-        xs = np.array(rating['x'])[order]
-        ys = np.array(rating[s])[order]
-        A = array([xs, ones(len(xs))])
-        w = linalg.lstsq(A.T, ys)[0]
-        line = w[0] * xs + w[1]
-        plt.plot(xs, line, label=s, marker=next(marker))
-        #plt.plot(xs, ys, label=s, marker=next(marker))
+    if reg == True:
+        for s in rating["ids"]:
+            order = np.argsort(rating['x'])
+            xs = np.array(rating['x'])[order]
+            ys = np.array(rating[s])[order]
+            A = array([xs, ones(len(xs))])
+            w = linalg.lstsq(A.T, ys)[0]
+            line = w[0] * xs + w[1]
+            plt.plot(xs, line, label=s, marker=next(marker))
+    else:
+        for s in rating["ids"]:
+            order = np.argsort(rating['x'])
+            xs = np.array(rating['x'])[order]
+            ys = np.array(rating[s])[order]
+            plt.plot(xs, ys, label=s, marker=next(marker))
     
-    if(category == "variables"):
+    if(category == "variables" or category == "miscount"):
         plt.xlabel("Number of variables")
     elif(category == "constraints"):
         plt.xlabel("Number of constraints")
@@ -304,8 +354,16 @@ def drawLineChart(solvers, results_dir, charts_dir, category):
     elif(category == "factors"):
         plt.xlabel("Diffrent between max and min factor")
     elif(category == "multiplication"):
-        plt.xlabel("Multiplication of number of variables and number of constraints")
-        
-    plt.ylabel("Time in miliseconds")
+        plt.xlabel("Number of variables times number of constraints")
+      
+    if category != "miscount":    
+        plt.ylabel("Time in miliseconds")
+    else:
+        plt.ylabel("Log + 14 from biggest miscount")
     plt.legend(loc='upper left')
-    plt.savefig(charts_dir + "time_from_" + category + ".png") 
+    if category != "miscount" and reg == False:
+        plt.savefig(charts_dir + "time_versus_" + category + ".png")
+    elif category != "miscount" and reg == True:
+        plt.savefig(charts_dir + "time_versus_" + category + "_reg.png")
+    else:
+        plt.savefig(charts_dir + "miscount_versus_variables.png")
