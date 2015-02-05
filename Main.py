@@ -24,16 +24,12 @@ variables_dir = ""
 timeout_problems = []
 
 def bi_contains(lst, item):
-    """ efficient `item in lst` for sorted lists """
-    # if item is larger than the last its not in the list, but the bisect would 
-    # find `len(lst)` as the index to insert, so check that first. Else, if the 
-    # item is in the list then it has to be at index bisect_left(lst, item)
     return (item <= lst[-1]) and (lst[bisect.bisect_left(lst, item)] == item)
 
 def getConfiguredSolvers():
     global script_dir
     solvers = []
-    script_dir = os.path.dirname(__file__)
+#     script_dir = os.path.dirname(__file__)
     os.chdir("solvers")
     
     for file in glob.glob("*.json"):
@@ -47,7 +43,7 @@ def getConfiguredSolvers():
     return solvers
 
 #mode: time console    
-def runSolver(solver, file_name, mode):
+def runSolver(solver, file_name, mode, deadline):
     results = open(script_dir + "/results/" + file_name + "RESULTS", 'a')
     if(solver["input"] != "lp_solve"):
         trans_cmd = "input_translator." + solver["input"] + "(\"" + script_dir + "/problems/" + file_name + "\")"
@@ -88,7 +84,7 @@ def runSolver(solver, file_name, mode):
         t1 = time.time()
         try:
             p = subprocess.Popen(shlex.split(command), stdout=stdout, env=my_env)       
-            p.wait(timeout = 5)
+            p.wait(timeout = float(deadline))
             t2 = time.time()
             ts = ((t2-t1)*1000).__str__()
             results.write(ts + "ms " + solver["id"] + "\n")
@@ -218,46 +214,49 @@ def scanOutput(solver, problem):
         VotV_started = False
         VotV_begin = False
         VotV_line = 0
-        for line in file:
-            if(re.search(solver["VoOF"], line) != None):
-                list = re.findall(pattern, line)
-                if(len(list) > 0):
-                    try:
-                        VoOF = float(list[0])
-                    except ValueError:
-                        None
-                 
-            if(VotV_started == True):   #section with variables started
-                if(re.search(solver["VotV_stop"], line) != None and solver["VotV_stop"] != ""):
-                    VotV_started = False
-                    break
-                list = re.findall(var_pattern, line)
-                if(solver["VotV"] != ""):
-                    name_list = re.findall(var_name_pattern, line.rsplit(solver["VotV"], -1)[1])
-                else:
-                    name_list = re.findall(var_name_pattern, line)
-                if(len(name_list) > 0):
-                    VotV[name_list[0]] = -0.0
-                else:
-                    VotV_started = False
-                    break
-                if(len(list) >= solver["VotV_num"]):
-                    try:
-                        VotV[name_list[0]] = float(list[solver["VotV_num"]-1])
-                    except ValueError:
-                        VotV[name_list[0]] = -0.0
-            elif(VotV_begin == True):   #
-                if(re.search(solver["VotV_start"][VotV_line], line) != None):
-                    if(len(solver["VotV_start"]) == VotV_line+1):
-                        VotV_started = True
+        try:
+            for line in file:
+                if(re.search(solver["VoOF"], line) != None):
+                    list = re.findall(pattern, line)
+                    if(len(list) > 0):
+                        try:
+                            VoOF = float(list[0])
+                        except ValueError:
+                            None
+                     
+                if(VotV_started == True):   #section with variables started
+                    if(re.search(solver["VotV_stop"], line) != None and solver["VotV_stop"] != ""):
+                        VotV_started = False
+                        break
+                    list = re.findall(var_pattern, line)
+                    if(solver["VotV"] != ""):
+                        name_list = re.findall(var_name_pattern, line.rsplit(solver["VotV"], -1)[1])
                     else:
-                        VotV_line += 1  
-            elif(re.search(solver["VotV_start"][0], line) != None):
-                if(len(solver["VotV_start"]) == 1):
-                    VotV_started = True
-                elif(len(solver["VotV_start"]) > 1):
-                    VotV_begin = True
-                    VotV_line += 1
+                        name_list = re.findall(var_name_pattern, line)
+                    if(len(name_list) > 0):
+                        VotV[name_list[0]] = -0.0
+                    else:
+                        VotV_started = False
+                        break
+                    if(len(list) >= solver["VotV_num"]):
+                        try:
+                            VotV[name_list[0]] = float(list[solver["VotV_num"]-1])
+                        except ValueError:
+                            VotV[name_list[0]] = -0.0
+                elif(VotV_begin == True):   #
+                    if(re.search(solver["VotV_start"][VotV_line], line) != None):
+                        if(len(solver["VotV_start"]) == VotV_line+1):
+                            VotV_started = True
+                        else:
+                            VotV_line += 1  
+                elif(re.search(solver["VotV_start"][0], line) != None):
+                    if(len(solver["VotV_start"]) == 1):
+                        VotV_started = True
+                    elif(len(solver["VotV_start"]) > 1):
+                        VotV_begin = True
+                        VotV_line += 1
+        except OSError:
+            VotV = {}
                 
     file2 = open(results_dir + problem + "RESULTS", 'a')
     if(VoOF != -0.0):
@@ -306,6 +305,12 @@ def cleanAfter(solvers):
             if solver["input"] in file:
                 os.unlink(file)
                 break
+    os.chdir(results_dir)
+    for file in glob.glob("*"):
+        for solver in solvers:
+            if solver["input"] in file:
+                os.unlink(file)
+                break
     os.chdir("../")
            
 def main(argv):
@@ -315,7 +320,8 @@ def main(argv):
     global results_dir
     global charts_dir
     global variables_dir
-    script_dir = os.path.dirname(__file__)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    print(script_dir)
     outputs_dir = script_dir + "/outputs/"
     problems_dir = script_dir + "/problems/"
     results_dir = script_dir + "/results/"
@@ -326,51 +332,34 @@ def main(argv):
     cleanBefore(solvers)
     global source
     
-    if(argv[-1].startswith("--")):
-        source = "dir"
-    else:
-        source = "file"
-   
-    if(source == "file"):
-        getProblemParams(argv[-1])
-    else:
-        os.chdir("problems")
-        for file in glob.glob("*"):
-            getProblemParams(file)
-    
-        os.chdir("../")
+    os.chdir("problems")
+    for file in glob.glob("*"):
+        getProblemParams(file)
+     
+    os.chdir("../")
          
-    if(len(argv) < 2):
-        print("Program needs at least 1 arguments")
+    if(len(argv) < 4):
+        print("Program needs at least 3 arguments")
         return
-    elif(argv[1] == "--all" and source == "file"):
-        for solver in solvers:
-            runSolver(solver, argv[-1])
-        for solver in solvers:
-            scanOutput(solver)
-    elif(source == "file"):
-        for solver in argv[1:-1]:
-            item = (item for item in solvers if item["id"] == solver[2:]).__next__()
-            runSolver(item, argv[-1])
-            scanOutput(item)
-    elif(argv[1] == "--all" and source == "dir"):
+
+    if(argv[1] == "--all"):
         listdir = os.listdir(script_dir + "/problems")
         for solver in solvers:
             for file in listdir:
-                runSolver(solver, file, "time")
+                runSolver(solver, file, "time", argv[-1])
         for solver in solvers:
             for file in listdir:
-                runSolver(solver, file, "console")
+                runSolver(solver, file, "console", argv[-1])
         for solver in solvers:
             for file in listdir:
                 scanOutput(solver, file)
-    elif(source == "dir"):
+    else:
         listdir = os.listdir(script_dir + "/problems")
-        for solver in argv[1:]:
+        for solver in argv[1:-2]:
             item = (item for item in solvers if item["id"] == solver[2:]).__next__()
             for file in listdir:
-                runSolver(item, file, "time")
-                runSolver(item, file, "console")
+                runSolver(item, file, "time", argv[-1])
+                runSolver(item, file, "console", argv[-1])
                 scanOutput(item, file)
                 
     cleanAfter(solvers)
@@ -380,7 +369,14 @@ def main(argv):
     Charts.drawLineChart(solvers, results_dir, charts_dir, "density")
     Charts.drawLineChart(solvers, results_dir, charts_dir, "factors")
     Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "variables", True)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "constraints", True)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "density", True)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "factors", True)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "multiplication", True)
     Charts.checkIfCorrect(solvers, variables_dir, problems_dir, results_dir)
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "miscount")
+    Charts.drawLineChart(solvers, results_dir, charts_dir, "miscount", True)
                        
 if __name__ == "__main__":
     main(sys.argv)

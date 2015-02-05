@@ -15,6 +15,9 @@ from Main import problems_dir, results_dir
 from numpy import arange,array,ones,linalg, append
 from math import log
 
+def createCsvFile():
+    x = 1
+
 def format_e(n):
     a = '%E' % n
     return a.split('E')[0].rstrip('0').rstrip('.') + 'E' + a.split('E')[1]
@@ -133,7 +136,7 @@ def getUnresolvedData(solvers, results_dir):
     for s in solvers:
         rating[s["id"]] = {}
         rating[s["id"]]["timeout"] = 0
-        rating[s["id"]]["any"] = 0
+        rating[s["id"]]["other"] = 0
         if "exceptions" in s:
             for e in s["exceptions"].keys():
                  rating[s["id"]][e] = 0
@@ -146,16 +149,16 @@ def getUnresolvedData(solvers, results_dir):
                 if solver in line and "_EXCEPTION" in line:
                     exc = re.findall(exc_pattern, line)[0].rsplit("-", -1)[0]
                     rating[solver][exc.lower()] += 1
-                    rating[solver]["any"] -= 1
+                    rating[solver]["other"] -= 1
                 elif solver in line and " EXCEPTION" in line:
-                    rating[solver]["any"] += 1              
+                    rating[solver]["other"] += 1              
         rfile.close()
     
     for solver in rating.keys():
         for e in rating[solver].keys():
             rating[solver][e] = int(rating[solver][e] / problems_count * 100)
     
-    reversed_rating = {"timeout":[], "any":[], "ids":[]}
+    reversed_rating = {"timeout":[], "other":[], "ids":[]}
     for solver in rating.keys():
         reversed_rating["ids"].append(solver)
         for e in rating[solver].keys():
@@ -182,30 +185,28 @@ def getMiscountData(solvers, results_dir):
     str = re.compile("[a-z]+_?[a-z]*")
     e = re.compile("[0-9.E+-]+")
     os.chdir(results_dir)
+    n = 1
     for file in glob.glob("*"):
+        n += 1
         rfile = open(file, 'r')
-        x_val = 0
         temp_val = {}
         for id in rating["ids"]:
             temp_val[id] = 0.0
         for line in rfile:
-            if(re.search("Number of variables:", line) != None):
-                x = re.findall(num, line)[0]
-                x_val = x
-            elif(re.search("biggest miscount", line) != None):
+            if(re.search("biggest miscount", line) != None):
                 x = re.findall(e, line)[0]
                 id = re.findall(str, line.rsplit("[")[1])[0]
                 x_f = float(x)
                 if x_f != 0.0:
                     temp_val[id] = x_f
                     if 0.0 not in temp_val.values():
-                        rating["x"].append(float(x_val))
+                        rating["x"].append(float(n))
                         for key, value in temp_val.items():
                             rating[key].append(value)
                 
     for key in rating:
         if key != "x" and key != "ids":
-            rating[key] = [log(y, 10) + 14 for y in rating[key]]
+            rating[key] = [log(y, 10) + 16 for y in rating[key]]
             
     return rating
     
@@ -222,7 +223,7 @@ def getTimeVariablesData(solvers, results_dir, category):
         rating["ids"].append(s["id"])
     rating["x"] = []
     num = re.compile("\d+")
-    dec = re.compile("\d+[.]?\d*")
+    dec = re.compile("-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?")
     str = re.compile("[a-z]+_?[a-z]*")
     os.chdir(results_dir)
     
@@ -255,7 +256,8 @@ def getTimeVariablesData(solvers, results_dir, category):
                 if(re.search("Constraints density:", line) != None):
                     x = re.findall(dec, line)
                     if len(x) > 0:
-                        rating["x"].append(float(x[0]))
+                        xf = float(x[0])
+                        rating["x"].append(xf)
                     else:
                         break
                 elif(re.search("\d+ms", line) != None):
@@ -345,8 +347,10 @@ def drawLineChart(solvers, results_dir, charts_dir, category, reg=False):
             ys = np.array(rating[s])[order]
             plt.plot(xs, ys, label=s, marker=next(marker))
     
-    if(category == "variables" or category == "miscount"):
+    if(category == "variables"):
         plt.xlabel("Number of variables")
+    elif(category == "miscount"):
+        plt.xlabel("Problem's ordinal number")
     elif(category == "constraints"):
         plt.xlabel("Number of constraints")
     elif(category == "density"):
@@ -359,11 +363,13 @@ def drawLineChart(solvers, results_dir, charts_dir, category, reg=False):
     if category != "miscount":    
         plt.ylabel("Time in miliseconds")
     else:
-        plt.ylabel("Log + 14 from biggest miscount")
+        plt.ylabel("Log from biggest miscount + 16")
     plt.legend(loc='upper left')
     if category != "miscount" and reg == False:
         plt.savefig(charts_dir + "time_versus_" + category + ".png")
     elif category != "miscount" and reg == True:
         plt.savefig(charts_dir + "time_versus_" + category + "_reg.png")
-    else:
-        plt.savefig(charts_dir + "miscount_versus_variables.png")
+    elif category == "miscount" and reg == False:
+        plt.savefig(charts_dir + "miscount_versus_variables.png")      
+    elif category == "miscount" and reg == True:
+        plt.savefig(charts_dir + "miscount_versus_variables_reg.png")  
