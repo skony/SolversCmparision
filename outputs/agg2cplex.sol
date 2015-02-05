@@ -2,7 +2,7 @@
 <CPLEXSolution version="1.2">
  <header
    problemName="/home/piotrek/Kodzenie/SolversComparision/problems/agg2cplex.lp"
-   objectiveValue="-20239263.2472786"
+   objectiveValue="-20239263.247278646"
    solutionTypeValue="1"
    solutionTypeString="basic"
    solutionStatusValue="1"
@@ -13,529 +13,529 @@
    simplexIterations="116"
    writeLevel="1"/>
  <quality
-   epRHS="1e-06"
-   epOpt="1e-06"
+   epRHS="9.9999999999999995e-07"
+   epOpt="9.9999999999999995e-07"
    maxPrimalInfeas="0"
-   maxDualInfeas="1.4210854715202e-14"
-   maxPrimalResidual="8.00355337560177e-11"
-   maxDualResidual="1.28785870856518e-14"
-   maxX="384019.764957265"
-   maxPi="3816.18519461352"
-   maxSlack="296321.43582547"
-   maxRedCost="14311.44"
-   kappa="3816.01560486967"/>
+   maxDualInfeas="1.4210854715202004e-14"
+   maxPrimalResidual="8.0035533756017685e-11"
+   maxDualResidual="1.2878587085651816e-14"
+   maxX="384019.76495726494"
+   maxPi="3816.185194613523"
+   maxSlack="296321.43582547037"
+   maxRedCost="14311.440000000001"
+   kappa="3816.0156048696676"/>
  <linearConstraints>
-  <constraint name="CAP00101" index="0" status="BS" slack="21255.2592713034" dual="0"/>
-  <constraint name="CAP00201" index="1" status="BS" slack="977.780289853655" dual="0"/>
-  <constraint name="CAP00301" index="2" status="BS" slack="6255.38627757563" dual="0"/>
-  <constraint name="CAP00401" index="3" status="BS" slack="3767.2122946816" dual="0"/>
-  <constraint name="CAP00501" index="4" status="BS" slack="24231.7694736882" dual="0"/>
-  <constraint name="CAP00601" index="5" status="BS" slack="2296.48259190871" dual="0"/>
-  <constraint name="CAP00701" index="6" status="BS" slack="11723.5812885121" dual="0"/>
+  <constraint name="CAP00101" index="0" status="BS" slack="21255.259271303432" dual="0"/>
+  <constraint name="CAP00201" index="1" status="BS" slack="977.78028985365472" dual="0"/>
+  <constraint name="CAP00301" index="2" status="BS" slack="6255.3862775756279" dual="0"/>
+  <constraint name="CAP00401" index="3" status="BS" slack="3767.2122946816007" dual="0"/>
+  <constraint name="CAP00501" index="4" status="BS" slack="24231.769473688157" dual="0"/>
+  <constraint name="CAP00601" index="5" status="BS" slack="2296.4825919087098" dual="0"/>
+  <constraint name="CAP00701" index="6" status="BS" slack="11723.581288512096" dual="0"/>
   <constraint name="CAP00801" index="7" status="BS" slack="1349.47" dual="0"/>
-  <constraint name="CAP00901" index="8" status="BS" slack="40595.1040848038" dual="0"/>
+  <constraint name="CAP00901" index="8" status="BS" slack="40595.104084803832" dual="0"/>
   <constraint name="CAP01001" index="9" status="BS" slack="26386.98" dual="0"/>
   <constraint name="CAP01101" index="10" status="BS" slack="6237" dual="0"/>
   <constraint name="CAP01201" index="11" status="BS" slack="2223.75" dual="0"/>
-  <constraint name="CAP01301" index="12" status="BS" slack="1674.91259790044" dual="0"/>
-  <constraint name="CAP01401" index="13" status="BS" slack="5392.35474962011" dual="0"/>
-  <constraint name="CAP01501" index="14" status="BS" slack="184.964864158942" dual="0"/>
-  <constraint name="CAP01601" index="15" status="BS" slack="527.12366148902" dual="0"/>
-  <constraint name="CAP01701" index="16" status="BS" slack="529.951615961435" dual="0"/>
-  <constraint name="CAP01801" index="17" status="BS" slack="1001.1874578852" dual="0"/>
-  <constraint name="CAP02001" index="18" status="BS" slack="948.052553874377" dual="0"/>
-  <constraint name="CAP02201" index="19" status="BS" slack="75.9002411506111" dual="0"/>
-  <constraint name="CAP02501" index="20" status="BS" slack="487.852834435049" dual="0"/>
-  <constraint name="CAP02701" index="21" status="BS" slack="2007.90067574857" dual="0"/>
-  <constraint name="CAP03101" index="22" status="BS" slack="510.333467806091" dual="0"/>
-  <constraint name="CAP03301" index="23" status="BS" slack="1160.98167878467" dual="0"/>
-  <constraint name="CAP03401" index="24" status="BS" slack="1993.33436687827" dual="0"/>
-  <constraint name="CAP03601" index="25" status="BS" slack="1356.11029550459" dual="0"/>
-  <constraint name="CAP03701" index="26" status="BS" slack="2744.09996232767" dual="0"/>
-  <constraint name="CAP03801" index="27" status="BS" slack="1007.73784643815" dual="0"/>
-  <constraint name="CAP04001" index="28" status="BS" slack="131.73308522303" dual="0"/>
-  <constraint name="CAP04101" index="29" status="BS" slack="656.017785673878" dual="0"/>
-  <constraint name="CAP04201" index="30" status="BS" slack="955.531243719873" dual="0"/>
-  <constraint name="CAP04301" index="31" status="BS" slack="984.390603640707" dual="0"/>
-  <constraint name="CAP04401" index="32" status="BS" slack="299.23729557066" dual="0"/>
-  <constraint name="CAP04501" index="33" status="BS" slack="887.312487439746" dual="0"/>
-  <constraint name="CAP04601" index="34" status="BS" slack="1376.22614499081" dual="0"/>
-  <constraint name="CAP04701" index="35" status="BS" slack="1356.22916551107" dual="0"/>
-  <constraint name="CAP04801" index="36" status="BS" slack="750.042283159144" dual="0"/>
-  <constraint name="CAP04901" index="37" status="BS" slack="631.082434837508" dual="0"/>
-  <constraint name="CAP05001" index="38" status="BS" slack="602.014417979145" dual="0"/>
-  <constraint name="CAP05101" index="39" status="BS" slack="641.151819028838" dual="0"/>
-  <constraint name="CAP05201" index="40" status="BS" slack="1874.25043574597" dual="0"/>
-  <constraint name="CAP05301" index="41" status="BS" slack="520.657415727477" dual="0"/>
-  <constraint name="CAP05401" index="42" status="BS" slack="698.456906544748" dual="0"/>
-  <constraint name="CAP05501" index="43" status="BS" slack="1761.89683424274" dual="0"/>
-  <constraint name="CAP05601" index="44" status="BS" slack="1087.71640225728" dual="0"/>
+  <constraint name="CAP01301" index="12" status="BS" slack="1674.9125979004368" dual="0"/>
+  <constraint name="CAP01401" index="13" status="BS" slack="5392.3547496201054" dual="0"/>
+  <constraint name="CAP01501" index="14" status="BS" slack="184.96486415894157" dual="0"/>
+  <constraint name="CAP01601" index="15" status="BS" slack="527.12366148901981" dual="0"/>
+  <constraint name="CAP01701" index="16" status="BS" slack="529.95161596143544" dual="0"/>
+  <constraint name="CAP01801" index="17" status="BS" slack="1001.1874578851975" dual="0"/>
+  <constraint name="CAP02001" index="18" status="BS" slack="948.05255387437683" dual="0"/>
+  <constraint name="CAP02201" index="19" status="BS" slack="75.900241150611095" dual="0"/>
+  <constraint name="CAP02501" index="20" status="BS" slack="487.85283443504937" dual="0"/>
+  <constraint name="CAP02701" index="21" status="BS" slack="2007.900675748569" dual="0"/>
+  <constraint name="CAP03101" index="22" status="BS" slack="510.33346780609082" dual="0"/>
+  <constraint name="CAP03301" index="23" status="BS" slack="1160.981678784668" dual="0"/>
+  <constraint name="CAP03401" index="24" status="BS" slack="1993.3343668782682" dual="0"/>
+  <constraint name="CAP03601" index="25" status="BS" slack="1356.1102955045922" dual="0"/>
+  <constraint name="CAP03701" index="26" status="BS" slack="2744.0999623276712" dual="0"/>
+  <constraint name="CAP03801" index="27" status="BS" slack="1007.7378464381508" dual="0"/>
+  <constraint name="CAP04001" index="28" status="BS" slack="131.73308522303034" dual="0"/>
+  <constraint name="CAP04101" index="29" status="BS" slack="656.01778567387794" dual="0"/>
+  <constraint name="CAP04201" index="30" status="BS" slack="955.53124371987292" dual="0"/>
+  <constraint name="CAP04301" index="31" status="BS" slack="984.39060364070656" dual="0"/>
+  <constraint name="CAP04401" index="32" status="BS" slack="299.23729557066019" dual="0"/>
+  <constraint name="CAP04501" index="33" status="BS" slack="887.31248743974618" dual="0"/>
+  <constraint name="CAP04601" index="34" status="BS" slack="1376.2261449908135" dual="0"/>
+  <constraint name="CAP04701" index="35" status="BS" slack="1356.2291655110671" dual="0"/>
+  <constraint name="CAP04801" index="36" status="BS" slack="750.04228315914361" dual="0"/>
+  <constraint name="CAP04901" index="37" status="BS" slack="631.08243483750812" dual="0"/>
+  <constraint name="CAP05001" index="38" status="BS" slack="602.01441797914504" dual="0"/>
+  <constraint name="CAP05101" index="39" status="BS" slack="641.15181902883774" dual="0"/>
+  <constraint name="CAP05201" index="40" status="BS" slack="1874.2504357459673" dual="0"/>
+  <constraint name="CAP05301" index="41" status="BS" slack="520.65741572747709" dual="0"/>
+  <constraint name="CAP05401" index="42" status="BS" slack="698.45690654474834" dual="0"/>
+  <constraint name="CAP05501" index="43" status="BS" slack="1761.8968342427438" dual="0"/>
+  <constraint name="CAP05601" index="44" status="BS" slack="1087.716402257284" dual="0"/>
   <constraint name="CAP05701" index="45" status="BS" slack="991.11726114464" dual="0"/>
-  <constraint name="CAP05801" index="46" status="BS" slack="1087.31324032312" dual="0"/>
-  <constraint name="CAP05901" index="47" status="BS" slack="738.007078388959" dual="0"/>
-  <constraint name="CAP06001" index="48" status="BS" slack="4445.17" dual="0"/>
-  <constraint name="CAP06101" index="49" status="BS" slack="3754.32630151801" dual="0"/>
-  <constraint name="CAP06201" index="50" status="BS" slack="648.845504332518" dual="0"/>
-  <constraint name="CAP06301" index="51" status="BS" slack="3445.27744626611" dual="0"/>
-  <constraint name="CAP06501" index="52" status="BS" slack="2085.73607382241" dual="0"/>
-  <constraint name="CAP00102" index="53" status="BS" slack="20175.4918226379" dual="0"/>
-  <constraint name="CAP00202" index="54" status="BS" slack="814.081858500735" dual="0"/>
-  <constraint name="CAP00302" index="55" status="BS" slack="5221.63289356993" dual="0"/>
-  <constraint name="CAP00402" index="56" status="BS" slack="2109.6771675016" dual="0"/>
-  <constraint name="CAP00502" index="57" status="BS" slack="19636.0835868977" dual="0"/>
-  <constraint name="CAP00602" index="58" status="BS" slack="1190.57102154384" dual="0"/>
-  <constraint name="CAP00702" index="59" status="BS" slack="10282.2171565947" dual="0"/>
-  <constraint name="CAP00802" index="60" status="BS" slack="1340.80366761144" dual="0"/>
-  <constraint name="CAP00902" index="61" status="BS" slack="35473.1062227708" dual="0"/>
-  <constraint name="CAP01002" index="62" status="BS" slack="23199.0502906726" dual="0"/>
-  <constraint name="CAP01102" index="63" status="BS" slack="2475.070450842" dual="0"/>
-  <constraint name="CAP01202" index="64" status="BS" slack="2214.9" dual="0"/>
-  <constraint name="CAP01302" index="65" status="BS" slack="1426.98169613033" dual="0"/>
-  <constraint name="CAP01402" index="66" status="BS" slack="4437.65446274432" dual="0"/>
-  <constraint name="CAP01502" index="67" status="BS" slack="292.38927857485" dual="0"/>
-  <constraint name="CAP01602" index="68" status="BS" slack="67.6138205677557" dual="0"/>
-  <constraint name="CAP01702" index="69" status="LL" slack="0" dual="-1.03644227104095"/>
-  <constraint name="CAP01802" index="70" status="BS" slack="839.17306781848" dual="0"/>
-  <constraint name="CAP01902" index="71" status="BS" slack="525.047393641202" dual="0"/>
-  <constraint name="CAP02002" index="72" status="BS" slack="817.117623901981" dual="0"/>
-  <constraint name="CAP02102" index="73" status="BS" slack="724.376201804681" dual="0"/>
-  <constraint name="CAP02202" index="74" status="BS" slack="7.54128531034503" dual="0"/>
-  <constraint name="CAP02302" index="75" status="BS" slack="569.168600424" dual="0"/>
-  <constraint name="CAP02402" index="76" status="BS" slack="522.816956990688" dual="0"/>
-  <constraint name="CAP02502" index="77" status="BS" slack="418.342589634414" dual="0"/>
-  <constraint name="CAP02602" index="78" status="BS" slack="1381.85653847645" dual="0"/>
-  <constraint name="CAP02702" index="79" status="BS" slack="1634.85850765643" dual="0"/>
-  <constraint name="CAP02802" index="80" status="BS" slack="1222.63314112348" dual="0"/>
-  <constraint name="CAP02902" index="81" status="BS" slack="375.324794193812" dual="0"/>
-  <constraint name="CAP03002" index="82" status="BS" slack="431.270476211817" dual="0"/>
-  <constraint name="CAP03102" index="83" status="BS" slack="392.881455596781" dual="0"/>
-  <constraint name="CAP03202" index="84" status="BS" slack="1122.94579750661" dual="0"/>
-  <constraint name="CAP03302" index="85" status="BS" slack="1024.05203182732" dual="0"/>
-  <constraint name="CAP03402" index="86" status="BS" slack="1702.90269056973" dual="0"/>
+  <constraint name="CAP05801" index="46" status="BS" slack="1087.3132403231218" dual="0"/>
+  <constraint name="CAP05901" index="47" status="BS" slack="738.00707838895926" dual="0"/>
+  <constraint name="CAP06001" index="48" status="BS" slack="4445.1700000000001" dual="0"/>
+  <constraint name="CAP06101" index="49" status="BS" slack="3754.3263015180132" dual="0"/>
+  <constraint name="CAP06201" index="50" status="BS" slack="648.84550433251843" dual="0"/>
+  <constraint name="CAP06301" index="51" status="BS" slack="3445.2774462661059" dual="0"/>
+  <constraint name="CAP06501" index="52" status="BS" slack="2085.7360738224052" dual="0"/>
+  <constraint name="CAP00102" index="53" status="BS" slack="20175.491822637872" dual="0"/>
+  <constraint name="CAP00202" index="54" status="BS" slack="814.08185850073482" dual="0"/>
+  <constraint name="CAP00302" index="55" status="BS" slack="5221.6328935699275" dual="0"/>
+  <constraint name="CAP00402" index="56" status="BS" slack="2109.6771675015989" dual="0"/>
+  <constraint name="CAP00502" index="57" status="BS" slack="19636.083586897741" dual="0"/>
+  <constraint name="CAP00602" index="58" status="BS" slack="1190.5710215438448" dual="0"/>
+  <constraint name="CAP00702" index="59" status="BS" slack="10282.217156594739" dual="0"/>
+  <constraint name="CAP00802" index="60" status="BS" slack="1340.8036676114382" dual="0"/>
+  <constraint name="CAP00902" index="61" status="BS" slack="35473.106222770773" dual="0"/>
+  <constraint name="CAP01002" index="62" status="BS" slack="23199.050290672585" dual="0"/>
+  <constraint name="CAP01102" index="63" status="BS" slack="2475.0704508419963" dual="0"/>
+  <constraint name="CAP01202" index="64" status="BS" slack="2214.8999999999996" dual="0"/>
+  <constraint name="CAP01302" index="65" status="BS" slack="1426.9816961303347" dual="0"/>
+  <constraint name="CAP01402" index="66" status="BS" slack="4437.6544627443245" dual="0"/>
+  <constraint name="CAP01502" index="67" status="BS" slack="292.38927857485021" dual="0"/>
+  <constraint name="CAP01602" index="68" status="BS" slack="67.613820567755738" dual="0"/>
+  <constraint name="CAP01702" index="69" status="LL" slack="0" dual="-1.0364422710409542"/>
+  <constraint name="CAP01802" index="70" status="BS" slack="839.17306781848038" dual="0"/>
+  <constraint name="CAP01902" index="71" status="BS" slack="525.04739364120155" dual="0"/>
+  <constraint name="CAP02002" index="72" status="BS" slack="817.11762390198146" dual="0"/>
+  <constraint name="CAP02102" index="73" status="BS" slack="724.37620180468116" dual="0"/>
+  <constraint name="CAP02202" index="74" status="BS" slack="7.5412853103450308" dual="0"/>
+  <constraint name="CAP02302" index="75" status="BS" slack="569.16860042400003" dual="0"/>
+  <constraint name="CAP02402" index="76" status="BS" slack="522.81695699068757" dual="0"/>
+  <constraint name="CAP02502" index="77" status="BS" slack="418.34258963441363" dual="0"/>
+  <constraint name="CAP02602" index="78" status="BS" slack="1381.8565384764502" dual="0"/>
+  <constraint name="CAP02702" index="79" status="BS" slack="1634.8585076564257" dual="0"/>
+  <constraint name="CAP02802" index="80" status="BS" slack="1222.6331411234848" dual="0"/>
+  <constraint name="CAP02902" index="81" status="BS" slack="375.32479419381156" dual="0"/>
+  <constraint name="CAP03002" index="82" status="BS" slack="431.27047621181669" dual="0"/>
+  <constraint name="CAP03102" index="83" status="BS" slack="392.88145559678065" dual="0"/>
+  <constraint name="CAP03202" index="84" status="BS" slack="1122.9457975066096" dual="0"/>
+  <constraint name="CAP03302" index="85" status="BS" slack="1024.0520318273168" dual="0"/>
+  <constraint name="CAP03402" index="86" status="BS" slack="1702.9026905697262" dual="0"/>
   <constraint name="CAP03502" index="87" status="BS" slack="94.3002423455643" dual="0"/>
-  <constraint name="CAP03602" index="88" status="BS" slack="1203.64282891745" dual="0"/>
-  <constraint name="CAP03702" index="89" status="BS" slack="2424.32234501505" dual="0"/>
-  <constraint name="CAP03802" index="90" status="BS" slack="857.192887729913" dual="0"/>
-  <constraint name="CAP03902" index="91" status="BS" slack="292.183848826283" dual="0"/>
-  <constraint name="CAP04002" index="92" status="BS" slack="62.6617561859938" dual="0"/>
-  <constraint name="CAP04102" index="93" status="BS" slack="580.069581341955" dual="0"/>
-  <constraint name="CAP04202" index="94" status="BS" slack="798.681501775436" dual="0"/>
-  <constraint name="CAP04302" index="95" status="BS" slack="858.172692764586" dual="0"/>
-  <constraint name="CAP04402" index="96" status="BS" slack="238.687020081091" dual="0"/>
-  <constraint name="CAP04502" index="97" status="BS" slack="751.187122233502" dual="0"/>
-  <constraint name="CAP04602" index="98" status="BS" slack="1218.52508279223" dual="0"/>
-  <constraint name="CAP04702" index="99" status="BS" slack="1171.81052086139" dual="0"/>
-  <constraint name="CAP04802" index="100" status="BS" slack="665.926986681643" dual="0"/>
-  <constraint name="CAP04902" index="101" status="BS" slack="549.460695960983" dual="0"/>
-  <constraint name="CAP05002" index="102" status="BS" slack="518.305951546608" dual="0"/>
-  <constraint name="CAP05102" index="103" status="BS" slack="557.893742914615" dual="0"/>
-  <constraint name="CAP05202" index="104" status="BS" slack="1665.12474529574" dual="0"/>
-  <constraint name="CAP05302" index="105" status="BS" slack="449.168220946382" dual="0"/>
-  <constraint name="CAP05402" index="106" status="BS" slack="597.093815472438" dual="0"/>
-  <constraint name="CAP05502" index="107" status="BS" slack="1566.49551158174" dual="0"/>
-  <constraint name="CAP05602" index="108" status="BS" slack="965.06068023184" dual="0"/>
-  <constraint name="CAP05702" index="109" status="BS" slack="880.158660924901" dual="0"/>
-  <constraint name="CAP05802" index="110" status="BS" slack="965.084833936175" dual="0"/>
-  <constraint name="CAP05902" index="111" status="BS" slack="654.976260866293" dual="0"/>
-  <constraint name="CAP06002" index="112" status="BS" slack="3812.94605898889" dual="0"/>
-  <constraint name="CAP06102" index="113" status="BS" slack="3256.12301518013" dual="0"/>
-  <constraint name="CAP06202" index="114" status="BS" slack="500.911675679147" dual="0"/>
-  <constraint name="CAP06302" index="115" status="BS" slack="3050.63310162162" dual="0"/>
-  <constraint name="CAP06402" index="116" status="BS" slack="1725.7754657251" dual="0"/>
-  <constraint name="CAP06502" index="117" status="BS" slack="1986.64287165094" dual="0"/>
-  <constraint name="CAP00103" index="118" status="BS" slack="17861.2651209161" dual="0"/>
-  <constraint name="CAP00203" index="119" status="BS" slack="407.971593919489" dual="0"/>
+  <constraint name="CAP03602" index="88" status="BS" slack="1203.6428289174546" dual="0"/>
+  <constraint name="CAP03702" index="89" status="BS" slack="2424.3223450150485" dual="0"/>
+  <constraint name="CAP03802" index="90" status="BS" slack="857.19288772991342" dual="0"/>
+  <constraint name="CAP03902" index="91" status="BS" slack="292.18384882628288" dual="0"/>
+  <constraint name="CAP04002" index="92" status="BS" slack="62.661756185993823" dual="0"/>
+  <constraint name="CAP04102" index="93" status="BS" slack="580.06958134195543" dual="0"/>
+  <constraint name="CAP04202" index="94" status="BS" slack="798.68150177543589" dual="0"/>
+  <constraint name="CAP04302" index="95" status="BS" slack="858.17269276458592" dual="0"/>
+  <constraint name="CAP04402" index="96" status="BS" slack="238.68702008109059" dual="0"/>
+  <constraint name="CAP04502" index="97" status="BS" slack="751.18712223350212" dual="0"/>
+  <constraint name="CAP04602" index="98" status="BS" slack="1218.5250827922287" dual="0"/>
+  <constraint name="CAP04702" index="99" status="BS" slack="1171.810520861392" dual="0"/>
+  <constraint name="CAP04802" index="100" status="BS" slack="665.92698668164326" dual="0"/>
+  <constraint name="CAP04902" index="101" status="BS" slack="549.46069596098289" dual="0"/>
+  <constraint name="CAP05002" index="102" status="BS" slack="518.3059515466075" dual="0"/>
+  <constraint name="CAP05102" index="103" status="BS" slack="557.89374291461536" dual="0"/>
+  <constraint name="CAP05202" index="104" status="BS" slack="1665.1247452957402" dual="0"/>
+  <constraint name="CAP05302" index="105" status="BS" slack="449.16822094638218" dual="0"/>
+  <constraint name="CAP05402" index="106" status="BS" slack="597.09381547243788" dual="0"/>
+  <constraint name="CAP05502" index="107" status="BS" slack="1566.495511581739" dual="0"/>
+  <constraint name="CAP05602" index="108" status="BS" slack="965.06068023184037" dual="0"/>
+  <constraint name="CAP05702" index="109" status="BS" slack="880.15866092490137" dual="0"/>
+  <constraint name="CAP05802" index="110" status="BS" slack="965.08483393617507" dual="0"/>
+  <constraint name="CAP05902" index="111" status="BS" slack="654.97626086629305" dual="0"/>
+  <constraint name="CAP06002" index="112" status="BS" slack="3812.9460589888895" dual="0"/>
+  <constraint name="CAP06102" index="113" status="BS" slack="3256.1230151801333" dual="0"/>
+  <constraint name="CAP06202" index="114" status="BS" slack="500.91167567914715" dual="0"/>
+  <constraint name="CAP06302" index="115" status="BS" slack="3050.6331016216195" dual="0"/>
+  <constraint name="CAP06402" index="116" status="BS" slack="1725.7754657251028" dual="0"/>
+  <constraint name="CAP06502" index="117" status="BS" slack="1986.6428716509408" dual="0"/>
+  <constraint name="CAP00103" index="118" status="BS" slack="17861.265120916079" dual="0"/>
+  <constraint name="CAP00203" index="119" status="BS" slack="407.97159391948946" dual="0"/>
   <constraint name="CAP00303" index="120" status="BS" slack="5166.04" dual="0"/>
-  <constraint name="CAP00403" index="121" status="BS" slack="3336.31113896765" dual="0"/>
-  <constraint name="CAP00503" index="122" status="BS" slack="22059.4235365267" dual="0"/>
-  <constraint name="CAP00603" index="123" status="LL" slack="0" dual="-15.897435897436"/>
-  <constraint name="CAP00703" index="124" status="BS" slack="10764.9397331932" dual="0"/>
-  <constraint name="CAP00803" index="125" status="BS" slack="1192.63939362952" dual="0"/>
-  <constraint name="CAP00903" index="126" status="BS" slack="38257.1649403871" dual="0"/>
-  <constraint name="CAP01003" index="127" status="BS" slack="24527.6285172774" dual="0"/>
-  <constraint name="CAP01103" index="128" status="LL" slack="0" dual="-15.8974358974359"/>
-  <constraint name="CAP01203" index="129" status="BS" slack="2448.66" dual="0"/>
-  <constraint name="CAP01303" index="130" status="BS" slack="1532.17328633788" dual="0"/>
+  <constraint name="CAP00403" index="121" status="BS" slack="3336.3111389676496" dual="0"/>
+  <constraint name="CAP00503" index="122" status="BS" slack="22059.423536526687" dual="0"/>
+  <constraint name="CAP00603" index="123" status="LL" slack="0" dual="-15.897435897436043"/>
+  <constraint name="CAP00703" index="124" status="BS" slack="10764.939733193165" dual="0"/>
+  <constraint name="CAP00803" index="125" status="BS" slack="1192.6393936295206" dual="0"/>
+  <constraint name="CAP00903" index="126" status="BS" slack="38257.164940387076" dual="0"/>
+  <constraint name="CAP01003" index="127" status="BS" slack="24527.628517277404" dual="0"/>
+  <constraint name="CAP01103" index="128" status="LL" slack="0" dual="-15.89743589743593"/>
+  <constraint name="CAP01203" index="129" status="BS" slack="2448.6599999999999" dual="0"/>
+  <constraint name="CAP01303" index="130" status="BS" slack="1532.1732863378795" dual="0"/>
   <constraint name="CAP01403" index="131" status="BS" slack="6239.75" dual="0"/>
-  <constraint name="CAP01503" index="132" status="BS" slack="519.979" dual="0"/>
-  <constraint name="CAP01603" index="133" status="BS" slack="498.512254686663" dual="0"/>
-  <constraint name="CAP01703" index="134" status="BS" slack="490.028391269416" dual="0"/>
+  <constraint name="CAP01503" index="132" status="BS" slack="519.97900000000004" dual="0"/>
+  <constraint name="CAP01603" index="133" status="BS" slack="498.51225468666314" dual="0"/>
+  <constraint name="CAP01703" index="134" status="BS" slack="490.0283912694162" dual="0"/>
   <constraint name="CAP01803" index="135" status="BS" slack="1039.96" dual="0"/>
-  <constraint name="CAP01903" index="136" status="BS" slack="548.602609690814" dual="0"/>
-  <constraint name="CAP02003" index="137" status="BS" slack="864.794987334108" dual="0"/>
-  <constraint name="CAP02103" index="138" status="BS" slack="749.788078719217" dual="0"/>
+  <constraint name="CAP01903" index="136" status="BS" slack="548.60260969081367" dual="0"/>
+  <constraint name="CAP02003" index="137" status="BS" slack="864.79498733410787" dual="0"/>
+  <constraint name="CAP02103" index="138" status="BS" slack="749.7880787192172" dual="0"/>
   <constraint name="CAP02203" index="139" status="LL" slack="0" dual="0"/>
-  <constraint name="CAP02303" index="140" status="BS" slack="596.965188041333" dual="0"/>
-  <constraint name="CAP02403" index="141" status="BS" slack="545.353648777571" dual="0"/>
-  <constraint name="CAP02503" index="142" status="BS" slack="448.299917519189" dual="0"/>
-  <constraint name="CAP02603" index="143" status="BS" slack="1437.14923897785" dual="0"/>
-  <constraint name="CAP02703" index="144" status="BS" slack="1777.65960384162" dual="0"/>
-  <constraint name="CAP02803" index="145" status="BS" slack="1327.90610731059" dual="0"/>
-  <constraint name="CAP02903" index="146" status="BS" slack="391.166508044132" dual="0"/>
-  <constraint name="CAP03003" index="147" status="BS" slack="447.877051930075" dual="0"/>
-  <constraint name="CAP03103" index="148" status="BS" slack="462.977081711323" dual="0"/>
-  <constraint name="CAP03203" index="149" status="BS" slack="1169.2667589106" dual="0"/>
-  <constraint name="CAP03303" index="150" status="BS" slack="1129.56479647365" dual="0"/>
-  <constraint name="CAP03403" index="151" status="BS" slack="1876.08871469177" dual="0"/>
-  <constraint name="CAP03503" index="152" status="BS" slack="104.099985224609" dual="0"/>
-  <constraint name="CAP03603" index="153" status="BS" slack="1304.37387060155" dual="0"/>
-  <constraint name="CAP03703" index="154" status="BS" slack="2669.33582700616" dual="0"/>
-  <constraint name="CAP03803" index="155" status="BS" slack="961.264267454414" dual="0"/>
-  <constraint name="CAP03903" index="156" status="BS" slack="317.463343654584" dual="0"/>
-  <constraint name="CAP04003" index="157" status="BS" slack="85.1368151928906" dual="0"/>
-  <constraint name="CAP04103" index="158" status="BS" slack="644.037951627791" dual="0"/>
-  <constraint name="CAP04203" index="159" status="BS" slack="878.162820603723" dual="0"/>
-  <constraint name="CAP04303" index="160" status="BS" slack="964.82008436651" dual="0"/>
-  <constraint name="CAP04403" index="161" status="BS" slack="264.013784875973" dual="0"/>
-  <constraint name="CAP04503" index="162" status="BS" slack="838.902859915039" dual="0"/>
-  <constraint name="CAP04603" index="163" status="BS" slack="1340.46810645311" dual="0"/>
-  <constraint name="CAP04703" index="164" status="BS" slack="1280.12119410213" dual="0"/>
-  <constraint name="CAP04803" index="165" status="BS" slack="721.795771459571" dual="0"/>
-  <constraint name="CAP04903" index="166" status="BS" slack="611.558672025825" dual="0"/>
-  <constraint name="CAP05003" index="167" status="BS" slack="580.117683368044" dual="0"/>
-  <constraint name="CAP05103" index="168" status="BS" slack="620.941746176594" dual="0"/>
-  <constraint name="CAP05203" index="169" status="BS" slack="1802.85214128435" dual="0"/>
-  <constraint name="CAP05303" index="170" status="BS" slack="501.452268972815" dual="0"/>
-  <constraint name="CAP05403" index="171" status="BS" slack="655.596990667798" dual="0"/>
-  <constraint name="CAP05503" index="172" status="BS" slack="1698.10918531604" dual="0"/>
-  <constraint name="CAP05603" index="173" status="BS" slack="1048.72771221803" dual="0"/>
-  <constraint name="CAP05703" index="174" status="BS" slack="953.970068002071" dual="0"/>
-  <constraint name="CAP05803" index="175" status="BS" slack="1047.87030228661" dual="0"/>
-  <constraint name="CAP05903" index="176" status="BS" slack="710.803433865749" dual="0"/>
-  <constraint name="CAP06003" index="177" status="BS" slack="3912.91927367453" dual="0"/>
-  <constraint name="CAP06103" index="178" status="BS" slack="3404.77796638218" dual="0"/>
-  <constraint name="CAP06203" index="179" status="BS" slack="449.400103068666" dual="0"/>
-  <constraint name="CAP06303" index="180" status="BS" slack="3189.09880051227" dual="0"/>
-  <constraint name="CAP06403" index="181" status="BS" slack="1811.09145342749" dual="0"/>
-  <constraint name="CAP06503" index="182" status="BS" slack="891.639070901647" dual="0"/>
-  <constraint name="CAP00104" index="183" status="BS" slack="18164.2051305" dual="0"/>
-  <constraint name="CAP00204" index="184" status="BS" slack="1858.15421323177" dual="0"/>
-  <constraint name="CAP00304" index="185" status="BS" slack="4980.67" dual="0"/>
-  <constraint name="CAP00404" index="186" status="BS" slack="4321.77644" dual="0"/>
-  <constraint name="CAP00504" index="187" status="BS" slack="23585.3822024" dual="0"/>
-  <constraint name="CAP00604" index="188" status="BS" slack="6280.64729259054" dual="0"/>
-  <constraint name="CAP00704" index="189" status="BS" slack="10979.8949835" dual="0"/>
+  <constraint name="CAP02303" index="140" status="BS" slack="596.96518804133336" dual="0"/>
+  <constraint name="CAP02403" index="141" status="BS" slack="545.35364877757115" dual="0"/>
+  <constraint name="CAP02503" index="142" status="BS" slack="448.29991751918948" dual="0"/>
+  <constraint name="CAP02603" index="143" status="BS" slack="1437.149238977848" dual="0"/>
+  <constraint name="CAP02703" index="144" status="BS" slack="1777.6596038416176" dual="0"/>
+  <constraint name="CAP02803" index="145" status="BS" slack="1327.9061073105881" dual="0"/>
+  <constraint name="CAP02903" index="146" status="BS" slack="391.16650804413155" dual="0"/>
+  <constraint name="CAP03003" index="147" status="BS" slack="447.87705193007548" dual="0"/>
+  <constraint name="CAP03103" index="148" status="BS" slack="462.97708171132314" dual="0"/>
+  <constraint name="CAP03203" index="149" status="BS" slack="1169.2667589106013" dual="0"/>
+  <constraint name="CAP03303" index="150" status="BS" slack="1129.5647964736493" dual="0"/>
+  <constraint name="CAP03403" index="151" status="BS" slack="1876.0887146917682" dual="0"/>
+  <constraint name="CAP03503" index="152" status="BS" slack="104.09998522460873" dual="0"/>
+  <constraint name="CAP03603" index="153" status="BS" slack="1304.3738706015531" dual="0"/>
+  <constraint name="CAP03703" index="154" status="BS" slack="2669.3358270061644" dual="0"/>
+  <constraint name="CAP03803" index="155" status="BS" slack="961.26426745441381" dual="0"/>
+  <constraint name="CAP03903" index="156" status="BS" slack="317.46334365458392" dual="0"/>
+  <constraint name="CAP04003" index="157" status="BS" slack="85.136815192890595" dual="0"/>
+  <constraint name="CAP04103" index="158" status="BS" slack="644.03795162779147" dual="0"/>
+  <constraint name="CAP04203" index="159" status="BS" slack="878.16282060372305" dual="0"/>
+  <constraint name="CAP04303" index="160" status="BS" slack="964.82008436650972" dual="0"/>
+  <constraint name="CAP04403" index="161" status="BS" slack="264.01378487597299" dual="0"/>
+  <constraint name="CAP04503" index="162" status="BS" slack="838.90285991503902" dual="0"/>
+  <constraint name="CAP04603" index="163" status="BS" slack="1340.4681064531085" dual="0"/>
+  <constraint name="CAP04703" index="164" status="BS" slack="1280.1211941021322" dual="0"/>
+  <constraint name="CAP04803" index="165" status="BS" slack="721.79577145957148" dual="0"/>
+  <constraint name="CAP04903" index="166" status="BS" slack="611.55867202582488" dual="0"/>
+  <constraint name="CAP05003" index="167" status="BS" slack="580.11768336804437" dual="0"/>
+  <constraint name="CAP05103" index="168" status="BS" slack="620.94174617659439" dual="0"/>
+  <constraint name="CAP05203" index="169" status="BS" slack="1802.8521412843509" dual="0"/>
+  <constraint name="CAP05303" index="170" status="BS" slack="501.45226897281526" dual="0"/>
+  <constraint name="CAP05403" index="171" status="BS" slack="655.59699066779785" dual="0"/>
+  <constraint name="CAP05503" index="172" status="BS" slack="1698.1091853160378" dual="0"/>
+  <constraint name="CAP05603" index="173" status="BS" slack="1048.727712218031" dual="0"/>
+  <constraint name="CAP05703" index="174" status="BS" slack="953.97006800207078" dual="0"/>
+  <constraint name="CAP05803" index="175" status="BS" slack="1047.8703022866123" dual="0"/>
+  <constraint name="CAP05903" index="176" status="BS" slack="710.80343386574862" dual="0"/>
+  <constraint name="CAP06003" index="177" status="BS" slack="3912.919273674534" dual="0"/>
+  <constraint name="CAP06103" index="178" status="BS" slack="3404.7779663821839" dual="0"/>
+  <constraint name="CAP06203" index="179" status="BS" slack="449.40010306866554" dual="0"/>
+  <constraint name="CAP06303" index="180" status="BS" slack="3189.0988005122726" dual="0"/>
+  <constraint name="CAP06403" index="181" status="BS" slack="1811.0914534274898" dual="0"/>
+  <constraint name="CAP06503" index="182" status="BS" slack="891.63907090164719" dual="0"/>
+  <constraint name="CAP00104" index="183" status="BS" slack="18164.205130499995" dual="0"/>
+  <constraint name="CAP00204" index="184" status="BS" slack="1858.1542132317729" dual="0"/>
+  <constraint name="CAP00304" index="185" status="BS" slack="4980.6700000000001" dual="0"/>
+  <constraint name="CAP00404" index="186" status="BS" slack="4321.7764399999996" dual="0"/>
+  <constraint name="CAP00504" index="187" status="BS" slack="23585.382202400004" dual="0"/>
+  <constraint name="CAP00604" index="188" status="BS" slack="6280.6472925905446" dual="0"/>
+  <constraint name="CAP00704" index="189" status="BS" slack="10979.894983499998" dual="0"/>
   <constraint name="CAP00804" index="190" status="BS" slack="1167.47" dual="0"/>
   <constraint name="CAP00904" index="191" status="BS" slack="38505" dual="0"/>
-  <constraint name="CAP01004" index="192" status="BS" slack="25456.8572282343" dual="0"/>
-  <constraint name="CAP01104" index="193" status="BS" slack="585.56878422569" dual="0"/>
-  <constraint name="CAP01204" index="194" status="BS" slack="2472.09" dual="0"/>
+  <constraint name="CAP01004" index="192" status="BS" slack="25456.857228234341" dual="0"/>
+  <constraint name="CAP01104" index="193" status="BS" slack="585.5687842256898" dual="0"/>
+  <constraint name="CAP01204" index="194" status="BS" slack="2472.0900000000001" dual="0"/>
   <constraint name="CAP01304" index="195" status="BS" slack="1556" dual="0"/>
   <constraint name="CAP01404" index="196" status="BS" slack="6239.75" dual="0"/>
-  <constraint name="CAP01504" index="197" status="BS" slack="519.979" dual="0"/>
-  <constraint name="CAP01604" index="198" status="BS" slack="519.979" dual="0"/>
-  <constraint name="CAP01704" index="199" status="BS" slack="519.979" dual="0"/>
+  <constraint name="CAP01504" index="197" status="BS" slack="519.97900000000004" dual="0"/>
+  <constraint name="CAP01604" index="198" status="BS" slack="519.97900000000004" dual="0"/>
+  <constraint name="CAP01704" index="199" status="BS" slack="519.97900000000004" dual="0"/>
   <constraint name="CAP01804" index="200" status="BS" slack="1039.96" dual="0"/>
-  <constraint name="CAP01904" index="201" status="BS" slack="585.415402996147" dual="0"/>
-  <constraint name="CAP02004" index="202" status="BS" slack="902.571062874198" dual="0"/>
-  <constraint name="CAP02104" index="203" status="BS" slack="788.643465670951" dual="0"/>
+  <constraint name="CAP01904" index="201" status="BS" slack="585.41540299614712" dual="0"/>
+  <constraint name="CAP02004" index="202" status="BS" slack="902.57106287419799" dual="0"/>
+  <constraint name="CAP02104" index="203" status="BS" slack="788.64346567095129" dual="0"/>
   <constraint name="CAP02204" index="204" status="LL" slack="0" dual="0"/>
-  <constraint name="CAP02304" index="205" status="BS" slack="625.785981534667" dual="0"/>
-  <constraint name="CAP02404" index="206" status="BS" slack="571.409537614205" dual="0"/>
-  <constraint name="CAP02504" index="207" status="BS" slack="463.967578521567" dual="0"/>
-  <constraint name="CAP02604" index="208" status="BS" slack="1506.4201057035" dual="0"/>
-  <constraint name="CAP02704" index="209" status="BS" slack="1854.00440882398" dual="0"/>
-  <constraint name="CAP02804" index="210" status="BS" slack="1371.31558461916" dual="0"/>
-  <constraint name="CAP02904" index="211" status="BS" slack="409.866755517082" dual="0"/>
-  <constraint name="CAP03004" index="212" status="BS" slack="469.352005690478" dual="0"/>
-  <constraint name="CAP03104" index="213" status="BS" slack="477.572996274343" dual="0"/>
-  <constraint name="CAP03204" index="214" status="BS" slack="1225.56602015405" dual="0"/>
-  <constraint name="CAP03304" index="215" status="BS" slack="1174.53694515288" dual="0"/>
-  <constraint name="CAP03404" index="216" status="BS" slack="1982.61072542474" dual="0"/>
-  <constraint name="CAP03504" index="217" status="BS" slack="106.815840379717" dual="0"/>
-  <constraint name="CAP03604" index="218" status="BS" slack="1308.45705134302" dual="0"/>
-  <constraint name="CAP03704" index="219" status="BS" slack="2764.72806248326" dual="0"/>
-  <constraint name="CAP03804" index="220" status="BS" slack="1053.16673113007" dual="0"/>
-  <constraint name="CAP03904" index="221" status="BS" slack="318.067525596698" dual="0"/>
-  <constraint name="CAP04004" index="222" status="BS" slack="156.413113905668" dual="0"/>
-  <constraint name="CAP04104" index="223" status="BS" slack="677.269246767387" dual="0"/>
-  <constraint name="CAP04204" index="224" status="BS" slack="936.710651316761" dual="0"/>
-  <constraint name="CAP04304" index="225" status="BS" slack="1045.92737721461" dual="0"/>
-  <constraint name="CAP04404" index="226" status="BS" slack="294.431080747559" dual="0"/>
-  <constraint name="CAP04504" index="227" status="BS" slack="916.4335339467" dual="0"/>
-  <constraint name="CAP04604" index="228" status="BS" slack="1384.43169645676" dual="0"/>
-  <constraint name="CAP04704" index="229" status="BS" slack="1324.26098333752" dual="0"/>
-  <constraint name="CAP04804" index="230" status="BS" slack="723.343714252044" dual="0"/>
-  <constraint name="CAP04904" index="231" status="BS" slack="654.05454587506" dual="0"/>
-  <constraint name="CAP05004" index="232" status="BS" slack="631.478003265021" dual="0"/>
-  <constraint name="CAP05104" index="233" status="BS" slack="663.043949802816" dual="0"/>
-  <constraint name="CAP05204" index="234" status="BS" slack="1806.3550547249" dual="0"/>
-  <constraint name="CAP05304" index="235" status="BS" slack="539.379438670704" dual="0"/>
-  <constraint name="CAP05404" index="236" status="BS" slack="690.624148459755" dual="0"/>
-  <constraint name="CAP05504" index="237" status="BS" slack="1698.06812518396" dual="0"/>
-  <constraint name="CAP05604" index="238" status="BS" slack="1053.4652986859" dual="0"/>
-  <constraint name="CAP05704" index="239" status="BS" slack="958.36440710659" dual="0"/>
-  <constraint name="CAP05804" index="240" status="BS" slack="1052.45059592618" dual="0"/>
-  <constraint name="CAP05904" index="241" status="BS" slack="715.221370591857" dual="0"/>
-  <constraint name="CAP06004" index="242" status="BS" slack="4054.63394733658" dual="0"/>
-  <constraint name="CAP06104" index="243" status="BS" slack="3602.4" dual="0"/>
-  <constraint name="CAP06204" index="244" status="BS" slack="706.1" dual="0"/>
-  <constraint name="CAP06304" index="245" status="BS" slack="3243.9576298" dual="0"/>
-  <constraint name="CAP06404" index="246" status="BS" slack="1896.72009054741" dual="0"/>
-  <constraint name="CAP06504" index="247" status="BS" slack="2199.28916031326" dual="0"/>
-  <constraint name="CAP00105" index="248" status="BS" slack="20205.4094569079" dual="0"/>
-  <constraint name="CAP00205" index="249" status="BS" slack="1325.74618226355" dual="0"/>
-  <constraint name="CAP00305" index="250" status="BS" slack="5702.73374342504" dual="0"/>
-  <constraint name="CAP00405" index="251" status="BS" slack="5476.77231908552" dual="0"/>
-  <constraint name="CAP00505" index="252" status="BS" slack="25559.4070291213" dual="0"/>
-  <constraint name="CAP00605" index="253" status="BS" slack="3486.75013793152" dual="0"/>
-  <constraint name="CAP00705" index="254" status="BS" slack="11252.5689273" dual="0"/>
+  <constraint name="CAP02304" index="205" status="BS" slack="625.78598153466669" dual="0"/>
+  <constraint name="CAP02404" index="206" status="BS" slack="571.40953761420496" dual="0"/>
+  <constraint name="CAP02504" index="207" status="BS" slack="463.96757852156679" dual="0"/>
+  <constraint name="CAP02604" index="208" status="BS" slack="1506.4201057035004" dual="0"/>
+  <constraint name="CAP02704" index="209" status="BS" slack="1854.0044088239838" dual="0"/>
+  <constraint name="CAP02804" index="210" status="BS" slack="1371.3155846191603" dual="0"/>
+  <constraint name="CAP02904" index="211" status="BS" slack="409.86675551708163" dual="0"/>
+  <constraint name="CAP03004" index="212" status="BS" slack="469.35200569047777" dual="0"/>
+  <constraint name="CAP03104" index="213" status="BS" slack="477.57299627434287" dual="0"/>
+  <constraint name="CAP03204" index="214" status="BS" slack="1225.5660201540477" dual="0"/>
+  <constraint name="CAP03304" index="215" status="BS" slack="1174.5369451528793" dual="0"/>
+  <constraint name="CAP03404" index="216" status="BS" slack="1982.6107254247436" dual="0"/>
+  <constraint name="CAP03504" index="217" status="BS" slack="106.81584037971697" dual="0"/>
+  <constraint name="CAP03604" index="218" status="BS" slack="1308.4570513430226" dual="0"/>
+  <constraint name="CAP03704" index="219" status="BS" slack="2764.7280624832638" dual="0"/>
+  <constraint name="CAP03804" index="220" status="BS" slack="1053.1667311300721" dual="0"/>
+  <constraint name="CAP03904" index="221" status="BS" slack="318.06752559669815" dual="0"/>
+  <constraint name="CAP04004" index="222" status="BS" slack="156.41311390566779" dual="0"/>
+  <constraint name="CAP04104" index="223" status="BS" slack="677.26924676738724" dual="0"/>
+  <constraint name="CAP04204" index="224" status="BS" slack="936.71065131676119" dual="0"/>
+  <constraint name="CAP04304" index="225" status="BS" slack="1045.9273772146096" dual="0"/>
+  <constraint name="CAP04404" index="226" status="BS" slack="294.43108074755884" dual="0"/>
+  <constraint name="CAP04504" index="227" status="BS" slack="916.43353394669964" dual="0"/>
+  <constraint name="CAP04604" index="228" status="BS" slack="1384.4316964567568" dual="0"/>
+  <constraint name="CAP04704" index="229" status="BS" slack="1324.2609833375207" dual="0"/>
+  <constraint name="CAP04804" index="230" status="BS" slack="723.34371425204404" dual="0"/>
+  <constraint name="CAP04904" index="231" status="BS" slack="654.0545458750596" dual="0"/>
+  <constraint name="CAP05004" index="232" status="BS" slack="631.47800326502102" dual="0"/>
+  <constraint name="CAP05104" index="233" status="BS" slack="663.0439498028162" dual="0"/>
+  <constraint name="CAP05204" index="234" status="BS" slack="1806.3550547249031" dual="0"/>
+  <constraint name="CAP05304" index="235" status="BS" slack="539.37943867070408" dual="0"/>
+  <constraint name="CAP05404" index="236" status="BS" slack="690.62414845975468" dual="0"/>
+  <constraint name="CAP05504" index="237" status="BS" slack="1698.0681251839624" dual="0"/>
+  <constraint name="CAP05604" index="238" status="BS" slack="1053.4652986859016" dual="0"/>
+  <constraint name="CAP05704" index="239" status="BS" slack="958.36440710658962" dual="0"/>
+  <constraint name="CAP05804" index="240" status="BS" slack="1052.450595926183" dual="0"/>
+  <constraint name="CAP05904" index="241" status="BS" slack="715.22137059185673" dual="0"/>
+  <constraint name="CAP06004" index="242" status="BS" slack="4054.6339473365765" dual="0"/>
+  <constraint name="CAP06104" index="243" status="BS" slack="3602.4000000000001" dual="0"/>
+  <constraint name="CAP06204" index="244" status="BS" slack="706.09999999999991" dual="0"/>
+  <constraint name="CAP06304" index="245" status="BS" slack="3243.9576297999997" dual="0"/>
+  <constraint name="CAP06404" index="246" status="BS" slack="1896.7200905474074" dual="0"/>
+  <constraint name="CAP06504" index="247" status="BS" slack="2199.2891603132648" dual="0"/>
+  <constraint name="CAP00105" index="248" status="BS" slack="20205.409456907939" dual="0"/>
+  <constraint name="CAP00205" index="249" status="BS" slack="1325.746182263546" dual="0"/>
+  <constraint name="CAP00305" index="250" status="BS" slack="5702.7337434250439" dual="0"/>
+  <constraint name="CAP00405" index="251" status="BS" slack="5476.7723190855158" dual="0"/>
+  <constraint name="CAP00505" index="252" status="BS" slack="25559.407029121303" dual="0"/>
+  <constraint name="CAP00605" index="253" status="BS" slack="3486.7501379315199" dual="0"/>
+  <constraint name="CAP00705" index="254" status="BS" slack="11252.568927299997" dual="0"/>
   <constraint name="CAP00805" index="255" status="BS" slack="1307.22" dual="0"/>
   <constraint name="CAP00905" index="256" status="BS" slack="39988" dual="0"/>
-  <constraint name="CAP01005" index="257" status="BS" slack="25724.7086422977" dual="0"/>
+  <constraint name="CAP01005" index="257" status="BS" slack="25724.708642297654" dual="0"/>
   <constraint name="CAP01105" index="258" status="LL" slack="0" dual="0"/>
-  <constraint name="CAP01205" index="259" status="BS" slack="2762.1" dual="0"/>
+  <constraint name="CAP01205" index="259" status="BS" slack="2762.0999999999999" dual="0"/>
   <constraint name="CAP01305" index="260" status="BS" slack="1615" dual="0"/>
-  <constraint name="CAP01405" index="261" status="BS" slack="6479.74" dual="0"/>
-  <constraint name="CAP01505" index="262" status="BS" slack="539.978" dual="0"/>
-  <constraint name="CAP01605" index="263" status="BS" slack="398.279927829955" dual="0"/>
-  <constraint name="CAP01705" index="264" status="BS" slack="376.654495304004" dual="0"/>
+  <constraint name="CAP01405" index="261" status="BS" slack="6479.7399999999998" dual="0"/>
+  <constraint name="CAP01505" index="262" status="BS" slack="539.97799999999995" dual="0"/>
+  <constraint name="CAP01605" index="263" status="BS" slack="398.27992782995545" dual="0"/>
+  <constraint name="CAP01705" index="264" status="BS" slack="376.65449530400394" dual="0"/>
   <constraint name="CAP01805" index="265" status="BS" slack="1079.96" dual="0"/>
-  <constraint name="CAP01905" index="266" status="BS" slack="581.673999233173" dual="0"/>
-  <constraint name="CAP02005" index="267" status="BS" slack="906.823655970167" dual="0"/>
-  <constraint name="CAP02105" index="268" status="BS" slack="787.986034330909" dual="0"/>
-  <constraint name="CAP02205" index="269" status="BS" slack="0.00121126127068705" dual="0"/>
-  <constraint name="CAP02305" index="270" status="BS" slack="625.942437632" dual="0"/>
-  <constraint name="CAP02405" index="271" status="BS" slack="571.387720229777" dual="0"/>
-  <constraint name="CAP02505" index="272" status="BS" slack="471.031921055335" dual="0"/>
-  <constraint name="CAP02605" index="273" status="BS" slack="1506.53102648684" dual="0"/>
-  <constraint name="CAP02705" index="274" status="BS" slack="1880.37931943667" dual="0"/>
-  <constraint name="CAP02805" index="275" status="BS" slack="1395.92437301051" dual="0"/>
-  <constraint name="CAP02905" index="276" status="BS" slack="409.834498308508" dual="0"/>
-  <constraint name="CAP03005" index="277" status="BS" slack="469.332165200341" dual="0"/>
-  <constraint name="CAP03105" index="278" status="BS" slack="500.396868590492" dual="0"/>
-  <constraint name="CAP03205" index="279" status="BS" slack="1225.67903703249" dual="0"/>
-  <constraint name="CAP03305" index="280" status="BS" slack="1276.02483479885" dual="0"/>
-  <constraint name="CAP03405" index="281" status="BS" slack="2225.36751648425" dual="0"/>
-  <constraint name="CAP03505" index="282" status="BS" slack="110.585807700472" dual="0"/>
+  <constraint name="CAP01905" index="266" status="BS" slack="581.67399923317328" dual="0"/>
+  <constraint name="CAP02005" index="267" status="BS" slack="906.82365597016701" dual="0"/>
+  <constraint name="CAP02105" index="268" status="BS" slack="787.98603433090932" dual="0"/>
+  <constraint name="CAP02205" index="269" status="BS" slack="0.0012112612706870474" dual="0"/>
+  <constraint name="CAP02305" index="270" status="BS" slack="625.94243763200006" dual="0"/>
+  <constraint name="CAP02405" index="271" status="BS" slack="571.38772022977662" dual="0"/>
+  <constraint name="CAP02505" index="272" status="BS" slack="471.03192105533486" dual="0"/>
+  <constraint name="CAP02605" index="273" status="BS" slack="1506.5310264868426" dual="0"/>
+  <constraint name="CAP02705" index="274" status="BS" slack="1880.3793194366694" dual="0"/>
+  <constraint name="CAP02805" index="275" status="BS" slack="1395.9243730105093" dual="0"/>
+  <constraint name="CAP02905" index="276" status="BS" slack="409.83449830850799" dual="0"/>
+  <constraint name="CAP03005" index="277" status="BS" slack="469.33216520034057" dual="0"/>
+  <constraint name="CAP03105" index="278" status="BS" slack="500.39686859049209" dual="0"/>
+  <constraint name="CAP03205" index="279" status="BS" slack="1225.6790370324936" dual="0"/>
+  <constraint name="CAP03305" index="280" status="BS" slack="1276.0248347988534" dual="0"/>
+  <constraint name="CAP03405" index="281" status="BS" slack="2225.367516484253" dual="0"/>
+  <constraint name="CAP03505" index="282" status="BS" slack="110.58580770047169" dual="0"/>
   <constraint name="CAP03605" index="283" status="BS" slack="1360.8" dual="0"/>
-  <constraint name="CAP03705" index="284" status="BS" slack="2986.10359333905" dual="0"/>
-  <constraint name="CAP03805" index="285" status="BS" slack="1226.22832218071" dual="0"/>
-  <constraint name="CAP03905" index="286" status="BS" slack="330.112189752358" dual="0"/>
-  <constraint name="CAP04005" index="287" status="BS" slack="282.637148470095" dual="0"/>
-  <constraint name="CAP04105" index="288" status="BS" slack="743.277206904333" dual="0"/>
-  <constraint name="CAP04205" index="289" status="BS" slack="1072.52964444661" dual="0"/>
-  <constraint name="CAP04305" index="290" status="BS" slack="1189.13424911463" dual="0"/>
-  <constraint name="CAP04405" index="291" status="BS" slack="358.0471292744" dual="0"/>
-  <constraint name="CAP04505" index="292" status="BS" slack="1068.77653940711" dual="0"/>
-  <constraint name="CAP04605" index="293" status="BS" slack="1491.04395768427" dual="0"/>
-  <constraint name="CAP04705" index="294" status="BS" slack="1449.65548185075" dual="0"/>
-  <constraint name="CAP04805" index="295" status="BS" slack="751.68" dual="0"/>
-  <constraint name="CAP04905" index="296" status="BS" slack="735.668097366612" dual="0"/>
-  <constraint name="CAP05005" index="297" status="BS" slack="726.982551838769" dual="0"/>
-  <constraint name="CAP05105" index="298" status="BS" slack="742.988003129079" dual="0"/>
+  <constraint name="CAP03705" index="284" status="BS" slack="2986.1035933390508" dual="0"/>
+  <constraint name="CAP03805" index="285" status="BS" slack="1226.2283221807058" dual="0"/>
+  <constraint name="CAP03905" index="286" status="BS" slack="330.11218975235846" dual="0"/>
+  <constraint name="CAP04005" index="287" status="BS" slack="282.63714847009498" dual="0"/>
+  <constraint name="CAP04105" index="288" status="BS" slack="743.27720690433273" dual="0"/>
+  <constraint name="CAP04205" index="289" status="BS" slack="1072.5296444466067" dual="0"/>
+  <constraint name="CAP04305" index="290" status="BS" slack="1189.1342491146311" dual="0"/>
+  <constraint name="CAP04405" index="291" status="BS" slack="358.04712927440022" dual="0"/>
+  <constraint name="CAP04505" index="292" status="BS" slack="1068.7765394071132" dual="0"/>
+  <constraint name="CAP04605" index="293" status="BS" slack="1491.0439576842662" dual="0"/>
+  <constraint name="CAP04705" index="294" status="BS" slack="1449.6554818507468" dual="0"/>
+  <constraint name="CAP04805" index="295" status="BS" slack="751.67999999999995" dual="0"/>
+  <constraint name="CAP04905" index="296" status="BS" slack="735.66809736661151" dual="0"/>
+  <constraint name="CAP05005" index="297" status="BS" slack="726.98255183876938" dual="0"/>
+  <constraint name="CAP05105" index="298" status="BS" slack="742.98800312907895" dual="0"/>
   <constraint name="CAP05205" index="299" status="BS" slack="1879.2" dual="0"/>
-  <constraint name="CAP05305" index="300" status="BS" slack="612.237422956805" dual="0"/>
-  <constraint name="CAP05405" index="301" status="BS" slack="772.528652702325" dual="0"/>
-  <constraint name="CAP05505" index="302" status="BS" slack="1763.11557846462" dual="0"/>
-  <constraint name="CAP05605" index="303" status="BS" slack="1094.49005533962" dual="0"/>
-  <constraint name="CAP05705" index="304" status="BS" slack="997.570401290094" dual="0"/>
-  <constraint name="CAP05805" index="305" status="BS" slack="1094.01986900943" dual="0"/>
-  <constraint name="CAP05905" index="306" status="BS" slack="744.576681415094" dual="0"/>
-  <constraint name="CAP06005" index="307" status="BS" slack="4024.62204" dual="0"/>
-  <constraint name="CAP06105" index="308" status="BS" slack="3601.1" dual="0"/>
-  <constraint name="CAP06205" index="309" status="BS" slack="694.4" dual="0"/>
-  <constraint name="CAP06305" index="310" status="BS" slack="3467.76606434129" dual="0"/>
-  <constraint name="CAP06405" index="311" status="BS" slack="1899.0140094" dual="0"/>
-  <constraint name="CAP06505" index="312" status="BS" slack="1525.60603767" dual="0"/>
-  <constraint name="CAP00106" index="313" status="BS" slack="21857.8700100315" dual="0"/>
-  <constraint name="CAP00206" index="314" status="BS" slack="690.96" dual="0"/>
-  <constraint name="CAP00306" index="315" status="BS" slack="5590.4398988448" dual="0"/>
-  <constraint name="CAP00406" index="316" status="BS" slack="5096.29676767177" dual="0"/>
-  <constraint name="CAP00506" index="317" status="BS" slack="23864.3798354128" dual="0"/>
-  <constraint name="CAP00606" index="318" status="BS" slack="830.349999999999" dual="0"/>
-  <constraint name="CAP00706" index="319" status="BS" slack="10539" dual="0"/>
+  <constraint name="CAP05305" index="300" status="BS" slack="612.23742295680518" dual="0"/>
+  <constraint name="CAP05405" index="301" status="BS" slack="772.5286527023253" dual="0"/>
+  <constraint name="CAP05505" index="302" status="BS" slack="1763.1155784646226" dual="0"/>
+  <constraint name="CAP05605" index="303" status="BS" slack="1094.4900553396226" dual="0"/>
+  <constraint name="CAP05705" index="304" status="BS" slack="997.57040129009431" dual="0"/>
+  <constraint name="CAP05805" index="305" status="BS" slack="1094.0198690094339" dual="0"/>
+  <constraint name="CAP05905" index="306" status="BS" slack="744.5766814150943" dual="0"/>
+  <constraint name="CAP06005" index="307" status="BS" slack="4024.6220399999997" dual="0"/>
+  <constraint name="CAP06105" index="308" status="BS" slack="3601.0999999999999" dual="0"/>
+  <constraint name="CAP06205" index="309" status="BS" slack="694.4000000000002" dual="0"/>
+  <constraint name="CAP06305" index="310" status="BS" slack="3467.766064341286" dual="0"/>
+  <constraint name="CAP06405" index="311" status="BS" slack="1899.0140093999998" dual="0"/>
+  <constraint name="CAP06505" index="312" status="BS" slack="1525.6060376699972" dual="0"/>
+  <constraint name="CAP00106" index="313" status="BS" slack="21857.870010031485" dual="0"/>
+  <constraint name="CAP00206" index="314" status="BS" slack="690.95999999999958" dual="0"/>
+  <constraint name="CAP00306" index="315" status="BS" slack="5590.4398988448038" dual="0"/>
+  <constraint name="CAP00406" index="316" status="BS" slack="5096.2967676717744" dual="0"/>
+  <constraint name="CAP00506" index="317" status="BS" slack="23864.379835412754" dual="0"/>
+  <constraint name="CAP00606" index="318" status="BS" slack="830.34999999999854" dual="0"/>
+  <constraint name="CAP00706" index="319" status="BS" slack="10538.999999999998" dual="0"/>
   <constraint name="CAP00806" index="320" status="BS" slack="1481.22" dual="0"/>
   <constraint name="CAP00906" index="321" status="BS" slack="36983" dual="0"/>
-  <constraint name="CAP01006" index="322" status="BS" slack="25110.12" dual="0"/>
+  <constraint name="CAP01006" index="322" status="BS" slack="25110.119999999999" dual="0"/>
   <constraint name="CAP01106" index="323" status="BS" slack="5775" dual="0"/>
   <constraint name="CAP01206" index="324" status="BS" slack="2557.5" dual="0"/>
   <constraint name="CAP01306" index="325" status="BS" slack="1492" dual="0"/>
-  <constraint name="CAP01406" index="326" status="BS" slack="1999.92" dual="0"/>
+  <constraint name="CAP01406" index="326" status="BS" slack="1999.9200000000001" dual="0"/>
   <constraint name="CAP01506" index="327" status="BS" slack="166.66" dual="0"/>
-  <constraint name="CAP01606" index="328" status="BS" slack="23.5202323282254" dual="0"/>
-  <constraint name="CAP01706" index="329" status="LL" slack="0" dual="-460.073095067535"/>
-  <constraint name="CAP01806" index="330" status="BS" slack="333.32" dual="0"/>
-  <constraint name="CAP01906" index="331" status="BS" slack="565.710661814076" dual="0"/>
-  <constraint name="CAP02006" index="332" status="BS" slack="866.334649750805" dual="0"/>
-  <constraint name="CAP02106" index="333" status="BS" slack="755.587655829962" dual="0"/>
-  <constraint name="CAP02206" index="334" status="LL" slack="0" dual="-3816.18519461352"/>
-  <constraint name="CAP02306" index="335" status="BS" slack="597.567856152" dual="0"/>
-  <constraint name="CAP02406" index="336" status="BS" slack="545.395541870272" dual="0"/>
-  <constraint name="CAP02506" index="337" status="BS" slack="449.617734531879" dual="0"/>
-  <constraint name="CAP02606" index="338" status="BS" slack="1438.15119351844" dual="0"/>
-  <constraint name="CAP02706" index="339" status="BS" slack="1819.89752904988" dual="0"/>
-  <constraint name="CAP02806" index="340" status="BS" slack="1339.38249727911" dual="0"/>
-  <constraint name="CAP02906" index="341" status="BS" slack="391.199678693353" dual="0"/>
-  <constraint name="CAP03006" index="342" status="BS" slack="447.996251422451" dual="0"/>
-  <constraint name="CAP03106" index="343" status="BS" slack="498.132449685328" dual="0"/>
-  <constraint name="CAP03206" index="344" status="BS" slack="1170.03187530975" dual="0"/>
-  <constraint name="CAP03306" index="345" status="BS" slack="1191.04147832547" dual="0"/>
-  <constraint name="CAP03406" index="346" status="BS" slack="2160.56591067925" dual="0"/>
-  <constraint name="CAP03506" index="347" status="BS" slack="101.788025896226" dual="0"/>
+  <constraint name="CAP01606" index="328" status="BS" slack="23.520232328225376" dual="0"/>
+  <constraint name="CAP01706" index="329" status="LL" slack="0" dual="-460.07309506753461"/>
+  <constraint name="CAP01806" index="330" status="BS" slack="333.31999999999999" dual="0"/>
+  <constraint name="CAP01906" index="331" status="BS" slack="565.71066181407593" dual="0"/>
+  <constraint name="CAP02006" index="332" status="BS" slack="866.3346497508054" dual="0"/>
+  <constraint name="CAP02106" index="333" status="BS" slack="755.58765582996182" dual="0"/>
+  <constraint name="CAP02206" index="334" status="LL" slack="0" dual="-3816.185194613523"/>
+  <constraint name="CAP02306" index="335" status="BS" slack="597.56785615199999" dual="0"/>
+  <constraint name="CAP02406" index="336" status="BS" slack="545.39554187027238" dual="0"/>
+  <constraint name="CAP02506" index="337" status="BS" slack="449.61773453187874" dual="0"/>
+  <constraint name="CAP02606" index="338" status="BS" slack="1438.1511935184412" dual="0"/>
+  <constraint name="CAP02706" index="339" status="BS" slack="1819.8975290498779" dual="0"/>
+  <constraint name="CAP02806" index="340" status="BS" slack="1339.3824972791131" dual="0"/>
+  <constraint name="CAP02906" index="341" status="BS" slack="391.19967869335301" dual="0"/>
+  <constraint name="CAP03006" index="342" status="BS" slack="447.99625142245134" dual="0"/>
+  <constraint name="CAP03106" index="343" status="BS" slack="498.13244968532774" dual="0"/>
+  <constraint name="CAP03206" index="344" status="BS" slack="1170.031875309754" dual="0"/>
+  <constraint name="CAP03306" index="345" status="BS" slack="1191.0414783254716" dual="0"/>
+  <constraint name="CAP03406" index="346" status="BS" slack="2160.5659106792455" dual="0"/>
+  <constraint name="CAP03506" index="347" status="BS" slack="101.78802589622642" dual="0"/>
   <constraint name="CAP03606" index="348" status="BS" slack="1260" dual="0"/>
-  <constraint name="CAP03706" index="349" status="BS" slack="2779.78802261792" dual="0"/>
-  <constraint name="CAP03806" index="350" status="BS" slack="1190.46083586085" dual="0"/>
-  <constraint name="CAP03906" index="351" status="BS" slack="305.51521003066" dual="0"/>
+  <constraint name="CAP03706" index="349" status="BS" slack="2779.7880226179245" dual="0"/>
+  <constraint name="CAP03806" index="350" status="BS" slack="1190.4608358608491" dual="0"/>
+  <constraint name="CAP03906" index="351" status="BS" slack="305.5152100306604" dual="0"/>
   <constraint name="CAP04006" index="352" status="BS" slack="342" dual="0"/>
-  <constraint name="CAP04106" index="353" status="BS" slack="691.137329181604" dual="0"/>
-  <constraint name="CAP04206" index="354" status="BS" slack="1067.39908350472" dual="0"/>
-  <constraint name="CAP04306" index="355" status="BS" slack="1121.77512021698" dual="0"/>
-  <constraint name="CAP04406" index="356" status="BS" slack="371.382491191038" dual="0"/>
+  <constraint name="CAP04106" index="353" status="BS" slack="691.13732918160372" dual="0"/>
+  <constraint name="CAP04206" index="354" status="BS" slack="1067.3990835047171" dual="0"/>
+  <constraint name="CAP04306" index="355" status="BS" slack="1121.7751202169811" dual="0"/>
+  <constraint name="CAP04406" index="356" status="BS" slack="371.38249119103773" dual="0"/>
   <constraint name="CAP04506" index="357" status="BS" slack="1044" dual="0"/>
-  <constraint name="CAP04606" index="358" status="BS" slack="1385.60000262264" dual="0"/>
+  <constraint name="CAP04606" index="358" status="BS" slack="1385.6000026226416" dual="0"/>
   <constraint name="CAP04706" index="359" status="BS" slack="1392" dual="0"/>
   <constraint name="CAP04806" index="360" status="BS" slack="696" dual="0"/>
   <constraint name="CAP04906" index="361" status="BS" slack="696" dual="0"/>
   <constraint name="CAP05006" index="362" status="BS" slack="696" dual="0"/>
-  <constraint name="CAP05106" index="363" status="BS" slack="702.835025158019" dual="0"/>
+  <constraint name="CAP05106" index="363" status="BS" slack="702.83502515801888" dual="0"/>
   <constraint name="CAP05206" index="364" status="BS" slack="1740" dual="0"/>
-  <constraint name="CAP05306" index="365" status="BS" slack="585.994475785377" dual="0"/>
-  <constraint name="CAP05406" index="366" status="BS" slack="749.404610997641" dual="0"/>
-  <constraint name="CAP05506" index="367" status="BS" slack="1632.51428796226" dual="0"/>
-  <constraint name="CAP05606" index="368" status="BS" slack="1013.19263197642" dual="0"/>
-  <constraint name="CAP05706" index="369" status="BS" slack="923.251618127358" dual="0"/>
-  <constraint name="CAP05806" index="370" status="BS" slack="1012.68018979009" dual="0"/>
-  <constraint name="CAP05906" index="371" status="BS" slack="689.059913136792" dual="0"/>
-  <constraint name="CAP06006" index="372" status="BS" slack="3846.60788" dual="0"/>
-  <constraint name="CAP06106" index="373" status="BS" slack="3434.4" dual="0"/>
-  <constraint name="CAP06206" index="374" status="BS" slack="640.5" dual="0"/>
-  <constraint name="CAP06306" index="375" status="BS" slack="3423.99808613948" dual="0"/>
-  <constraint name="CAP06406" index="376" status="BS" slack="1814.4" dual="0"/>
-  <constraint name="CAP06506" index="377" status="BS" slack="1895.2" dual="0"/>
-  <constraint name="U0010102" index="378" status="LL" slack="0" dual="-1.24754191114837"/>
-  <constraint name="U0020102" index="379" status="BS" slack="101.789428651507" dual="0"/>
-  <constraint name="U0030102" index="380" status="LL" slack="0" dual="-3.63119207879296"/>
-  <constraint name="U0050102" index="381" status="BS" slack="296321.43582547" dual="0"/>
+  <constraint name="CAP05306" index="365" status="BS" slack="585.9944757853774" dual="0"/>
+  <constraint name="CAP05406" index="366" status="BS" slack="749.4046109976415" dual="0"/>
+  <constraint name="CAP05506" index="367" status="BS" slack="1632.5142879622642" dual="0"/>
+  <constraint name="CAP05606" index="368" status="BS" slack="1013.1926319764151" dual="0"/>
+  <constraint name="CAP05706" index="369" status="BS" slack="923.25161812735848" dual="0"/>
+  <constraint name="CAP05806" index="370" status="BS" slack="1012.6801897900943" dual="0"/>
+  <constraint name="CAP05906" index="371" status="BS" slack="689.05991313679249" dual="0"/>
+  <constraint name="CAP06006" index="372" status="BS" slack="3846.6078800000005" dual="0"/>
+  <constraint name="CAP06106" index="373" status="BS" slack="3434.4000000000001" dual="0"/>
+  <constraint name="CAP06206" index="374" status="BS" slack="640.49999999999977" dual="0"/>
+  <constraint name="CAP06306" index="375" status="BS" slack="3423.9980861394797" dual="0"/>
+  <constraint name="CAP06406" index="376" status="BS" slack="1814.4000000000001" dual="0"/>
+  <constraint name="CAP06506" index="377" status="BS" slack="1895.1999999999998" dual="0"/>
+  <constraint name="U0010102" index="378" status="LL" slack="0" dual="-1.2475419111483717"/>
+  <constraint name="U0020102" index="379" status="BS" slack="101.78942865150748" dual="0"/>
+  <constraint name="U0030102" index="380" status="LL" slack="0" dual="-3.6311920787929646"/>
+  <constraint name="U0050102" index="381" status="BS" slack="296321.43582547037" dual="0"/>
   <constraint name="U0070102" index="382" status="BS" slack="14000" dual="0"/>
   <constraint name="U0080102" index="383" status="BS" slack="7000" dual="0"/>
-  <constraint name="U0090102" index="384" status="LL" slack="0" dual="-0.00398870721906563"/>
-  <constraint name="U0100102" index="385" status="LL" slack="0" dual="-0.00398870721906563"/>
-  <constraint name="U0110102" index="386" status="LL" slack="0" dual="-0.0899999999999999"/>
-  <constraint name="U0120102" index="387" status="BS" slack="65891.0459055009" dual="0"/>
-  <constraint name="U0130102" index="388" status="BS" slack="30557.3714839961" dual="0"/>
-  <constraint name="U0140102" index="389" status="BS" slack="40213.9539497021" dual="0"/>
-  <constraint name="U0150102" index="390" status="BS" slack="14446.3112512124" dual="0"/>
-  <constraint name="U0160102" index="391" status="BS" slack="22271.6919668896" dual="0"/>
-  <constraint name="U0010103" index="392" status="LL" slack="0" dual="-1.496"/>
-  <constraint name="U0020103" index="393" status="LL" slack="0" dual="-1.52"/>
-  <constraint name="U0030103" index="394" status="LL" slack="0" dual="-4.41839899413244"/>
-  <constraint name="U0040103" index="395" status="BS" slack="685.465725102704" dual="0"/>
-  <constraint name="U0050103" index="396" status="LL" slack="0" dual="-50.1143928"/>
-  <constraint name="U0060103" index="397" status="BS" slack="493.284547766722" dual="0"/>
-  <constraint name="U0070103" index="398" status="LL" slack="0" dual="-26.8973184"/>
-  <constraint name="U0080103" index="399" status="LL" slack="0" dual="-26.8973184"/>
-  <constraint name="U0090103" index="400" status="LL" slack="0" dual="-0.313"/>
-  <constraint name="U0100103" index="401" status="LL" slack="0" dual="-0.313"/>
-  <constraint name="U0110103" index="402" status="LL" slack="0" dual="-0.204086255360553"/>
-  <constraint name="U0120103" index="403" status="LL" slack="0" dual="-26.8433184"/>
-  <constraint name="U0130103" index="404" status="LL" slack="0" dual="-26.8433184"/>
-  <constraint name="U0140103" index="405" status="LL" slack="0" dual="-0.208"/>
-  <constraint name="U0150103" index="406" status="LL" slack="0" dual="-0.208"/>
-  <constraint name="U0160103" index="407" status="LL" slack="0" dual="-0.118086255360554"/>
-  <constraint name="U0010104" index="408" status="LL" slack="0" dual="-1.421"/>
-  <constraint name="U0020104" index="409" status="LL" slack="0" dual="-1.443"/>
-  <constraint name="U0030104" index="410" status="LL" slack="0" dual="-1.454"/>
-  <constraint name="U0040104" index="411" status="LL" slack="0" dual="-4.18300000000001"/>
-  <constraint name="U0050104" index="412" status="BS" slack="206349.340055795" dual="0"/>
-  <constraint name="U0060104" index="413" status="LL" slack="0" dual="-12.803964"/>
-  <constraint name="U0070104" index="414" status="LL" slack="0" dual="-0.215999999999999"/>
-  <constraint name="U0080104" index="415" status="LL" slack="0" dual="-0.215999999999999"/>
-  <constraint name="U0090104" index="416" status="LL" slack="0" dual="-0.297"/>
-  <constraint name="U0100104" index="417" status="LL" slack="0" dual="-0.297"/>
-  <constraint name="U0110104" index="418" status="LL" slack="0" dual="-0.249000000000001"/>
-  <constraint name="U0120104" index="419" status="LL" slack="0" dual="-0.166"/>
-  <constraint name="U0130104" index="420" status="LL" slack="0" dual="-0.166"/>
-  <constraint name="U0140104" index="421" status="LL" slack="0" dual="-0.198"/>
-  <constraint name="U0150104" index="422" status="LL" slack="0" dual="-0.198"/>
-  <constraint name="U0160104" index="423" status="LL" slack="0" dual="-0.168"/>
-  <constraint name="U0010105" index="424" status="LL" slack="0" dual="-26.656"/>
-  <constraint name="U0020105" index="425" status="LL" slack="0" dual="-27.079"/>
-  <constraint name="U0030105" index="426" status="LL" slack="0" dual="-19.9955574264325"/>
-  <constraint name="U0040105" index="427" status="LL" slack="0" dual="-78.482"/>
-  <constraint name="U0050105" index="428" status="LL" slack="0" dual="-0.176"/>
-  <constraint name="U0060105" index="429" status="LL" slack="0" dual="-1.51"/>
-  <constraint name="U0070105" index="430" status="LL" slack="0" dual="-4.054"/>
-  <constraint name="U0080105" index="431" status="LL" slack="0" dual="-4.054"/>
-  <constraint name="U0090105" index="432" status="LL" slack="0" dual="-4.58476383471485"/>
-  <constraint name="U0100105" index="433" status="LL" slack="0" dual="-4.58476383471485"/>
-  <constraint name="U0110105" index="434" status="LL" slack="0" dual="-0.237"/>
-  <constraint name="U0120105" index="435" status="LL" slack="0" dual="-3.112"/>
-  <constraint name="U0130105" index="436" status="LL" slack="0" dual="-3.112"/>
-  <constraint name="U0140105" index="437" status="LL" slack="0" dual="-3.713"/>
-  <constraint name="U0150105" index="438" status="LL" slack="0" dual="-3.713"/>
-  <constraint name="U0160105" index="439" status="LL" slack="0" dual="-0.159"/>
-  <constraint name="U0010106" index="440" status="BS" slack="28940.472845397" dual="0"/>
+  <constraint name="U0090102" index="384" status="LL" slack="0" dual="-0.0039887072190656347"/>
+  <constraint name="U0100102" index="385" status="LL" slack="0" dual="-0.0039887072190656347"/>
+  <constraint name="U0110102" index="386" status="LL" slack="0" dual="-0.089999999999999941"/>
+  <constraint name="U0120102" index="387" status="BS" slack="65891.045905500898" dual="0"/>
+  <constraint name="U0130102" index="388" status="BS" slack="30557.371483996121" dual="0"/>
+  <constraint name="U0140102" index="389" status="BS" slack="40213.953949702089" dual="0"/>
+  <constraint name="U0150102" index="390" status="BS" slack="14446.311251212406" dual="0"/>
+  <constraint name="U0160102" index="391" status="BS" slack="22271.69196688963" dual="0"/>
+  <constraint name="U0010103" index="392" status="LL" slack="0" dual="-1.4959999999999987"/>
+  <constraint name="U0020103" index="393" status="LL" slack="0" dual="-1.5200000000000031"/>
+  <constraint name="U0030103" index="394" status="LL" slack="0" dual="-4.4183989941324429"/>
+  <constraint name="U0040103" index="395" status="BS" slack="685.4657251027038" dual="0"/>
+  <constraint name="U0050103" index="396" status="LL" slack="0" dual="-50.11439279999999"/>
+  <constraint name="U0060103" index="397" status="BS" slack="493.28454776672152" dual="0"/>
+  <constraint name="U0070103" index="398" status="LL" slack="0" dual="-26.897318399999996"/>
+  <constraint name="U0080103" index="399" status="LL" slack="0" dual="-26.897318399999996"/>
+  <constraint name="U0090103" index="400" status="LL" slack="0" dual="-0.31299999999999972"/>
+  <constraint name="U0100103" index="401" status="LL" slack="0" dual="-0.31299999999999972"/>
+  <constraint name="U0110103" index="402" status="LL" slack="0" dual="-0.20408625536055316"/>
+  <constraint name="U0120103" index="403" status="LL" slack="0" dual="-26.843318399999998"/>
+  <constraint name="U0130103" index="404" status="LL" slack="0" dual="-26.843318399999998"/>
+  <constraint name="U0140103" index="405" status="LL" slack="0" dual="-0.20799999999999974"/>
+  <constraint name="U0150103" index="406" status="LL" slack="0" dual="-0.20799999999999974"/>
+  <constraint name="U0160103" index="407" status="LL" slack="0" dual="-0.11808625536055377"/>
+  <constraint name="U0010104" index="408" status="LL" slack="0" dual="-1.4210000000000029"/>
+  <constraint name="U0020104" index="409" status="LL" slack="0" dual="-1.4429999999999978"/>
+  <constraint name="U0030104" index="410" status="LL" slack="0" dual="-1.4540000000000006"/>
+  <constraint name="U0040104" index="411" status="LL" slack="0" dual="-4.1830000000000069"/>
+  <constraint name="U0050104" index="412" status="BS" slack="206349.34005579527" dual="0"/>
+  <constraint name="U0060104" index="413" status="LL" slack="0" dual="-12.803964000000001"/>
+  <constraint name="U0070104" index="414" status="LL" slack="0" dual="-0.2159999999999993"/>
+  <constraint name="U0080104" index="415" status="LL" slack="0" dual="-0.2159999999999993"/>
+  <constraint name="U0090104" index="416" status="LL" slack="0" dual="-0.29699999999999971"/>
+  <constraint name="U0100104" index="417" status="LL" slack="0" dual="-0.29699999999999971"/>
+  <constraint name="U0110104" index="418" status="LL" slack="0" dual="-0.24900000000000055"/>
+  <constraint name="U0120104" index="419" status="LL" slack="0" dual="-0.16599999999999993"/>
+  <constraint name="U0130104" index="420" status="LL" slack="0" dual="-0.16599999999999993"/>
+  <constraint name="U0140104" index="421" status="LL" slack="0" dual="-0.19799999999999995"/>
+  <constraint name="U0150104" index="422" status="LL" slack="0" dual="-0.19799999999999995"/>
+  <constraint name="U0160104" index="423" status="LL" slack="0" dual="-0.16799999999999971"/>
+  <constraint name="U0010105" index="424" status="LL" slack="0" dual="-26.655999999999999"/>
+  <constraint name="U0020105" index="425" status="LL" slack="0" dual="-27.079000000000001"/>
+  <constraint name="U0030105" index="426" status="LL" slack="0" dual="-19.995557426432452"/>
+  <constraint name="U0040105" index="427" status="LL" slack="0" dual="-78.481999999999999"/>
+  <constraint name="U0050105" index="428" status="LL" slack="0" dual="-0.17599999999999971"/>
+  <constraint name="U0060105" index="429" status="LL" slack="0" dual="-1.509999999999998"/>
+  <constraint name="U0070105" index="430" status="LL" slack="0" dual="-4.0540000000000003"/>
+  <constraint name="U0080105" index="431" status="LL" slack="0" dual="-4.0540000000000003"/>
+  <constraint name="U0090105" index="432" status="LL" slack="0" dual="-4.5847638347148498"/>
+  <constraint name="U0100105" index="433" status="LL" slack="0" dual="-4.5847638347148498"/>
+  <constraint name="U0110105" index="434" status="LL" slack="0" dual="-0.2370000000000001"/>
+  <constraint name="U0120105" index="435" status="LL" slack="0" dual="-3.1120000000000001"/>
+  <constraint name="U0130105" index="436" status="LL" slack="0" dual="-3.1120000000000001"/>
+  <constraint name="U0140105" index="437" status="LL" slack="0" dual="-3.7130000000000001"/>
+  <constraint name="U0150105" index="438" status="LL" slack="0" dual="-3.7130000000000001"/>
+  <constraint name="U0160105" index="439" status="LL" slack="0" dual="-0.15900000000000025"/>
+  <constraint name="U0010106" index="440" status="BS" slack="28940.472845396966" dual="0"/>
   <constraint name="U0020106" index="441" status="BS" slack="571" dual="0"/>
-  <constraint name="U0030106" index="442" status="LL" slack="0" dual="-7.28644257356755"/>
+  <constraint name="U0030106" index="442" status="LL" slack="0" dual="-7.2864425735675482"/>
   <constraint name="U0040106" index="443" status="BS" slack="2000" dual="0"/>
-  <constraint name="U0050106" index="444" status="LL" slack="0" dual="-3.301"/>
+  <constraint name="U0050106" index="444" status="LL" slack="0" dual="-3.3010000000000002"/>
   <constraint name="U0060106" index="445" status="LL" slack="0" dual="-28.323"/>
   <constraint name="U0070106" index="446" status="BS" slack="13300" dual="0"/>
   <constraint name="U0080106" index="447" status="BS" slack="6700" dual="0"/>
-  <constraint name="U0090106" index="448" status="LL" slack="0" dual="-0.988236165285151"/>
-  <constraint name="U0100106" index="449" status="LL" slack="0" dual="-0.988236165285151"/>
-  <constraint name="U0110106" index="450" status="LL" slack="0" dual="-4.435"/>
+  <constraint name="U0090106" index="448" status="LL" slack="0" dual="-0.98823616528515057"/>
+  <constraint name="U0100106" index="449" status="LL" slack="0" dual="-0.98823616528515057"/>
+  <constraint name="U0110106" index="450" status="LL" slack="0" dual="-4.4349999999999996"/>
   <constraint name="U0120106" index="451" status="BS" slack="133300" dual="0"/>
-  <constraint name="U0130106" index="452" status="BS" slack="66700" dual="0"/>
+  <constraint name="U0130106" index="452" status="BS" slack="66699.999999999985" dual="0"/>
   <constraint name="U0140106" index="453" status="BS" slack="200000" dual="0"/>
   <constraint name="U0150106" index="454" status="BS" slack="100000" dual="0"/>
-  <constraint name="U0160106" index="455" status="LL" slack="0" dual="-2.985"/>
-  <constraint name="I0010101" index="456" status="LL" slack="0" dual="26.8235138578577"/>
+  <constraint name="U0160106" index="455" status="LL" slack="0" dual="-2.9849999999999999"/>
+  <constraint name="I0010101" index="456" status="LL" slack="0" dual="26.823513857857741"/>
   <constraint name="I0010102" index="457" status="LL" slack="0" dual="-100.08"/>
   <constraint name="I0010103" index="458" status="LL" slack="0" dual="0"/>
   <constraint name="I0010104" index="459" status="LL" slack="0" dual="0"/>
   <constraint name="I0010105" index="460" status="LL" slack="0" dual="0"/>
   <constraint name="I0010106" index="461" status="LL" slack="0" dual="0"/>
-  <constraint name="I0020101" index="462" status="LL" slack="0" dual="507.874008299496"/>
+  <constraint name="I0020101" index="462" status="LL" slack="0" dual="507.8740082994957"/>
   <constraint name="I0020102" index="463" status="LL" slack="0" dual="-100.08"/>
   <constraint name="I0020103" index="464" status="LL" slack="0" dual="0"/>
   <constraint name="I0020104" index="465" status="LL" slack="0" dual="0"/>
   <constraint name="I0020105" index="466" status="LL" slack="0" dual="0"/>
   <constraint name="I0020106" index="467" status="LL" slack="0" dual="0"/>
-  <constraint name="I0030101" index="468" status="LL" slack="0" dual="-6.75498251877204"/>
+  <constraint name="I0030101" index="468" status="LL" slack="0" dual="-6.7549825187720369"/>
   <constraint name="I0030102" index="469" status="LL" slack="0" dual="0"/>
   <constraint name="I0030103" index="470" status="LL" slack="0" dual="0"/>
   <constraint name="I0030104" index="471" status="LL" slack="0" dual="0"/>
   <constraint name="I0030105" index="472" status="LL" slack="0" dual="0"/>
-  <constraint name="I0030106" index="473" status="LL" slack="0" dual="13.2581373540306"/>
-  <constraint name="I0040101" index="474" status="LL" slack="0" dual="0.238893545683146"/>
+  <constraint name="I0030106" index="473" status="LL" slack="0" dual="13.258137354030563"/>
+  <constraint name="I0040101" index="474" status="LL" slack="0" dual="0.2388935456831458"/>
   <constraint name="I0040102" index="475" status="LL" slack="0" dual="0"/>
   <constraint name="I0040103" index="476" status="LL" slack="0" dual="0"/>
   <constraint name="I0040104" index="477" status="LL" slack="0" dual="0"/>
   <constraint name="I0040105" index="478" status="LL" slack="0" dual="0"/>
-  <constraint name="I0040106" index="479" status="LL" slack="0" dual="13.2581373540306"/>
-  <constraint name="I0050101" index="480" status="LL" slack="0" dual="516.686390466953"/>
+  <constraint name="I0040106" index="479" status="LL" slack="0" dual="13.258137354030563"/>
+  <constraint name="I0050101" index="480" status="LL" slack="0" dual="516.68639046695307"/>
   <constraint name="I0050102" index="481" status="LL" slack="0" dual="-100.08"/>
   <constraint name="I0050103" index="482" status="LL" slack="0" dual="0"/>
   <constraint name="I0050104" index="483" status="LL" slack="0" dual="0"/>
   <constraint name="I0050105" index="484" status="LL" slack="0" dual="0"/>
-  <constraint name="I0050106" index="485" status="LL" slack="0" dual="3.33318900194847"/>
-  <constraint name="I0060101" index="486" status="LL" slack="0" dual="516.686390466953"/>
+  <constraint name="I0050106" index="485" status="LL" slack="0" dual="3.3331890019484742"/>
+  <constraint name="I0060101" index="486" status="LL" slack="0" dual="516.68639046695307"/>
   <constraint name="I0060102" index="487" status="LL" slack="0" dual="-100.08"/>
   <constraint name="I0060103" index="488" status="LL" slack="0" dual="0"/>
   <constraint name="I0060104" index="489" status="LL" slack="0" dual="0"/>
   <constraint name="I0060105" index="490" status="LL" slack="0" dual="0"/>
-  <constraint name="I0060106" index="491" status="LL" slack="0" dual="3.33318900194847"/>
-  <constraint name="I0070101" index="492" status="LL" slack="0" dual="1.12927809339061"/>
+  <constraint name="I0060106" index="491" status="LL" slack="0" dual="3.3331890019484742"/>
+  <constraint name="I0070101" index="492" status="LL" slack="0" dual="1.1292780933906075"/>
   <constraint name="I0070102" index="493" status="LL" slack="0" dual="0"/>
   <constraint name="I0070103" index="494" status="LL" slack="0" dual="0"/>
   <constraint name="I0070104" index="495" status="LL" slack="0" dual="0"/>
   <constraint name="I0070105" index="496" status="LL" slack="0" dual="0"/>
-  <constraint name="I0070106" index="497" status="LL" slack="0" dual="3.72614317793016"/>
-  <constraint name="I0080101" index="498" status="LL" slack="0" dual="1.12927809339061"/>
+  <constraint name="I0070106" index="497" status="LL" slack="0" dual="3.7261431779301581"/>
+  <constraint name="I0080101" index="498" status="LL" slack="0" dual="1.1292780933906075"/>
   <constraint name="I0080102" index="499" status="LL" slack="0" dual="0"/>
   <constraint name="I0080103" index="500" status="LL" slack="0" dual="0"/>
   <constraint name="I0080104" index="501" status="LL" slack="0" dual="0"/>
   <constraint name="I0080105" index="502" status="LL" slack="0" dual="0"/>
-  <constraint name="I0080106" index="503" status="LL" slack="0" dual="3.72614317793016"/>
-  <constraint name="I0090101" index="504" status="LL" slack="0" dual="0.311532148503454"/>
-  <constraint name="I0090102" index="505" status="LL" slack="0" dual="0.125229738008577"/>
+  <constraint name="I0080106" index="503" status="LL" slack="0" dual="3.7261431779301581"/>
+  <constraint name="I0090101" index="504" status="LL" slack="0" dual="0.31153214850345423"/>
+  <constraint name="I0090102" index="505" status="LL" slack="0" dual="0.12522973800857673"/>
   <constraint name="I0090103" index="506" status="LL" slack="0" dual="0"/>
   <constraint name="I0090104" index="507" status="LL" slack="0" dual="0"/>
   <constraint name="I0090105" index="508" status="LL" slack="0" dual="0"/>
   <constraint name="I0090106" index="509" status="LL" slack="0" dual="0"/>
-  <constraint name="I0100101" index="510" status="LL" slack="0" dual="11.8304110839621"/>
+  <constraint name="I0100101" index="510" status="LL" slack="0" dual="11.830411083962066"/>
   <constraint name="I0100102" index="511" status="LL" slack="0" dual="0"/>
   <constraint name="I0100103" index="512" status="LL" slack="0" dual="0"/>
   <constraint name="I0100104" index="513" status="LL" slack="0" dual="0"/>
@@ -543,99 +543,99 @@
   <constraint name="I0100106" index="515" status="LL" slack="0" dual="100.08"/>
  </linearConstraints>
  <variables>
-  <variable name="Y0010102" index="0" status="BS" value="15031.3879347075" reducedCost="0"/>
-  <variable name="Y0010103" index="1" status="LL" value="0" reducedCost="0.054000000000002"/>
-  <variable name="Y0010104" index="2" status="LL" value="0" reducedCost="0.0510000000000019"/>
-  <variable name="Y0010105" index="3" status="LL" value="0" reducedCost="0.0489999999999995"/>
-  <variable name="Y0010106" index="4" status="LL" value="0" reducedCost="0.0459999999999994"/>
-  <variable name="Y0020102" index="5" status="BS" value="6968.61206529248" reducedCost="0"/>
+  <variable name="Y0010102" index="0" status="BS" value="15031.387934707518" reducedCost="0"/>
+  <variable name="Y0010103" index="1" status="LL" value="0" reducedCost="0.054000000000002046"/>
+  <variable name="Y0010104" index="2" status="LL" value="0" reducedCost="0.051000000000001933"/>
+  <variable name="Y0010105" index="3" status="LL" value="0" reducedCost="0.048999999999999488"/>
+  <variable name="Y0010106" index="4" status="LL" value="0" reducedCost="0.045999999999999375"/>
+  <variable name="Y0020102" index="5" status="BS" value="6968.6120652924819" reducedCost="0"/>
   <variable name="Y0020103" index="6" status="BS" value="21000" reducedCost="0"/>
-  <variable name="Y0020104" index="7" status="BS" value="40000" reducedCost="0"/>
-  <variable name="Y0020105" index="8" status="BS" value="40000" reducedCost="0"/>
-  <variable name="Y0020106" index="9" status="BS" value="11059.527154603" reducedCost="0"/>
-  <variable name="Y0030102" index="10" status="LL" value="0" reducedCost="2.17074959868191"/>
-  <variable name="Y0030103" index="11" status="LL" value="0" reducedCost="0.0538823102628214"/>
-  <variable name="Y0030104" index="12" status="LL" value="0" reducedCost="0.0429999999999993"/>
-  <variable name="Y0030105" index="13" status="LL" value="0" reducedCost="0.0410000000000004"/>
-  <variable name="Y0030106" index="14" status="LL" value="0" reducedCost="39.0019925229358"/>
-  <variable name="Y0040102" index="15" status="BS" value="79898.2105713485" reducedCost="0"/>
-  <variable name="Y0040103" index="16" status="BS" value="42958.7894286515" reducedCost="0"/>
+  <variable name="Y0020104" index="7" status="BS" value="40000.000000000007" reducedCost="0"/>
+  <variable name="Y0020105" index="8" status="BS" value="39999.999999999993" reducedCost="0"/>
+  <variable name="Y0020106" index="9" status="BS" value="11059.527154603049" reducedCost="0"/>
+  <variable name="Y0030102" index="10" status="LL" value="0" reducedCost="2.1707495986819074"/>
+  <variable name="Y0030103" index="11" status="LL" value="0" reducedCost="0.05388231026282142"/>
+  <variable name="Y0030104" index="12" status="LL" value="0" reducedCost="0.042999999999999261"/>
+  <variable name="Y0030105" index="13" status="LL" value="0" reducedCost="0.041000000000000369"/>
+  <variable name="Y0030106" index="14" status="LL" value="0" reducedCost="39.001992522935815"/>
+  <variable name="Y0040102" index="15" status="BS" value="79898.210571348493" reducedCost="0"/>
+  <variable name="Y0040103" index="16" status="BS" value="42958.789428651507" reducedCost="0"/>
   <variable name="Y0040104" index="17" status="BS" value="21429" reducedCost="0"/>
   <variable name="Y0040105" index="18" status="BS" value="571" reducedCost="0"/>
-  <variable name="Y0040106" index="19" status="LL" value="0" reducedCost="6.63005540158949"/>
-  <variable name="Y0050103" index="20" status="BS" value="21857.6614890198" reducedCost="0"/>
-  <variable name="Y0050104" index="21" status="BS" value="58824" reducedCost="0"/>
+  <variable name="Y0040106" index="19" status="LL" value="0" reducedCost="6.6300554015894875"/>
+  <variable name="Y0050103" index="20" status="BS" value="21857.661489019818" reducedCost="0"/>
+  <variable name="Y0050104" index="21" status="BS" value="58824.000000000007" reducedCost="0"/>
   <variable name="Y0050105" index="22" status="BS" value="70588" reducedCost="0"/>
-  <variable name="Y0050106" index="23" status="BS" value="66468.8699950569" reducedCost="0"/>
+  <variable name="Y0050106" index="23" status="BS" value="66468.869995056855" reducedCost="0"/>
   <variable name="Y0060102" index="24" status="BS" value="0" reducedCost="0"/>
-  <variable name="Y0060103" index="25" status="BS" value="12854.3385109802" reducedCost="0"/>
+  <variable name="Y0060103" index="25" status="BS" value="12854.338510980184" reducedCost="0"/>
   <variable name="Y0060104" index="26" status="LL" value="0" reducedCost="0"/>
   <variable name="Y0060105" index="27" status="LL" value="0" reducedCost="0"/>
-  <variable name="Y0060106" index="28" status="BS" value="4119.13000494315" reducedCost="0"/>
-  <variable name="Y0070103" index="29" status="BS" value="914.534274897296" reducedCost="0"/>
-  <variable name="Y0070104" index="30" status="BS" value="2485.4657251027" reducedCost="0"/>
-  <variable name="Y0070105" index="31" status="BS" value="1899.99" reducedCost="0"/>
-  <variable name="Y0070106" index="32" status="LL" value="0" reducedCost="87.004108"/>
+  <variable name="Y0060106" index="28" status="BS" value="4119.1300049431538" reducedCost="0"/>
+  <variable name="Y0070103" index="29" status="BS" value="914.5342748972962" reducedCost="0"/>
+  <variable name="Y0070104" index="30" status="BS" value="2485.4657251027038" reducedCost="0"/>
+  <variable name="Y0070105" index="31" status="BS" value="1899.9899999999998" reducedCost="0"/>
+  <variable name="Y0070106" index="32" status="LL" value="0" reducedCost="87.004107999999988"/>
   <variable name="Y0080102" index="33" status="LL" value="0" reducedCost="0"/>
-  <variable name="Y0080103" index="34" status="BS" value="262301.670868205" reducedCost="0"/>
-  <variable name="Y0080104" index="35" status="BS" value="93650.6599442047" reducedCost="0"/>
-  <variable name="Y0080105" index="36" status="BS" value="325691.906005222" reducedCost="0"/>
+  <variable name="Y0080103" index="34" status="BS" value="262301.67086820543" reducedCost="0"/>
+  <variable name="Y0080104" index="35" status="BS" value="93650.659944204672" reducedCost="0"/>
+  <variable name="Y0080105" index="36" status="BS" value="325691.90600522194" reducedCost="0"/>
   <variable name="Y0080106" index="37" status="LL" value="0" reducedCost="0"/>
-  <variable name="Y0090102" index="38" status="BS" value="53678.5641745296" reducedCost="0"/>
-  <variable name="Y0090103" index="39" status="BS" value="384019.764957265" reducedCost="0"/>
-  <variable name="Y0090104" index="40" status="LL" value="0" reducedCost="1.33226762955019e-15"/>
-  <variable name="Y0090105" index="41" status="BS" value="80657.4340505733" reducedCost="0"/>
-  <variable name="Y0090106" index="42" status="BS" value="200000" reducedCost="0"/>
-  <variable name="Y0100103" index="43" status="LL" value="0" reducedCost="-1.4210854715202e-14"/>
-  <variable name="Y0100104" index="44" status="LL" value="0" reducedCost="1.77635683940025e-15"/>
+  <variable name="Y0090102" index="38" status="BS" value="53678.564174529609" reducedCost="0"/>
+  <variable name="Y0090103" index="39" status="BS" value="384019.76495726494" reducedCost="0"/>
+  <variable name="Y0090104" index="40" status="LL" value="0" reducedCost="1.3322676295501878e-15"/>
+  <variable name="Y0090105" index="41" status="BS" value="80657.434050573327" reducedCost="0"/>
+  <variable name="Y0090106" index="42" status="BS" value="200000.00000000006" reducedCost="0"/>
+  <variable name="Y0100103" index="43" status="LL" value="0" reducedCost="-1.4210854715202004e-14"/>
+  <variable name="Y0100104" index="44" status="LL" value="0" reducedCost="1.7763568394002505e-15"/>
   <variable name="Y0100105" index="45" status="BS" value="7000" reducedCost="0"/>
   <variable name="Y0100106" index="46" status="BS" value="6000" reducedCost="0"/>
-  <variable name="Y0110103" index="47" status="BS" value="4506.71545223328" reducedCost="0"/>
-  <variable name="Y0110104" index="48" status="BS" value="7493.28454776672" reducedCost="0"/>
+  <variable name="Y0110103" index="47" status="BS" value="4506.7154522332785" reducedCost="0"/>
+  <variable name="Y0110104" index="48" status="BS" value="7493.2845477667215" reducedCost="0"/>
   <variable name="Y0110105" index="49" status="LL" value="0" reducedCost="0"/>
   <variable name="Y0110106" index="50" status="LL" value="0" reducedCost="0"/>
-  <variable name="Y0120102" index="51" status="LL" value="0" reducedCost="88.9172276639047"/>
+  <variable name="Y0120102" index="51" status="LL" value="0" reducedCost="88.917227663904683"/>
   <variable name="Y0120103" index="52" status="BS" value="34000" reducedCost="0"/>
   <variable name="Y0120104" index="53" status="BS" value="13300" reducedCost="0"/>
   <variable name="Y0120105" index="54" status="BS" value="13300" reducedCost="0"/>
   <variable name="Y0120106" index="55" status="BS" value="0" reducedCost="0"/>
-  <variable name="Y0130102" index="56" status="LL" value="0" reducedCost="88.9352276639047"/>
-  <variable name="Y0130103" index="57" status="LL" value="0" reducedCost="0.0179999999999971"/>
-  <variable name="Y0130104" index="58" status="LL" value="0" reducedCost="0.0169999999999995"/>
-  <variable name="Y0130105" index="59" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0130106" index="60" status="LL" value="0" reducedCost="0.0150000000000006"/>
-  <variable name="Y0140102" index="61" status="LL" value="0" reducedCost="88.9352276639047"/>
-  <variable name="Y0140103" index="62" status="LL" value="0" reducedCost="0.0179999999999971"/>
-  <variable name="Y0140104" index="63" status="LL" value="0" reducedCost="0.0169999999999995"/>
-  <variable name="Y0140105" index="64" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0140106" index="65" status="LL" value="0" reducedCost="0.0150000000000006"/>
-  <variable name="Y0150102" index="66" status="LL" value="0" reducedCost="88.9172276639047"/>
+  <variable name="Y0130102" index="56" status="LL" value="0" reducedCost="88.935227663904683"/>
+  <variable name="Y0130103" index="57" status="LL" value="0" reducedCost="0.017999999999997129"/>
+  <variable name="Y0130104" index="58" status="LL" value="0" reducedCost="0.01699999999999946"/>
+  <variable name="Y0130105" index="59" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0130106" index="60" status="LL" value="0" reducedCost="0.015000000000000568"/>
+  <variable name="Y0140102" index="61" status="LL" value="0" reducedCost="88.935227663904683"/>
+  <variable name="Y0140103" index="62" status="LL" value="0" reducedCost="0.017999999999997129"/>
+  <variable name="Y0140104" index="63" status="LL" value="0" reducedCost="0.01699999999999946"/>
+  <variable name="Y0140105" index="64" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0140106" index="65" status="LL" value="0" reducedCost="0.015000000000000568"/>
+  <variable name="Y0150102" index="66" status="LL" value="0" reducedCost="88.917227663904683"/>
   <variable name="Y0150103" index="67" status="BS" value="17000" reducedCost="0"/>
   <variable name="Y0150104" index="68" status="BS" value="6700" reducedCost="0"/>
   <variable name="Y0150105" index="69" status="BS" value="6700" reducedCost="0"/>
   <variable name="Y0150106" index="70" status="BS" value="0" reducedCost="0"/>
-  <variable name="Y0160102" index="71" status="LL" value="0" reducedCost="0.0189999999999997"/>
-  <variable name="Y0160103" index="72" status="LL" value="0" reducedCost="0.0179999999999998"/>
-  <variable name="Y0160104" index="73" status="LL" value="0" reducedCost="0.0170000000000003"/>
-  <variable name="Y0160105" index="74" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0160106" index="75" status="LL" value="0" reducedCost="0.0150000000000006"/>
-  <variable name="Y0170102" index="76" status="BS" value="699.99" reducedCost="0"/>
+  <variable name="Y0160102" index="71" status="LL" value="0" reducedCost="0.018999999999999739"/>
+  <variable name="Y0160103" index="72" status="LL" value="0" reducedCost="0.017999999999999794"/>
+  <variable name="Y0160104" index="73" status="LL" value="0" reducedCost="0.017000000000000348"/>
+  <variable name="Y0160105" index="74" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0160106" index="75" status="LL" value="0" reducedCost="0.015000000000000568"/>
+  <variable name="Y0170102" index="76" status="BS" value="699.99000000000001" reducedCost="0"/>
   <variable name="Y0170103" index="77" status="BS" value="3700" reducedCost="0"/>
   <variable name="Y0170104" index="78" status="BS" value="3600" reducedCost="0"/>
-  <variable name="Y0170105" index="79" status="BS" value="3600.01" reducedCost="0"/>
+  <variable name="Y0170105" index="79" status="BS" value="3600.0100000000002" reducedCost="0"/>
   <variable name="Y0170106" index="80" status="BS" value="3300" reducedCost="0"/>
-  <variable name="Y0180102" index="81" status="LL" value="0" reducedCost="0.0189999999999997"/>
-  <variable name="Y0180103" index="82" status="LL" value="0" reducedCost="0.0179999999999998"/>
-  <variable name="Y0180104" index="83" status="LL" value="0" reducedCost="0.0170000000000003"/>
-  <variable name="Y0180105" index="84" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0180106" index="85" status="LL" value="0" reducedCost="0.0150000000000006"/>
+  <variable name="Y0180102" index="81" status="LL" value="0" reducedCost="0.018999999999999739"/>
+  <variable name="Y0180103" index="82" status="LL" value="0" reducedCost="0.017999999999999794"/>
+  <variable name="Y0180104" index="83" status="LL" value="0" reducedCost="0.017000000000000348"/>
+  <variable name="Y0180105" index="84" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0180106" index="85" status="LL" value="0" reducedCost="0.015000000000000568"/>
   <variable name="Y0190102" index="86" status="BS" value="300" reducedCost="0"/>
-  <variable name="Y0190103" index="87" status="BS" value="1899.99" reducedCost="0"/>
+  <variable name="Y0190103" index="87" status="BS" value="1899.9899999999998" reducedCost="0"/>
   <variable name="Y0190104" index="88" status="BS" value="1700" reducedCost="0"/>
   <variable name="Y0190105" index="89" status="BS" value="1700" reducedCost="0"/>
   <variable name="Y0190106" index="90" status="BS" value="1700" reducedCost="0"/>
-  <variable name="Y0200102" index="91" status="LL" value="0" reducedCost="1.52655665885959e-16"/>
-  <variable name="Y0200103" index="92" status="LL" value="0" reducedCost="1.87350135405495e-16"/>
+  <variable name="Y0200102" index="91" status="LL" value="0" reducedCost="1.5265566588595902e-16"/>
+  <variable name="Y0200103" index="92" status="LL" value="0" reducedCost="1.8735013540549517e-16"/>
   <variable name="Y0200104" index="93" status="LL" value="0" reducedCost="0"/>
   <variable name="Y0200105" index="94" status="BS" value="30000" reducedCost="0"/>
   <variable name="Y0200106" index="95" status="BS" value="30000" reducedCost="0"/>
@@ -644,199 +644,199 @@
   <variable name="Y0210104" index="98" status="BS" value="30000" reducedCost="0"/>
   <variable name="Y0210105" index="99" status="LL" value="0" reducedCost="0"/>
   <variable name="Y0210106" index="100" status="LL" value="0" reducedCost="0"/>
-  <variable name="Y0220102" index="101" status="BS" value="808.854094499099" reducedCost="0"/>
-  <variable name="Y0220103" index="102" status="LL" value="0" reducedCost="13.3886592"/>
-  <variable name="Y0220104" index="103" status="LL" value="0" reducedCost="0.052"/>
-  <variable name="Y0220105" index="104" status="LL" value="0" reducedCost="0.0489999999999999"/>
-  <variable name="Y0220106" index="105" status="LL" value="0" reducedCost="0.941000000000001"/>
-  <variable name="Y0230102" index="106" status="LL" value="0" reducedCost="88.9722276639047"/>
-  <variable name="Y0230103" index="107" status="BS" value="125891.145905501" reducedCost="0"/>
-  <variable name="Y0230104" index="108" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0230105" index="109" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0230106" index="110" status="LL" value="0" reducedCost="0.895000000000001"/>
-  <variable name="Y0240102" index="111" status="LL" value="0" reducedCost="88.9912276639047"/>
-  <variable name="Y0240103" index="112" status="LL" value="0" reducedCost="0.0179999999999971"/>
-  <variable name="Y0240104" index="113" status="LL" value="0" reducedCost="0.0180000000000002"/>
-  <variable name="Y0240105" index="114" status="LL" value="0" reducedCost="0.0169999999999999"/>
-  <variable name="Y0240106" index="115" status="LL" value="0" reducedCost="0.910000000000001"/>
-  <variable name="Y0250102" index="116" status="LL" value="0" reducedCost="88.9912276639047"/>
-  <variable name="Y0250103" index="117" status="LL" value="0" reducedCost="0.0179999999999971"/>
-  <variable name="Y0250104" index="118" status="LL" value="0" reducedCost="0.0180000000000002"/>
-  <variable name="Y0250105" index="119" status="LL" value="0" reducedCost="0.0169999999999999"/>
-  <variable name="Y0250106" index="120" status="LL" value="0" reducedCost="0.910000000000001"/>
-  <variable name="Y0260102" index="121" status="BS" value="2742.62851600388" reducedCost="0"/>
-  <variable name="Y0260103" index="122" status="LL" value="0" reducedCost="13.3886592"/>
-  <variable name="Y0260104" index="123" status="LL" value="0" reducedCost="0.052"/>
-  <variable name="Y0260105" index="124" status="LL" value="0" reducedCost="0.0489999999999999"/>
-  <variable name="Y0260106" index="125" status="LL" value="0" reducedCost="0.941000000000001"/>
-  <variable name="Y0270102" index="126" status="LL" value="0" reducedCost="88.9722276639047"/>
-  <variable name="Y0270103" index="127" status="BS" value="60557.3714839961" reducedCost="0"/>
+  <variable name="Y0220102" index="101" status="BS" value="808.85409449909946" reducedCost="0"/>
+  <variable name="Y0220103" index="102" status="LL" value="0" reducedCost="13.388659199999998"/>
+  <variable name="Y0220104" index="103" status="LL" value="0" reducedCost="0.052000000000000046"/>
+  <variable name="Y0220105" index="104" status="LL" value="0" reducedCost="0.048999999999999932"/>
+  <variable name="Y0220106" index="105" status="LL" value="0" reducedCost="0.94100000000000072"/>
+  <variable name="Y0230102" index="106" status="LL" value="0" reducedCost="88.972227663904661"/>
+  <variable name="Y0230103" index="107" status="BS" value="125891.1459055009" reducedCost="0"/>
+  <variable name="Y0230104" index="108" status="BS" value="99999.999999999985" reducedCost="0"/>
+  <variable name="Y0230105" index="109" status="BS" value="100000.00000000001" reducedCost="0"/>
+  <variable name="Y0230106" index="110" status="LL" value="0" reducedCost="0.89500000000000091"/>
+  <variable name="Y0240102" index="111" status="LL" value="0" reducedCost="88.991227663904667"/>
+  <variable name="Y0240103" index="112" status="LL" value="0" reducedCost="0.017999999999997129"/>
+  <variable name="Y0240104" index="113" status="LL" value="0" reducedCost="0.018000000000000238"/>
+  <variable name="Y0240105" index="114" status="LL" value="0" reducedCost="0.016999999999999904"/>
+  <variable name="Y0240106" index="115" status="LL" value="0" reducedCost="0.91000000000000059"/>
+  <variable name="Y0250102" index="116" status="LL" value="0" reducedCost="88.991227663904667"/>
+  <variable name="Y0250103" index="117" status="LL" value="0" reducedCost="0.017999999999997129"/>
+  <variable name="Y0250104" index="118" status="LL" value="0" reducedCost="0.018000000000000238"/>
+  <variable name="Y0250105" index="119" status="LL" value="0" reducedCost="0.016999999999999904"/>
+  <variable name="Y0250106" index="120" status="LL" value="0" reducedCost="0.91000000000000059"/>
+  <variable name="Y0260102" index="121" status="BS" value="2742.6285160038797" reducedCost="0"/>
+  <variable name="Y0260103" index="122" status="LL" value="0" reducedCost="13.388659199999998"/>
+  <variable name="Y0260104" index="123" status="LL" value="0" reducedCost="0.052000000000000046"/>
+  <variable name="Y0260105" index="124" status="LL" value="0" reducedCost="0.048999999999999932"/>
+  <variable name="Y0260106" index="125" status="LL" value="0" reducedCost="0.94100000000000072"/>
+  <variable name="Y0270102" index="126" status="LL" value="0" reducedCost="88.972227663904661"/>
+  <variable name="Y0270103" index="127" status="BS" value="60557.371483996118" reducedCost="0"/>
   <variable name="Y0270104" index="128" status="BS" value="50000" reducedCost="0"/>
-  <variable name="Y0270105" index="129" status="BS" value="50000" reducedCost="0"/>
-  <variable name="Y0270106" index="130" status="LL" value="0" reducedCost="0.895000000000001"/>
-  <variable name="Y0280102" index="131" status="BS" value="95086.0460502979" reducedCost="0"/>
-  <variable name="Y0280103" index="132" status="LL" value="0" reducedCost="0.0539999999999994"/>
-  <variable name="Y0280104" index="133" status="LL" value="0" reducedCost="0.052"/>
-  <variable name="Y0280105" index="134" status="LL" value="0" reducedCost="0.0489999999999999"/>
-  <variable name="Y0280106" index="135" status="LL" value="0" reducedCost="0.82376383471485"/>
-  <variable name="Y0290102" index="136" status="LL" value="0" reducedCost="0.106011292780934"/>
-  <variable name="Y0290103" index="137" status="BS" value="240213.953949702" reducedCost="0"/>
+  <variable name="Y0270105" index="129" status="BS" value="50000.000000000015" reducedCost="0"/>
+  <variable name="Y0270106" index="130" status="LL" value="0" reducedCost="0.89500000000000091"/>
+  <variable name="Y0280102" index="131" status="BS" value="95086.046050297911" reducedCost="0"/>
+  <variable name="Y0280103" index="132" status="LL" value="0" reducedCost="0.053999999999999382"/>
+  <variable name="Y0280104" index="133" status="LL" value="0" reducedCost="0.052000000000000046"/>
+  <variable name="Y0280105" index="134" status="LL" value="0" reducedCost="0.048999999999999932"/>
+  <variable name="Y0280106" index="135" status="LL" value="0" reducedCost="0.82376383471484971"/>
+  <variable name="Y0290102" index="136" status="LL" value="0" reducedCost="0.1060112927809343"/>
+  <variable name="Y0290103" index="137" status="BS" value="240213.95394970209" reducedCost="0"/>
   <variable name="Y0290104" index="138" status="BS" value="213300" reducedCost="0"/>
   <variable name="Y0290105" index="139" status="BS" value="200000" reducedCost="0"/>
-  <variable name="Y0290106" index="140" status="LL" value="0" reducedCost="0.77776383471485"/>
-  <variable name="Y0300102" index="141" status="LL" value="0" reducedCost="0.125011292780934"/>
-  <variable name="Y0300103" index="142" status="LL" value="0" reducedCost="0.0179999999999998"/>
-  <variable name="Y0300104" index="143" status="LL" value="0" reducedCost="0.0169999999999999"/>
-  <variable name="Y0300105" index="144" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0300106" index="145" status="LL" value="0" reducedCost="0.79276383471485"/>
-  <variable name="Y0310102" index="146" status="LL" value="0" reducedCost="0.125011292780934"/>
-  <variable name="Y0310103" index="147" status="LL" value="0" reducedCost="0.0179999999999998"/>
-  <variable name="Y0310104" index="148" status="LL" value="0" reducedCost="0.0169999999999999"/>
-  <variable name="Y0310105" index="149" status="LL" value="0" reducedCost="0.016"/>
-  <variable name="Y0310106" index="150" status="LL" value="0" reducedCost="0.79276383471485"/>
-  <variable name="Y0320102" index="151" status="BS" value="53253.5887487876" reducedCost="0"/>
-  <variable name="Y0320103" index="152" status="LL" value="0" reducedCost="0.0539999999999994"/>
-  <variable name="Y0320104" index="153" status="LL" value="0" reducedCost="0.052"/>
-  <variable name="Y0320105" index="154" status="LL" value="0" reducedCost="0.0489999999999999"/>
-  <variable name="Y0320106" index="155" status="LL" value="0" reducedCost="0.82376383471485"/>
-  <variable name="Y0330102" index="156" status="LL" value="0" reducedCost="0.106011292780934"/>
-  <variable name="Y0330103" index="157" status="BS" value="114446.411251212" reducedCost="0"/>
+  <variable name="Y0290106" index="140" status="LL" value="0" reducedCost="0.77776383471484989"/>
+  <variable name="Y0300102" index="141" status="LL" value="0" reducedCost="0.12501129278093442"/>
+  <variable name="Y0300103" index="142" status="LL" value="0" reducedCost="0.017999999999999794"/>
+  <variable name="Y0300104" index="143" status="LL" value="0" reducedCost="0.016999999999999904"/>
+  <variable name="Y0300105" index="144" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0300106" index="145" status="LL" value="0" reducedCost="0.79276383471485001"/>
+  <variable name="Y0310102" index="146" status="LL" value="0" reducedCost="0.12501129278093442"/>
+  <variable name="Y0310103" index="147" status="LL" value="0" reducedCost="0.017999999999999794"/>
+  <variable name="Y0310104" index="148" status="LL" value="0" reducedCost="0.016999999999999904"/>
+  <variable name="Y0310105" index="149" status="LL" value="0" reducedCost="0.016000000000000014"/>
+  <variable name="Y0310106" index="150" status="LL" value="0" reducedCost="0.79276383471485001"/>
+  <variable name="Y0320102" index="151" status="BS" value="53253.588748787588" reducedCost="0"/>
+  <variable name="Y0320103" index="152" status="LL" value="0" reducedCost="0.053999999999999382"/>
+  <variable name="Y0320104" index="153" status="LL" value="0" reducedCost="0.052000000000000046"/>
+  <variable name="Y0320105" index="154" status="LL" value="0" reducedCost="0.048999999999999932"/>
+  <variable name="Y0320106" index="155" status="LL" value="0" reducedCost="0.82376383471484971"/>
+  <variable name="Y0330102" index="156" status="LL" value="0" reducedCost="0.1060112927809343"/>
+  <variable name="Y0330103" index="157" status="BS" value="114446.41125121241" reducedCost="0"/>
   <variable name="Y0330104" index="158" status="BS" value="106700" reducedCost="0"/>
   <variable name="Y0330105" index="159" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0330106" index="160" status="LL" value="0" reducedCost="0.77776383471485"/>
-  <variable name="Y0340102" index="161" status="BS" value="84152.9099985909" reducedCost="0"/>
-  <variable name="Y0340103" index="162" status="BS" value="142271.69196689" reducedCost="0"/>
+  <variable name="Y0330106" index="160" status="LL" value="0" reducedCost="0.77776383471484989"/>
+  <variable name="Y0340102" index="161" status="BS" value="84152.909998590854" reducedCost="0"/>
+  <variable name="Y0340103" index="162" status="BS" value="142271.69196688963" reducedCost="0"/>
   <variable name="Y0340104" index="163" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0340105" index="164" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0340106" index="165" status="BS" value="100000" reducedCost="0"/>
-  <variable name="Y0350102" index="166" status="BS" value="21575.3980345195" reducedCost="0"/>
-  <variable name="Y0350103" index="167" status="LL" value="0" reducedCost="0.00962687844607048"/>
-  <variable name="Y0350104" index="168" status="LL" value="0" reducedCost="0.0259999999999998"/>
-  <variable name="Y0350105" index="169" status="LL" value="0" reducedCost="0.024"/>
-  <variable name="Y0350106" index="170" status="LL" value="0" reducedCost="0.0230000000000001"/>
-  <variable name="I0010101" index="171" status="LL" value="0" reducedCost="226.983513857858"/>
-  <variable name="I0010102" index="172" status="BS" value="40141.0228022231" reducedCost="0"/>
+  <variable name="Y0340105" index="164" status="BS" value="99999.999999999971" reducedCost="0"/>
+  <variable name="Y0340106" index="165" status="BS" value="100000.00000000003" reducedCost="0"/>
+  <variable name="Y0350102" index="166" status="BS" value="21575.398034519512" reducedCost="0"/>
+  <variable name="Y0350103" index="167" status="LL" value="0" reducedCost="0.0096268784460704776"/>
+  <variable name="Y0350104" index="168" status="LL" value="0" reducedCost="0.025999999999999801"/>
+  <variable name="Y0350105" index="169" status="LL" value="0" reducedCost="0.024000000000000021"/>
+  <variable name="Y0350106" index="170" status="LL" value="0" reducedCost="0.023000000000000131"/>
+  <variable name="I0010101" index="171" status="LL" value="0" reducedCost="226.98351385785776"/>
+  <variable name="I0010102" index="172" status="BS" value="40141.022802223131" reducedCost="0"/>
   <variable name="I0010103" index="173" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0010104" index="174" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0010105" index="175" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0010106" index="176" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0020101" index="177" status="LL" value="0" reducedCost="708.034008299496"/>
-  <variable name="I0020102" index="178" status="BS" value="355.4" reducedCost="0"/>
+  <variable name="I0020101" index="177" status="LL" value="0" reducedCost="708.03400829949578"/>
+  <variable name="I0020102" index="178" status="BS" value="355.39999999999998" reducedCost="0"/>
   <variable name="I0020103" index="179" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0020104" index="180" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0020105" index="181" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0020106" index="182" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0030101" index="183" status="LL" value="0" reducedCost="93.325017481228"/>
+  <variable name="I0030101" index="183" status="LL" value="0" reducedCost="93.32501748122796"/>
   <variable name="I0030102" index="184" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0030103" index="185" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0030104" index="186" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0030105" index="187" status="LL" value="0" reducedCost="86.8218626459694"/>
-  <variable name="I0030106" index="188" status="LL" value="0" reducedCost="113.338137354031"/>
-  <variable name="I0040101" index="189" status="LL" value="0" reducedCost="100.318893545683"/>
+  <variable name="I0030105" index="187" status="LL" value="0" reducedCost="86.821862645969432"/>
+  <variable name="I0030106" index="188" status="LL" value="0" reducedCost="113.33813735403056"/>
+  <variable name="I0040101" index="189" status="LL" value="0" reducedCost="100.31889354568314"/>
   <variable name="I0040102" index="190" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0040103" index="191" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0040104" index="192" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0040105" index="193" status="LL" value="0" reducedCost="86.8218626459694"/>
-  <variable name="I0040106" index="194" status="LL" value="0" reducedCost="113.338137354031"/>
-  <variable name="I0050101" index="195" status="LL" value="0" reducedCost="716.846390466953"/>
-  <variable name="I0050102" index="196" status="BS" value="33074.9412620202" reducedCost="0"/>
+  <variable name="I0040105" index="193" status="LL" value="0" reducedCost="86.821862645969432"/>
+  <variable name="I0040106" index="194" status="LL" value="0" reducedCost="113.33813735403056"/>
+  <variable name="I0050101" index="195" status="LL" value="0" reducedCost="716.84639046695315"/>
+  <variable name="I0050102" index="196" status="BS" value="33074.941262020227" reducedCost="0"/>
   <variable name="I0050103" index="197" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0050104" index="198" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0050105" index="199" status="LL" value="0" reducedCost="96.7468109980515"/>
-  <variable name="I0050106" index="200" status="LL" value="0" reducedCost="103.413189001948"/>
-  <variable name="I0060101" index="201" status="LL" value="0" reducedCost="716.846390466953"/>
-  <variable name="I0060102" index="202" status="BS" value="22461.3597943744" reducedCost="0"/>
+  <variable name="I0050105" index="199" status="LL" value="0" reducedCost="96.746810998051529"/>
+  <variable name="I0050106" index="200" status="LL" value="0" reducedCost="103.41318900194847"/>
+  <variable name="I0060101" index="201" status="LL" value="0" reducedCost="716.84639046695315"/>
+  <variable name="I0060102" index="202" status="BS" value="22461.359794374392" reducedCost="0"/>
   <variable name="I0060103" index="203" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0060104" index="204" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0060105" index="205" status="LL" value="0" reducedCost="96.7468109980515"/>
-  <variable name="I0060106" index="206" status="LL" value="0" reducedCost="103.413189001948"/>
-  <variable name="I0070101" index="207" status="LL" value="0" reducedCost="101.209278093391"/>
+  <variable name="I0060105" index="205" status="LL" value="0" reducedCost="96.746810998051529"/>
+  <variable name="I0060106" index="206" status="LL" value="0" reducedCost="103.41318900194847"/>
+  <variable name="I0070101" index="207" status="LL" value="0" reducedCost="101.20927809339061"/>
   <variable name="I0070102" index="208" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0070103" index="209" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0070104" index="210" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0070105" index="211" status="LL" value="0" reducedCost="96.3538568220698"/>
-  <variable name="I0070106" index="212" status="LL" value="0" reducedCost="103.80614317793"/>
-  <variable name="I0080101" index="213" status="LL" value="0" reducedCost="101.209278093391"/>
+  <variable name="I0070105" index="211" status="LL" value="0" reducedCost="96.353856822069844"/>
+  <variable name="I0070106" index="212" status="LL" value="0" reducedCost="103.80614317793015"/>
+  <variable name="I0080101" index="213" status="LL" value="0" reducedCost="101.20927809339061"/>
   <variable name="I0080102" index="214" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0080103" index="215" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0080104" index="216" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0080105" index="217" status="LL" value="0" reducedCost="96.3538568220698"/>
-  <variable name="I0080106" index="218" status="LL" value="0" reducedCost="103.80614317793"/>
-  <variable name="I0090101" index="219" status="LL" value="0" reducedCost="100.266302410495"/>
-  <variable name="I0090102" index="220" status="LL" value="0" reducedCost="100.205229738009"/>
+  <variable name="I0080105" index="217" status="LL" value="0" reducedCost="96.353856822069844"/>
+  <variable name="I0080106" index="218" status="LL" value="0" reducedCost="103.80614317793015"/>
+  <variable name="I0090101" index="219" status="LL" value="0" reducedCost="100.26630241049489"/>
+  <variable name="I0090102" index="220" status="LL" value="0" reducedCost="100.20522973800857"/>
   <variable name="I0090103" index="221" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0090104" index="222" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0090105" index="223" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0090106" index="224" status="LL" value="0" reducedCost="100.08"/>
-  <variable name="I0100101" index="225" status="LL" value="0" reducedCost="111.910411083962"/>
+  <variable name="I0100101" index="225" status="LL" value="0" reducedCost="111.91041108396206"/>
   <variable name="I0100102" index="226" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0100103" index="227" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0100104" index="228" status="LL" value="0" reducedCost="100.08"/>
   <variable name="I0100105" index="229" status="BS" value="0" reducedCost="0"/>
   <variable name="I0100106" index="230" status="LL" value="0" reducedCost="200.16"/>
-  <variable name="X0010103" index="231" status="BS" value="1597.38120785125" reducedCost="0"/>
-  <variable name="X0020103" index="232" status="BS" value="139.6776" reducedCost="0"/>
+  <variable name="X0010103" index="231" status="BS" value="1597.3812078512469" reducedCost="0"/>
+  <variable name="X0020103" index="232" status="BS" value="139.67760000000001" reducedCost="0"/>
   <variable name="X0040103" index="233" status="LL" value="0" reducedCost="0"/>
   <variable name="X0060103" index="234" status="LL" value="0" reducedCost="0"/>
   <variable name="X0070103" index="235" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0100103" index="236" status="BS" value="53.2417322508873" reducedCost="0"/>
-  <variable name="X0120103" index="237" status="BS" value="1793.8624828425" reducedCost="0"/>
-  <variable name="X0140103" index="238" status="BS" value="864.270913983101" reducedCost="0"/>
-  <variable name="X0030102" index="239" status="BS" value="3897.68669060167" reducedCost="0"/>
-  <variable name="X0030103" index="240" status="BS" value="2123.48389144238" reducedCost="0"/>
-  <variable name="X0050102" index="241" status="BS" value="2115.17564745133" reducedCost="0"/>
-  <variable name="X0050103" index="242" status="BS" value="3454.51066324635" reducedCost="0"/>
-  <variable name="X0080102" index="243" status="LL" value="0" reducedCost="14311.44"/>
-  <variable name="X0080103" index="244" status="BS" value="973.033223157056" reducedCost="0"/>
-  <variable name="X0090102" index="245" status="LL" value="0" reducedCost="14311.44"/>
-  <variable name="X0090103" index="246" status="BS" value="373.384318456847" reducedCost="0"/>
-  <variable name="X0110102" index="247" status="BS" value="199.785767252711" reducedCost="0"/>
+  <variable name="X0100103" index="236" status="BS" value="53.241732250887253" reducedCost="0"/>
+  <variable name="X0120103" index="237" status="BS" value="1793.8624828424959" reducedCost="0"/>
+  <variable name="X0140103" index="238" status="BS" value="864.27091398310097" reducedCost="0"/>
+  <variable name="X0030102" index="239" status="BS" value="3897.686690601673" reducedCost="0"/>
+  <variable name="X0030103" index="240" status="BS" value="2123.4838914423804" reducedCost="0"/>
+  <variable name="X0050102" index="241" status="BS" value="2115.1756474513272" reducedCost="0"/>
+  <variable name="X0050103" index="242" status="BS" value="3454.5106632463476" reducedCost="0"/>
+  <variable name="X0080102" index="243" status="LL" value="0" reducedCost="14311.440000000001"/>
+  <variable name="X0080103" index="244" status="BS" value="973.03322315705645" reducedCost="0"/>
+  <variable name="X0090102" index="245" status="LL" value="0" reducedCost="14311.440000000001"/>
+  <variable name="X0090103" index="246" status="BS" value="373.38431845684687" reducedCost="0"/>
+  <variable name="X0110102" index="247" status="BS" value="199.78576725271051" reducedCost="0"/>
   <variable name="X0110103" index="248" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0130102" index="249" status="BS" value="124.135196344042" reducedCost="0"/>
+  <variable name="X0130102" index="249" status="BS" value="124.13519634404238" reducedCost="0"/>
   <variable name="X0130103" index="250" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0150103" index="251" status="BS" value="442.430461683916" reducedCost="0"/>
-  <variable name="X0160102" index="252" status="BS" value="67.40048345275" reducedCost="0"/>
-  <variable name="X0160103" index="253" status="BS" value="148.012353256586" reducedCost="0"/>
-  <variable name="X0010104" index="254" status="BS" value="926.618668524372" reducedCost="0"/>
-  <variable name="X0020104" index="255" status="BS" value="130.550533333333" reducedCost="0"/>
+  <variable name="X0150103" index="251" status="BS" value="442.43046168391584" reducedCost="0"/>
+  <variable name="X0160102" index="252" status="BS" value="67.400483452750024" reducedCost="0"/>
+  <variable name="X0160103" index="253" status="BS" value="148.01235325658647" reducedCost="0"/>
+  <variable name="X0010104" index="254" status="BS" value="926.61866852437197" reducedCost="0"/>
+  <variable name="X0020104" index="255" status="BS" value="130.55053333333336" reducedCost="0"/>
   <variable name="X0040104" index="256" status="LL" value="0" reducedCost="0"/>
   <variable name="X0060104" index="257" status="LL" value="0" reducedCost="0"/>
   <variable name="X0070104" index="258" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0100104" index="259" status="BS" value="424.279058823529" reducedCost="0"/>
-  <variable name="X0120104" index="260" status="BS" value="1600.72916056275" reducedCost="0"/>
-  <variable name="X0140104" index="261" status="BS" value="799.906568627451" reducedCost="0"/>
-  <variable name="X0150104" index="262" status="BS" value="363.411320754717" reducedCost="0"/>
-  <variable name="X0010105" index="263" status="BS" value="1387.54239785882" reducedCost="0"/>
-  <variable name="X0020105" index="264" status="BS" value="125.86" reducedCost="0"/>
+  <variable name="X0100104" index="259" status="BS" value="424.27905882352945" reducedCost="0"/>
+  <variable name="X0120104" index="260" status="BS" value="1600.7291605627452" reducedCost="0"/>
+  <variable name="X0140104" index="261" status="BS" value="799.90656862745095" reducedCost="0"/>
+  <variable name="X0150104" index="262" status="BS" value="363.41132075471694" reducedCost="0"/>
+  <variable name="X0010105" index="263" status="BS" value="1387.5423978588158" reducedCost="0"/>
+  <variable name="X0020105" index="264" status="BS" value="125.86000000000001" reducedCost="0"/>
   <variable name="X0040105" index="265" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0060105" index="266" status="BS" value="29.0078633777855" reducedCost="0"/>
-  <variable name="X0070105" index="267" status="BS" value="665.093215686275" reducedCost="0"/>
-  <variable name="X0100105" index="268" status="BS" value="332.840117647059" reducedCost="0"/>
-  <variable name="X0120105" index="269" status="BS" value="1201.14950968235" reducedCost="0"/>
-  <variable name="X0140105" index="270" status="BS" value="600.078274509804" reducedCost="0"/>
-  <variable name="X0030104" index="271" status="BS" value="911.702101395349" reducedCost="0"/>
-  <variable name="X0050104" index="272" status="BS" value="3952.6511074168" reducedCost="0"/>
-  <variable name="X0080104" index="273" status="BS" value="907.097230769231" reducedCost="0"/>
+  <variable name="X0060105" index="266" status="BS" value="29.007863377785526" reducedCost="0"/>
+  <variable name="X0070105" index="267" status="BS" value="665.09321568627456" reducedCost="0"/>
+  <variable name="X0100105" index="268" status="BS" value="332.84011764705895" reducedCost="0"/>
+  <variable name="X0120105" index="269" status="BS" value="1201.1495096823528" reducedCost="0"/>
+  <variable name="X0140105" index="270" status="BS" value="600.07827450980392" reducedCost="0"/>
+  <variable name="X0030104" index="271" status="BS" value="911.70210139534879" reducedCost="0"/>
+  <variable name="X0050104" index="272" status="BS" value="3952.6511074167997" reducedCost="0"/>
+  <variable name="X0080104" index="273" status="BS" value="907.0972307692308" reducedCost="0"/>
   <variable name="X0090104" index="274" status="LL" value="0" reducedCost="0"/>
   <variable name="X0110104" index="275" status="LL" value="0" reducedCost="0"/>
   <variable name="X0130104" index="276" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0150105" index="277" status="BS" value="379.584669811321" reducedCost="0"/>
-  <variable name="X0160104" index="278" status="BS" value="100.462702015385" reducedCost="0"/>
-  <variable name="X0010106" index="279" status="BS" value="844" reducedCost="0"/>
+  <variable name="X0150105" index="277" status="BS" value="379.58466981132074" reducedCost="0"/>
+  <variable name="X0160104" index="278" status="BS" value="100.46270201538461" reducedCost="0"/>
+  <variable name="X0010106" index="279" status="BS" value="844.00000000000023" reducedCost="0"/>
   <variable name="X0020106" index="280" status="BS" value="116.5368" reducedCost="0"/>
   <variable name="X0040106" index="281" status="BS" value="0" reducedCost="0"/>
-  <variable name="X0060106" index="282" status="BS" value="2661.23890695801" reducedCost="0"/>
-  <variable name="X0070106" index="283" status="LL" value="0" reducedCost="60.1219889251976"/>
-  <variable name="X0100106" index="284" status="LL" value="0" reducedCost="60.1219889251976"/>
-  <variable name="X0120106" index="285" status="BS" value="24.9063725490196" reducedCost="0"/>
-  <variable name="X0140106" index="286" status="BS" value="12.8305555555556" reducedCost="0"/>
-  <variable name="X0030105" index="287" status="BS" value="24.387808372093" reducedCost="0"/>
-  <variable name="X0050105" index="288" status="BS" value="3290.70590454476" reducedCost="0"/>
+  <variable name="X0060106" index="282" status="BS" value="2661.2389069580122" reducedCost="0"/>
+  <variable name="X0070106" index="283" status="LL" value="0" reducedCost="60.121988925197627"/>
+  <variable name="X0100106" index="284" status="LL" value="0" reducedCost="60.121988925197627"/>
+  <variable name="X0120106" index="285" status="BS" value="24.906372549019608" reducedCost="0"/>
+  <variable name="X0140106" index="286" status="BS" value="12.830555555555556" reducedCost="0"/>
+  <variable name="X0030105" index="287" status="BS" value="24.387808372093023" reducedCost="0"/>
+  <variable name="X0050105" index="288" status="BS" value="3290.705904544765" reducedCost="0"/>
   <variable name="X0080105" index="289" status="LL" value="0" reducedCost="0"/>
   <variable name="X0090105" index="290" status="LL" value="0" reducedCost="0"/>
   <variable name="X0110105" index="291" status="LL" value="0" reducedCost="0"/>
   <variable name="X0130105" index="292" status="LL" value="0" reducedCost="0"/>
-  <variable name="X0150106" index="293" status="BS" value="368.663443396226" reducedCost="0"/>
+  <variable name="X0150106" index="293" status="BS" value="368.66344339622646" reducedCost="0"/>
   <variable name="X0160105" index="294" status="BS" value="0" reducedCost="0"/>
   <variable name="X0030106" index="295" status="LL" value="0" reducedCost="0"/>
   <variable name="X0050106" index="296" status="LL" value="0" reducedCost="0"/>

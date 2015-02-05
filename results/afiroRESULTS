@@ -1,15 +1,19 @@
-Number of variables: 5
+Number of variables: 33
 Number of constraints: 27
-Constraints density: 0.6148148148148148
+Constraints density: 0.09988776655443322
 Maximum factor: 500.0
 Minimum factor: 0.107
-73.68850708007812ms gurobi
-26.360034942626953ms cplex
-13.841629028320312ms glpk
-12.40682601928711ms lp_solve
-15.90108871459961ms clp
+10.961532592773438ms gurobi
+20.50948143005371ms cplex
+32.019615173339844ms glpk
+5.484580993652344ms lp_solve
+9.463310241699219ms clp
 -464.75314285714285 Value of objective function [gurobi]
--464.753142857143 Value of objective function [cplex]
+-464.7531428571428 Value of objective function [cplex]
 -464.7531429 Value of objective function [glpk]
 -464.753 Value of objective function [lp_solve]
 -464.75314 Value of objective function [clp]
+1.421085E-14 biggest miscount [gurobi]
+3.4E-04 biggest miscount [lp_solve]
+2E-04 biggest miscount [glpk]
+1.421085E-14 biggest miscount [cplex]
